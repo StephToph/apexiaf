@@ -35,8 +35,22 @@
     />
     <title>Lawyer</title>
     <style>
+      /* ============================================================
+   APEXIA LANDING PAGE — CLEAN REFACTORED STYLES (LOGO LEFT)
+   ============================================================ */
+      /* Disable theme's sticky header wrapper completely */
+      .main-header,
+      .main-header-overlay {
+        position: static !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+        height: auto !important;
+        pointer-events: auto !important;
+      }
+
       /* ===========
-   APX Hero Base
+   HERO BASE
    =========== */
       .apx-hero {
         position: relative;
@@ -46,10 +60,9 @@
         justify-content: center;
         overflow: hidden;
         padding: 2rem;
-        background: #0b102c; /* fallback */
+        background: #0b102c;
       }
 
-      /* Background Image */
       .apx-hero-bg {
         position: absolute;
         top: 0;
@@ -61,7 +74,6 @@
         z-index: 1;
       }
 
-      /* Gradient overlay */
       .apx-hero-overlay {
         position: absolute;
         top: 0;
@@ -76,7 +88,6 @@
         z-index: 2;
       }
 
-      /* Content container */
       .apx-container {
         position: relative;
         z-index: 3;
@@ -84,15 +95,17 @@
         max-width: 820px;
         text-align: center;
         padding: 0 1rem;
-        margin-top: 60px; /* breathing space below logo */
+        margin-top: 60px;
       }
 
-      /* Title */
+      /* ===========
+   HERO TYPOGRAPHY
+   =========== */
       .apx-hero-title {
         font-size: 3.2rem;
         line-height: 1.05;
-        color: #fff;
         font-weight: 700;
+        color: #fff;
         margin-bottom: 1.2rem;
       }
 
@@ -102,20 +115,21 @@
         }
       }
 
-      /* Subtext */
       .apx-hero-subtext {
         font-size: 1.15rem;
         line-height: 1.55;
         color: rgba(255, 255, 255, 0.82);
-        margin: 0 auto 2.2rem auto;
+        margin: 0 auto 2.2rem;
         max-width: 630px;
       }
 
-      /* Input field */
+      /* ===========
+   INPUT + BUTTON
+   =========== */
       .apx-input-wrap {
         width: 100%;
         max-width: 480px;
-        margin: 0 auto 1.2rem auto;
+        margin: 0 auto 1.2rem;
       }
 
       .apx-input {
@@ -139,15 +153,14 @@
         background: rgba(255, 255, 255, 0.22);
       }
 
-      /* CTA Button – UPDATED TO APEXIA BLUE */
       .apx-btn {
         width: 100%;
         max-width: 480px;
         padding: 16px 32px;
-        background: #0b102c; /* Apexia primary */
+        background: #0b102c;
         color: #fff;
         border: 1px solid rgba(255, 255, 255, 0.18);
-        border-radius: 999px;
+        border-radius: 10px;
         font-size: 1rem;
         font-weight: 700;
         cursor: pointer;
@@ -165,38 +178,44 @@
         transform: scale(0.97);
       }
 
-      /* Note text */
       .apx-hero-note {
         font-size: 0.9rem;
         color: rgba(255, 255, 255, 0.72);
-        margin-top: 0.5rem;
       }
 
-      /* Logo Improvement */
+      /* ============================================================
+   LOGO LEFT — BIGGER PREMIUM LOGO
+   ============================================================ */
       .apx-logo {
-        position: absolute;
-        top: 30px;
-        left: 40px;
-        z-index: 50;
-      }
-
-      .apx-logo img {
-        height: 95px; /* bigger, stronger */
+        height: 90px;
         width: auto;
-        opacity: 1;
-        filter: drop-shadow(
-          0 6px 16px rgba(0, 0, 0, 0.55)
-        ); /* makes logo POP */
+        border-radius: 12px;
+        object-fit: contain;
+        filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.35));
         transition: transform 0.3s ease;
       }
 
-      .apx-logo img:hover {
-        transform: scale(1.03); /* subtle luxury hover */
+      .apx-logo:hover {
+        transform: scale(1.04);
       }
 
-      /* Mobile Header Wrap */
+      @media (min-width: 1400px) {
+        .apx-logo {
+          height: 100px;
+        }
+      }
+
+      @media (min-width: 1600px) {
+        .apx-logo {
+          height: 110px;
+        }
+      }
+
+      /* ============================================================
+   MOBILE HEADER
+   ============================================================ */
       .apx-mobile-header {
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: center;
         padding: 14px 20px;
@@ -206,53 +225,32 @@
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
       }
 
-      /* Mobile Logo */
       .apx-mobile-logo img {
-        height: 45px; /* more premium and visible */
+        height: 45px;
         width: auto;
-        filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.25));
       }
 
-      /* Mobile CTA Button */
       .apx-mobile-btn {
         padding: 10px 22px;
         background: #0b102c;
         color: #fff;
-        border-radius: 999px;
+        border-radius: 10px;
         font-size: 14px;
         font-weight: 600;
-        border: none;
-        cursor: pointer;
-        transition: all 0.25s ease;
-        box-shadow: 0 3px 12px rgba(11, 16, 44, 0.2);
       }
 
-      .apx-mobile-btn:hover {
-        background: #11183f;
-      }
-
-      .apx-mobile-btn:active {
-        transform: scale(0.96);
-      }
-
-      /* Hide mobile header by default */
-      .apx-mobile-header {
-        display: none;
-      }
-
-      /* Show ONLY on screens 0–768px */
       @media (max-width: 768px) {
         .apx-mobile-header {
           display: flex;
         }
       }
 
-      /********************************************
- * BASE DESKTOP HEADER (Transparent on load)
- *******************************************/
+      /* ============================================================
+   DESKTOP HEADER (LOGO LEFT)
+   ============================================================ */
       .apx-desktop-header {
         width: 100%;
-        padding: 28px 45px; /* increased padding */
+        padding: 10px 35px;
         background: transparent;
         position: fixed;
         top: 0;
@@ -261,31 +259,19 @@
         transition: background 0.35s ease, box-shadow 0.35s ease;
       }
 
-      /* Show only on desktop/tablet */
-      @media (min-width: 769px) {
+      @media (max-width: 768px) {
         .apx-desktop-header {
-          display: block;
+          display: none;
         }
       }
 
-      /********************************************
- * SCROLLED STATE — White background + shadow
- *******************************************/
-      .apx-desktop-header.apx-scrolled {
-        background: #ffffff; /* solid white */
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); /* soft shadow */
-      }
-
-      /********************************************
- * HEADER LAYOUT (3 columns)
- *******************************************/
+      /* Header Layout */
       .apx-header-inner {
         max-width: 1600px;
         margin: 0 auto;
-        height: 100%; /* ensures alignment */
+        height: 100%;
         display: flex;
-        align-items: center; /* vertical centering */
-        justify-content: space-between;
+        align-items: center;
       }
 
       .apx-header-col {
@@ -294,43 +280,85 @@
         align-items: center;
       }
 
-      .apx-center {
-        justify-content: center;
+      .apx-left {
+        justify-content: flex-start;
       }
 
       .apx-right {
         justify-content: flex-end;
       }
 
-      /********************************************
- * LOGO (Centered)
- *******************************************/
-      .apx-logo {
-        height: 54px; /* Balanced size */
-        width: auto;
-        border-radius: 6px;
-        display: block;
-      }
-
-      /********************************************
- * CTA BUTTON
- *******************************************/
+      /* CTA button */
       .apx-header-btn {
         background: #0b102c;
         color: #ffffff;
         padding: 14px 34px;
-        border-radius: 999px;
+        border-radius: 10px;
         font-size: 15px;
         font-weight: 600;
-        letter-spacing: 0.4px;
-        border: none;
-        cursor: pointer;
         transition: 0.25s ease;
       }
 
       .apx-header-btn:hover {
         background: #11183f;
         transform: translateY(-2px);
+      }
+
+      /* ============================================================
+   HEADER SLIDE-IN
+   ============================================================ */
+      .apx-animate-in {
+        opacity: 0;
+        transform: translateY(-25px);
+        animation: apxHeaderSlideIn 0.75s ease-out forwards;
+        animation-delay: 0.25s;
+      }
+
+      @keyframes apxHeaderSlideIn {
+        0% {
+          opacity: 0;
+          transform: translateY(-25px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* ============================================================
+   HERO TEXT FADE-UP
+   ============================================================ */
+      .apx-hero-animate > * {
+        opacity: 0;
+        transform: translateY(25px);
+        animation: apxFadeUp 0.8s ease-out forwards;
+      }
+
+      .apx-hero-animate h1 {
+        animation-delay: 0.2s;
+      }
+      .apx-hero-animate p.apx-hero-subtext {
+        animation-delay: 0.35s;
+      }
+      .apx-hero-animate .apx-input-wrap {
+        animation-delay: 0.55s;
+      }
+      .apx-hero-animate .apx-btn {
+        animation-delay: 0.75s;
+      }
+      .apx-hero-animate .apx-hero-note {
+        animation-delay: 0.95s;
+      }
+
+      @keyframes apxFadeUp {
+        0% {
+          opacity: 0;
+          transform: translateY(25px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
     </style>
   </head>
@@ -350,14 +378,12 @@
         data-sticky-values-measured="false"
         data-sticky-options='{ "disableOnMobile" :true, "stickyTrigger" :"first-section" }'
       >
-        <section class="apx-desktop-header">
+        <section class="apx-desktop-header apx-animate-in">
           <div class="apx-header-inner">
-            <div class="apx-header-col"></div>
-
-            <div class="apx-header-col apx-center">
-              <a href="index.html" class="apx-logo-wrap">
+            <div class="apx-header-col apx-left">
+              <a href="index.html">
                 <img
-                  src="assets/images/logo.jpeg"
+                  src="assets/images/logo.png"
                   class="apx-logo"
                   alt="Apexia Logo"
                 />
@@ -373,7 +399,7 @@
         <div class="apx-mobile-header">
           <!-- Left: Logo -->
           <a href="index.html" class="apx-mobile-logo">
-            <img src="assets/images/logo.jpeg" alt="Apexia Logo" />
+            <img src="assets/images/logo.png" alt="Apexia Logo" />
           </a>
 
           <!-- Right: Join Button -->
@@ -387,7 +413,7 @@
         style="background-image: url(assets/images/demo/lawyer/Pattern.jpg)"
       >
         <div id="lqd-contents-wrap">
-          <section id="banner" class="apx-hero">
+          <section id="banner" class="apx-hero apx-hero-animate">
             <!-- Background image -->
             <div
               class="apx-hero-bg"
@@ -428,6 +454,293 @@
             </div>
           </section>
 
+          <section class="lqd-section help py-75" id="help">
+            <div class="container">
+              <div class="row">
+                <div
+                  class="col col-12 col-lg-6 col-xl-5 flex items-stretch transition-all module-col"
+                >
+                  <div
+                    class="w-full relative flex flex-col items-end pt-300 px-65 pb-45 mb-0 rounded-10 module-img"
+                  >
+                    <div
+                      class="row-bg-wrap absolute top-0 right-0 bottom-0 left-0 inline-block overflow-hidden rounded-inherit"
+                    >
+                      <div
+                        class="row-bg-inner absolute top-0 right-0 bottom-0 left-0 inline-block overflow-hidden rounded-inherit opacity-100 scale-1"
+                      >
+                        <figure
+                          class="row-bg absolute -top-5 -right-5 -bottom-5 -left-5 inline-block overflow-hidden rounded-inherit bg-no-repeat bg-cover bg-center-top"
+                          style="
+                            background-image: url(assets/images/demo/lawyer/experience.jpg);
+                          "
+                        ></figure>
+                      </div>
+                    </div>
+                    <div
+                      class="liquid-column-overlay pointer-events-none w-full h-full absolute block top-0 left-0 rounded-inherit transition-all"
+                      style="
+                        background: linear-gradient(
+                          0deg,
+                          rgb(46, 70, 85) 0%,
+                          rgba(46, 70, 85, 0) 40%
+                        );
+                      "
+                    ></div>
+                    <div class="ld-fancy-heading relative text-end">
+                      <p
+                        class="ld-fh-element h1 mb-0 text-150 leading-1em text-white"
+                      >
+                        <span class="flex items-end justify-end"
+                          ><span class="-mb-0/15em">11</span>
+                          <span
+                            class="flex flex-col basic-0 flex-grow-0 flex-shrink-1 text-18 leading-18"
+                            >Years of experience</span
+                          ></span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-12 col-lg-5 offset-lg-1">
+                  <h6 class="ld-fh-element mb-1em">Our Offering</h6>
+                  <br />
+                  <h2 class="ld-fh-element mb-0/5em text-46 module-h2-init-sm">
+                    How <u>it</u> Works.
+                  </h2>
+                  <div
+                    class="accordion accordion-md accordion-title-underlined mb-2em"
+                    id="help-accordion"
+                    role="tablist"
+                    aria-multiselectable="true"
+                  >
+                    <div class="accordion-item panel active">
+                      <div
+                        class="accordion-heading"
+                        role="tab"
+                        id="heading-help-1"
+                        data-id="lqd-help-item-1"
+                      >
+                        <h4
+                          class="accordion-title text-20 font-medium"
+                          data-bs-controls="lqd-help-item-1"
+                        >
+                          <a
+                            class
+                            data-bs-toggle="collapse"
+                            data-bs-parent="#help-accordion"
+                            href="#lqd-help-item-1"
+                            aria-expanded="true"
+                            aria-controls="lqd-help-item-1"
+                            >Create a Tab in Seconds
+
+                            <span class="accordion-expander absolute text-16"
+                              ><i class="lqd-icn-ess icon-ion-ios-add"></i>
+                              <i
+                                class="lqd-icn-ess icon-ion-ios-remove"
+                              ></i></span
+                          ></a>
+                        </h4>
+                      </div>
+                      <div
+                        id="lqd-help-item-1"
+                        class="accordion-collapse collapse show"
+                        role="tabpanel"
+                        aria-labelledby="heading-help-1"
+                        data-bs-parent="#help-accordion"
+                      >
+                        <div class="accordion-content">
+                          <div class="ld-fancy-heading">
+                            <p class="ld-fh-element mb-0 text-14 leading-1/6em">
+                              Create a Tab in Seconds .
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item panel">
+                      <div
+                        class="accordion-heading"
+                        role="tab"
+                        id="heading-help-2"
+                        data-id="lqd-help-item-2"
+                      >
+                        <h4
+                          class="accordion-title text-20 font-medium"
+                          data-bs-controls="lqd-help-item-2"
+                        >
+                          <a
+                            class="collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-parent="#help-accordion"
+                            href="#lqd-help-item-2"
+                            aria-expanded="false"
+                            aria-controls="lqd-help-item-2"
+                            >Authorize With a Glance
+
+                            <span class="accordion-expander absolute text-16"
+                              ><i class="lqd-icn-ess icon-ion-ios-add"></i>
+                              <i
+                                class="lqd-icn-ess icon-ion-ios-remove"
+                              ></i></span
+                          ></a>
+                        </h4>
+                      </div>
+                      <div
+                        id="lqd-help-item-2"
+                        class="accordion-collapse collapse"
+                        role="tabpanel"
+                        aria-labelledby="heading-help-2"
+                        data-bs-parent="#help-accordion"
+                      >
+                        <div class="accordion-content">
+                          <div class="ld-fancy-heading">
+                            <p class="ld-fh-element mb-0 text-14 leading-1/6em">
+                              Approve or decline silently, from anywhere in the
+                              world.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item panel">
+                      <div
+                        class="accordion-heading"
+                        role="tab"
+                        id="heading-help-3"
+                        data-id="lqd-help-item-3"
+                      >
+                        <h4
+                          class="accordion-title text-20 font-medium"
+                          data-bs-controls="lqd-help-item-3"
+                        >
+                          <a
+                            class="collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-parent="#help-accordion"
+                            href="#lqd-help-item-3"
+                            aria-expanded="false"
+                            aria-controls="lqd-help-item-3"
+                            >Empower the People You Trust
+
+                            <span class="accordion-expander absolute text-16"
+                              ><i class="lqd-icn-ess icon-ion-ios-add"></i>
+                              <i
+                                class="lqd-icn-ess icon-ion-ios-remove"
+                              ></i></span
+                          ></a>
+                        </h4>
+                      </div>
+                      <div
+                        id="lqd-help-item-3"
+                        class="accordion-collapse collapse"
+                        role="tabpanel"
+                        aria-labelledby="heading-help-3"
+                        data-bs-parent="#help-accordion"
+                      >
+                        <div class="accordion-content">
+                          <div class="ld-fancy-heading">
+                            <p class="ld-fh-element mb-0 text-14 leading-1/6em">
+                              Staff, family, advisors—controlled access with
+                              instant revocation.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item panel">
+                      <div
+                        class="accordion-heading"
+                        role="tab"
+                        id="heading-help-3"
+                        data-id="lqd-help-item-3"
+                      >
+                        <h4
+                          class="accordion-title text-20 font-medium"
+                          data-bs-controls="lqd-help-item-3"
+                        >
+                          <a
+                            class="collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-parent="#help-accordion"
+                            href="#lqd-help-item-4"
+                            aria-expanded="false"
+                            aria-controls="lqd-help-item-4"
+                            >Concierge, Encrypted and Human
+
+                            <span class="accordion-expander absolute text-16"
+                              ><i class="lqd-icn-ess icon-ion-ios-add"></i>
+                              <i
+                                class="lqd-icn-ess icon-ion-ios-remove"
+                              ></i></span
+                          ></a>
+                        </h4>
+                      </div>
+                      <div
+                        id="lqd-help-item-4"
+                        class="accordion-collapse collapse"
+                        role="tabpanel"
+                        aria-labelledby="heading-help-4"
+                        data-bs-parent="#help-accordion"
+                      >
+                        <div class="accordion-content">
+                          <div class="ld-fancy-heading">
+                            <p class="ld-fh-element mb-0 text-14 leading-1/6em">
+                              24/7 private assistance. Zero chat history stored.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item panel">
+                      <div
+                        class="accordion-heading"
+                        role="tab"
+                        id="heading-help-3"
+                        data-id="lqd-help-item-3"
+                      >
+                        <h4
+                          class="accordion-title text-20 font-medium"
+                          data-bs-controls="lqd-help-item-5"
+                        >
+                          <a
+                            class="collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-parent="#help-accordion"
+                            href="#lqd-help-item-5"
+                            aria-expanded="false"
+                            aria-controls="lqd-help-item-5"
+                            >AI Insights, But Only for You
+
+                            <span class="accordion-expander absolute text-16"
+                              ><i class="lqd-icn-ess icon-ion-ios-add"></i>
+                              <i
+                                class="lqd-icn-ess icon-ion-ios-remove"
+                              ></i></span
+                          ></a>
+                        </h4>
+                      </div>
+                      <div
+                        id="lqd-help-item-5"
+                        class="accordion-collapse collapse"
+                        role="tabpanel"
+                        aria-labelledby="heading-help-5"
+                        data-bs-parent="#help-accordion"
+                      >
+                        <div class="accordion-content">
+                          <div class="ld-fancy-heading">
+                            <p class="ld-fh-element mb-0 text-14 leading-1/6em">
+                              On-device recommendations for wealth optimization.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
           <section
             class="lqd-section about bg-no-repeat"
             id="about"
@@ -794,244 +1107,7 @@
               </div>
             </div>
           </section>
-          <section class="lqd-section help py-75" id="help">
-            <div class="container">
-              <div class="row">
-                <div class="col col-12 col-lg-6">
-                  <div class="w-full relative flex flex-col mb-0 module-img">
-                    <div
-                      class="lqd-imggrp-container relative mb-2em transition-all"
-                    >
-                      <div class="lqd-imggrp-inner flex flex-wrap">
-                        <div
-                          class="lqd-imggrp-single relative block transition-all"
-                          data-shadow-style="4"
-                          data-inview="true"
-                          data-animate-shadow="true"
-                        >
-                          <div
-                            class="lqd-imggrp-img-container max-w-full inline-flex items-center justify-center"
-                            data-parallax="true"
-                            data-parallax-from='{ "y" :40}'
-                            data-parallax-to='{ "y" :-45}'
-                            data-parallax-options='{ "overflowHidden" :false, "ease" :"linear", "start" :"top bottom" }'
-                          >
-                            <figure>
-                              <img
-                                width="205"
-                                height="218"
-                                src="assets/images/demo/lawyer/help-1.jpg"
-                                alt="help"
-                              />
-                            </figure>
-                          </div>
-                        </div>
-                        <div
-                          class="lqd-imggrp-single absolute block transition-all top-20 right-0 module-img-2"
-                          data-shadow-style="4"
-                          data-inview="true"
-                          data-inview-options='{ "delayTime" :240}'
-                          data-animate-shadow="true"
-                        >
-                          <div
-                            class="lqd-imggrp-img-container max-w-full inline-flex items-center justify-center"
-                            data-parallax="true"
-                            data-parallax-from='{ "y" :50}'
-                            data-parallax-to='{ "y" :-55}'
-                            data-parallax-options='{ "overflowHidden" :false, "ease" :"linear", "start" :"top bottom" }'
-                          >
-                            <figure>
-                              <img
-                                width="211"
-                                height="258"
-                                src="assets/images/demo/lawyer/help-2.jpg"
-                                alt="help"
-                              />
-                            </figure>
-                          </div>
-                        </div>
-                        <div
-                          class="lqd-imggrp-single absolute block transition-all top-80 right-10percent left-90 module-img-3"
-                          data-shadow-style="4"
-                          data-inview="true"
-                          data-inview-options='{ "delayTime" :120}'
-                          data-animate-shadow="true"
-                        >
-                          <div
-                            class="lqd-imggrp-img-container max-w-full inline-flex items-center justify-center"
-                            data-parallax="true"
-                            data-parallax-from='{ "y" :75}'
-                            data-parallax-to='{ "y" :-105}'
-                            data-parallax-options='{ "overflowHidden" :false, "ease" :"linear", "start" :"top bottom" }'
-                          >
-                            <figure>
-                              <img
-                                width="305"
-                                height="373"
-                                src="assets/images/demo/lawyer/help-3.jpg"
-                                alt="help"
-                              />
-                            </figure>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col col-12 col-lg-5 offset-lg-1">
-                  <h6 class="ld-fh-element mb-1em">Legal disciplines.</h6>
-                  <h2 class="ld-fh-element mb-0/5em text-46 module-h2-init-sm">
-                    Legal <u>aid</u> from professionals.
-                  </h2>
-                  <div
-                    class="accordion accordion-md accordion-title-underlined mb-2em"
-                    id="help-accordion"
-                    role="tablist"
-                    aria-multiselectable="true"
-                  >
-                    <div class="accordion-item panel active">
-                      <div
-                        class="accordion-heading"
-                        role="tab"
-                        id="heading-help-1"
-                        data-id="lqd-help-item-1"
-                      >
-                        <h4
-                          class="accordion-title text-20 font-medium"
-                          data-bs-controls="lqd-help-item-1"
-                        >
-                          <a
-                            class
-                            data-bs-toggle="collapse"
-                            data-bs-parent="#help-accordion"
-                            href="#lqd-help-item-1"
-                            aria-expanded="true"
-                            aria-controls="lqd-help-item-1"
-                            >Anti-money Laundering
-                            <span class="accordion-expander absolute text-16"
-                              ><i class="lqd-icn-ess icon-ion-ios-add"></i>
-                              <i
-                                class="lqd-icn-ess icon-ion-ios-remove"
-                              ></i></span
-                          ></a>
-                        </h4>
-                      </div>
-                      <div
-                        id="lqd-help-item-1"
-                        class="accordion-collapse collapse show"
-                        role="tabpanel"
-                        aria-labelledby="heading-help-1"
-                        data-bs-parent="#help-accordion"
-                      >
-                        <div class="accordion-content">
-                          <div class="ld-fancy-heading">
-                            <p class="ld-fh-element mb-0 text-14 leading-1/6em">
-                              Many strands of place-making, environmental
-                              stewardship, social equity and economic viability
-                              into the creation of places with distinct beauty
-                              and identity.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item panel">
-                      <div
-                        class="accordion-heading"
-                        role="tab"
-                        id="heading-help-2"
-                        data-id="lqd-help-item-2"
-                      >
-                        <h4
-                          class="accordion-title text-20 font-medium"
-                          data-bs-controls="lqd-help-item-2"
-                        >
-                          <a
-                            class="collapsed"
-                            data-bs-toggle="collapse"
-                            data-bs-parent="#help-accordion"
-                            href="#lqd-help-item-2"
-                            aria-expanded="false"
-                            aria-controls="lqd-help-item-2"
-                            >Immigration and Citizenship
-                            <span class="accordion-expander absolute text-16"
-                              ><i class="lqd-icn-ess icon-ion-ios-add"></i>
-                              <i
-                                class="lqd-icn-ess icon-ion-ios-remove"
-                              ></i></span
-                          ></a>
-                        </h4>
-                      </div>
-                      <div
-                        id="lqd-help-item-2"
-                        class="accordion-collapse collapse"
-                        role="tabpanel"
-                        aria-labelledby="heading-help-2"
-                        data-bs-parent="#help-accordion"
-                      >
-                        <div class="accordion-content">
-                          <div class="ld-fancy-heading">
-                            <p class="ld-fh-element mb-0 text-14 leading-1/6em">
-                              Many strands of place-making, environmental
-                              stewardship, social equity and economic viability
-                              into the creation of places with distinct beauty
-                              and identity.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item panel">
-                      <div
-                        class="accordion-heading"
-                        role="tab"
-                        id="heading-help-3"
-                        data-id="lqd-help-item-3"
-                      >
-                        <h4
-                          class="accordion-title text-20 font-medium"
-                          data-bs-controls="lqd-help-item-3"
-                        >
-                          <a
-                            class="collapsed"
-                            data-bs-toggle="collapse"
-                            data-bs-parent="#help-accordion"
-                            href="#lqd-help-item-3"
-                            aria-expanded="false"
-                            aria-controls="lqd-help-item-3"
-                            >Private Property and Business
-                            <span class="accordion-expander absolute text-16"
-                              ><i class="lqd-icn-ess icon-ion-ios-add"></i>
-                              <i
-                                class="lqd-icn-ess icon-ion-ios-remove"
-                              ></i></span
-                          ></a>
-                        </h4>
-                      </div>
-                      <div
-                        id="lqd-help-item-3"
-                        class="accordion-collapse collapse"
-                        role="tabpanel"
-                        aria-labelledby="heading-help-3"
-                        data-bs-parent="#help-accordion"
-                      >
-                        <div class="accordion-content">
-                          <div class="ld-fancy-heading">
-                            <p class="ld-fh-element mb-0 text-14 leading-1/6em">
-                              Many strands of place-making, environmental
-                              stewardship, social equity and economic viability
-                              into the creation of places with distinct beauty
-                              and identity.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+
           <section class="lqd-section practice-carousel pt-50 pb-120">
             <div class="container">
               <div class="row">
@@ -2440,16 +2516,60 @@
       </div>
     </div>
     <script>
-      document.addEventListener("scroll", function () {
+      document.addEventListener("DOMContentLoaded", function () {
         const header = document.querySelector(".apx-desktop-header");
 
-        if (window.scrollY > 40) {
-          header.classList.add("apx-scrolled");
-        } else {
-          header.classList.remove("apx-scrolled");
+        if (header && header.classList.contains("apx-animate-in")) {
+          header.classList.remove("apx-animate-in");
+        }
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const apexiaHeader = document.querySelector(".apx-desktop-header");
+        if (!apexiaHeader) return;
+
+        // Always visible on load
+        apexiaHeader.style.opacity = "1";
+        apexiaHeader.style.transform = "translateY(0)";
+        apexiaHeader.style.pointerEvents = "auto";
+
+        let lastScrollTop = 0;
+
+        window.addEventListener("scroll", function () {
+          let scrollTop = window.scrollY;
+
+          // hide only after scrolling down past 200px
+          if (scrollTop > lastScrollTop && scrollTop > 200) {
+            apexiaHeader.style.opacity = "0";
+            apexiaHeader.style.transform = "translateY(-25px)";
+            apexiaHeader.style.pointerEvents = "none";
+          }
+
+          // show when scroll up close to top
+          else if (scrollTop < 100) {
+            apexiaHeader.style.opacity = "1";
+            apexiaHeader.style.transform = "translateY(0)";
+            apexiaHeader.style.pointerEvents = "auto";
+          }
+
+          lastScrollTop = scrollTop;
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const themeHeader = document.querySelector(".main-header");
+
+        if (themeHeader) {
+          // Remove all sticky attributes
+          themeHeader.removeAttribute("data-sticky-header");
+          themeHeader.removeAttribute("data-sticky-values-measured");
+          themeHeader.removeAttribute("data-sticky-options");
         }
       });
     </script>
   </body>
-  <!-- Mirrored from hubhtml.liquid-themes.com/index-lawyer.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Dec 2025 20:36:36 GMT -->
 </html>
