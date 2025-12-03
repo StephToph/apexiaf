@@ -360,6 +360,113 @@
           transform: translateY(0);
         }
       }
+
+      @media (max-width: 767px) {
+        .module-img {
+          padding-top: 120px !important; /* reduce from 300 */
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+          padding-bottom: 25px !important;
+        }
+
+        .module-img figure.row-bg {
+          background-position: center !important;
+        }
+
+        .module-img .liquid-column-overlay {
+          background: linear-gradient(
+            0deg,
+            rgba(46, 70, 85, 0.9) 0%,
+            rgba(46, 70, 85, 0) 35%
+          ) !important;
+        }
+
+        .module-col {
+          margin-bottom: -6rem !important;
+        }
+
+        .module-h2-init-sm {
+          font-size: 32px !important;
+          line-height: 1.2 !important;
+        }
+
+        #help-accordion .accordion-title {
+          font-size: 16px !important;
+        }
+      }
+      @media (max-width: 767px) {
+        .module-img {
+          padding: 0 !important;
+          height: 200px !important; /* control the mobile height */
+          overflow: hidden !important;
+        }
+
+        .module-img .row-bg,
+        .module-img .row-bg-inner,
+        .module-img .row-bg-wrap {
+          top: 0 !important;
+          left: 0 !important;
+          right: 0 !important;
+          bottom: 0 !important;
+          height: 100% !important;
+          width: 100% !important;
+        }
+
+        .module-img .row-bg {
+          background-size: cover !important;
+          background-position: center !important;
+        }
+
+        .module-img .liquid-column-overlay {
+          height: 100% !important;
+        }
+      }
+
+      #about {
+        background: #061b3a 100% /* deep navy */;
+      }
+
+      #about h2,
+      #about h3,
+      #about h6,
+      #about p,
+      #about span {
+        color: #e8f4ff !important; /* light premium text */
+      }
+
+      #about .iconbox {
+        background: rgba(172, 214, 242, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 25px;
+        border-radius: 12px;
+        backdrop-filter: blur(10px);
+      }
+
+      #about .iconbox h3 {
+        color: #ffffff !important;
+      }
+
+      #about .iconbox p {
+        color: #cfe7ff !important;
+      }
+
+      #about .modul-top {
+        padding-top: 40px !important;
+        padding-bottom: 20px !important;
+      }
+
+      #about .modul-bottom {
+        padding-top: 20px !important;
+        padding-bottom: 40px !important;
+      }
+
+      .section {
+        min-height: 100vh; /* fills at least one full screen */
+        display: flex; /* lets you center or manage children easily */
+        align-items: center; /* vertically centers content */
+        padding-top: 0;
+        padding-bottom: 0;
+      }
     </style>
   </head>
   <body
@@ -454,14 +561,14 @@
             </div>
           </section>
 
-          <section class="lqd-section help py-75" id="help">
+          <section class="lqd-section section help py-75" id="help">
             <div class="container">
               <div class="row">
                 <div
                   class="col col-12 col-lg-6 col-xl-5 flex items-stretch transition-all module-col"
                 >
                   <div
-                    class="w-full relative flex flex-col items-end pt-300 px-65 pb-45 mb-0 rounded-10 module-img"
+                    class="w-full relative flex flex-col items-end pt-300 px-65 pb-15 mb-0 rounded-10 module-img"
                   >
                     <div
                       class="row-bg-wrap absolute top-0 right-0 bottom-0 left-0 inline-block overflow-hidden rounded-inherit"
@@ -471,9 +578,7 @@
                       >
                         <figure
                           class="row-bg absolute -top-5 -right-5 -bottom-5 -left-5 inline-block overflow-hidden rounded-inherit bg-no-repeat bg-cover bg-center-top"
-                          style="
-                            background-image: url(assets/images/demo/lawyer/experience.jpg);
-                          "
+                          style="background-image: url(assets/images/4.jpg)"
                         ></figure>
                       </div>
                     </div>
@@ -487,26 +592,13 @@
                         );
                       "
                     ></div>
-                    <div class="ld-fancy-heading relative text-end">
-                      <p
-                        class="ld-fh-element h1 mb-0 text-150 leading-1em text-white"
-                      >
-                        <span class="flex items-end justify-end"
-                          ><span class="-mb-0/15em">11</span>
-                          <span
-                            class="flex flex-col basic-0 flex-grow-0 flex-shrink-1 text-18 leading-18"
-                            >Years of experience</span
-                          ></span
-                        >
-                      </p>
-                    </div>
                   </div>
                 </div>
                 <div class="col col-12 col-lg-5 offset-lg-1">
                   <h6 class="ld-fh-element mb-1em">Our Offering</h6>
                   <br />
                   <h2 class="ld-fh-element mb-0/5em text-46 module-h2-init-sm">
-                    How <u>it</u> Works.
+                    How It <u> Works</u>.
                   </h2>
                   <div
                     class="accordion accordion-md accordion-title-underlined mb-2em"
@@ -552,7 +644,7 @@
                         <div class="accordion-content">
                           <div class="ld-fancy-heading">
                             <p class="ld-fh-element mb-0 text-14 leading-1/6em">
-                              Create a Tab in Seconds .
+                              Private. Custom. Geofenced. Multi-currency.
                             </p>
                           </div>
                         </div>
@@ -742,33 +834,33 @@
             </div>
           </section>
           <section
-            class="lqd-section about bg-no-repeat"
+            class="lqd-section sectin about"
             id="about"
-            style="
-              background-image: url(assets/images/demo/lawyer/about-bg.png);
-            "
+            style="height: 100vh"
           >
-            <div class="modul-top pt-65 pb-45">
+            <div class="modul-top pt-65 pb-75">
               <div class="container">
                 <div class="row items-center">
-                  <div class="col col-12 col-lg-6 flex flex-col">
-                    <h6 class="ld-fh-element mb-1/25em">Legal disciplines.</h6>
+                  <div class="col col-12 col-lg-12 pt-75 flex flex-col">
+                    <h6 class="ld-fh-element mb-1/25em">APEXIA</h6>
                     <h2
                       class="ld-fh-element mb-0 text-46 module-mb-init module-h2-init-md"
                     >
-                      Practice Areas.
+                      Tiers Overview.
                     </h2>
-                  </div>
-                  <div class="col col-12 col-lg-5 offset-lg-1">
-                    <p class="ld-fh-element mb-0/5em text-17 leading-1/5em">
-                      We embrace holistic development and support for the aim of
-                      being a first-choice employer within our sectors.
-                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="modul-bottom border-top border-black-10">
+
+            <div
+              class="border-white-10 py-75"
+              style="
+                border-color: rgba(56, 205, 242, 0.801);
+                border-top-width: 1px;
+                border-top-style: solid;
+              "
+            >
               <div class="container">
                 <div class="row">
                   <div class="col col-12 col-md-4">
@@ -784,14 +876,11 @@
                         ></span>
                       </div>
                       <div class="contents">
-                        <h3 class="mb-0/75em text-28 leading-1/5em">
-                          Financial capital And business
-                        </h3>
+                        <h3 class="mb-0/75em text-28 leading-1/5em">Summit</h3>
                         <p>
                           <span class="text-15"
-                            >Our process applies techniques from a variety of
-                            disciplines distinction in detail and gives careful
-                            attention.</span
+                            >The gateway to Apexia: private tabs, real-time
+                            monitoring, discreet control.</span
                           >
                         </p>
                       </div>
@@ -811,14 +900,13 @@
                       </div>
                       <div class="contents">
                         <h3 class="mb-0/75em text-28 leading-1/5em">
-                          Citizenship And Immigration
+                          Pinnacle
                         </h3>
                         <p>
                           <span class="text-15"
-                            >Our process applies techniques from a variety of
-                            disciplines distinction in detail and gives careful
-                            attention.</span
-                          >
+                            >Unlimited authorizations, advanced AI insights,
+                            multi-entity dashboards.
+                          </span>
                         </p>
                       </div>
                     </div>
@@ -836,15 +924,12 @@
                         ></span>
                       </div>
                       <div class="contents">
-                        <h3 class="mb-0/75em text-28 leading-1/5em">
-                          Criminal Cases And Defense
-                        </h3>
+                        <h3 class="mb-0/75em text-28 leading-1/5em">Zenith</h3>
                         <p>
                           <span class="text-15"
-                            >Our process applies techniques from a variety of
-                            disciplines distinction in detail and gives careful
-                            attention.</span
-                          >
+                            >Unlimited authorizations, advanced AI insights,
+                            multi-entity dashboards.
+                          </span>
                         </p>
                       </div>
                     </div>
@@ -886,19 +971,6 @@
                         );
                       "
                     ></div>
-                    <div class="ld-fancy-heading relative text-end">
-                      <p
-                        class="ld-fh-element h1 mb-0 text-150 leading-1em text-white"
-                      >
-                        <span class="flex items-end justify-end"
-                          ><span class="-mb-0/15em">11</span>
-                          <span
-                            class="flex flex-col basic-0 flex-grow-0 flex-shrink-1 text-18 leading-18"
-                            >Years of experience</span
-                          ></span
-                        >
-                      </p>
-                    </div>
                   </div>
                 </div>
                 <div class="col col-12 col-lg-5 offset-lg-1">
