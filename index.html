@@ -2,23 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta
-      name="keywords"
-      content="HTML Template, site template, seo, marketing, creative, corporate, modern, multipurpose, one page, business, responsive, minimal, saas, startup"
-    />
-    <meta name="author" content="LiquidThemes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO: Brand-Focused Metadata -->
+    <title>
+      Apexia — Private Financial Concierge for the World’s Quiet Powerholders
+    </title>
     <meta
       name="description"
-      content="Hub is a HTML template with high performance, and award-winning design collection."
+      content="Apexia is a sovereign financial concierge engineered for ultra-high-net-worth individuals. Zero-trust privacy, quantum-resistant security, and invisible financial operations."
     />
-    <meta property="og:title" content="Hub HTML template" />
+    <meta
+      name="keywords"
+      content="Apexia, private financial concierge, UHNWI wallet, luxury fintech, private banking, secure wallet, encrypted concierge, sovereign finance"
+    />
+    <meta name="author" content="Apexia" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://theapexia.com/" />
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Apexia — Private Financial Concierge" />
     <meta
       property="og:description"
-      content="Hub is a HTML template with high performance, and award-winning design collection."
+      content="Engineered for UHNWI, family offices, and elite executives. Apexia delivers invisible transactions, encrypted concierge access, and absolute digital sovereignty."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/images/common/og-image.jpg" />
+    <meta property="og:url" content="https://theapexia.com/" />
+    <meta property="og:image" content="assets/images/logo.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Apexia — Private Financial Concierge" />
+    <meta
+      name="twitter:description"
+      content="A new standard of private wealth autonomy. Zero-trust. No tracking. No ads. Encrypted by design."
+    />
+    <meta name="twitter:image" content="assets/images/logo.png" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/images/logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/images/logo.png" />
+
     <link
       rel="stylesheet"
       href="assets/vendors/liquid-icon/lqd-essentials/lqd-essentials.min.css"
@@ -33,7 +58,19 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Franklin&amp;family=Marcellus&amp;display=swap"
       rel="stylesheet"
     />
-    <title>Lawyer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+    />
+
+    <title>Home</title>
+
     <style>
       .apx-field {
         width: 100%;
@@ -49,6 +86,11 @@
         display: block;
         border-radius: 10px;
         width: 100%;
+        text-transform: capitalize;
+        font-size: medium;
+        background-color: #db9d00;
+        border: 1px solid #061b3a;
+        color: #000;
       }
 
       /* ============================================================
@@ -57,7 +99,6 @@
       /* Disable theme's sticky header wrapper completely */
       .main-header,
       .main-header-overlay {
-        position: static !important;
         opacity: 1 !important;
         visibility: visible !important;
         transform: none !important;
@@ -241,14 +282,17 @@
         justify-content: space-between;
         align-items: center;
         padding: 14px 20px;
-        background: #ffffff;
+        background: transparent !important; /* ← FORCE override */
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        box-shadow: none !important;
         position: relative;
         z-index: 20;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       }
 
       .apx-mobile-logo img {
-        height: 45px;
+        height: 65px;
         width: auto;
       }
 
@@ -445,15 +489,7 @@
       }
 
       #about {
-        background: #061b3a 100% /* deep navy */;
-      }
-
-      #about h2,
-      #about h3,
-      #about h6,
-      #about p,
-      #about span {
-        color: #e8f4ff !important; /* light premium text */
+        background-color: #061b3a;
       }
 
       #about .iconbox {
@@ -546,7 +582,7 @@
       }
 
       .accordion-title-underlined .accordion-title a {
-        color: #2596be;
+        color: #db9d00;
       }
 
       /* Fade up on section load */
@@ -603,7 +639,346 @@
         transform: translateY(-12px);
         filter: brightness(1.15);
       }
+      /* ================================
+   APEXIA — Tiers Section Premium
+   ================================ */
+
+      #about {
+        background: #0c0c0c; /* deep luxury black */
+        padding-top: 80px;
+        padding-bottom: 120px;
+      }
+
+      .apx-tiers-container {
+        text-align: left;
+      }
+
+      /* Stronger premium baseline */
+      .apx-tier-card {
+        position: relative;
+        background-size: cover !important;
+        background-position: center !important;
+        border-radius: 14px;
+        overflow: hidden;
+        padding: 60px 35px;
+        height: 340px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: white;
+        border: 1px solid rgba(219, 157, 0, 0.22);
+        transition: all 0.55s cubic-bezier(0.22, 0.61, 0.36, 1);
+        filter: brightness(0.75) saturate(0.85);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+      }
+
+      .apx-tier-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+            circle at 30% 40%,
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.85)
+          ),
+          linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.95));
+
+        opacity: 1;
+        transition: opacity 0.55s ease;
+        z-index: 1;
+      }
+
+      .apx-tier-card:hover {
+        border-color: #e6c46d;
+        box-shadow: 0 0 22px rgba(219, 157, 0, 0.25),
+          0 0 3px 1px rgba(219, 157, 0, 0.45) inset; /* inner gold glow */
+        filter: brightness(1) saturate(1.08);
+      }
+
+      .apx-tier-card:hover::before {
+        opacity: 0.35;
+      }
+
+      .apx-tier-card:hover .apx-tier-title {
+        color: #ffd995;
+        text-shadow: 0 0 8px rgba(255, 210, 140, 0.35);
+      }
+
+      .apx-tier-card:hover .apx-tier-sub {
+        color: #f0c878;
+      }
+
+      .apx-tier-card:hover .apx-tier-text {
+        color: rgba(255, 255, 255, 0.95);
+      }
+
+      .apx-tier-card:hover .apx-tier-sub {
+        color: #e1b85c;
+      }
+
+      .apx-tier-title {
+        position: relative;
+        display: inline-block;
+      }
+
+      .apx-tier-text::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        height: 2px;
+        width: 0;
+        background: linear-gradient(90deg, #db9d00, #f7e7b0);
+        transition: width 0.45s ease;
+        border-radius: 2px;
+      }
+
+      .apx-tier-card:hover .apx-tier-text::after {
+        width: 60%;
+      }
+
+      .apx-badge {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        background: #db9d00;
+        color: #000;
+        font-weight: 700;
+        font-size: 13px;
+        padding: 4px 12px;
+        border-radius: 4px;
+        z-index: 3;
+        overflow: hidden;
+      }
+
+      .apx-badge::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -120%;
+        height: 100%;
+        width: 70%;
+        background: linear-gradient(
+          120deg,
+          transparent,
+          rgba(255, 255, 255, 0.6),
+          transparent
+        );
+        transform: skewX(-25deg);
+        animation: apexBadgeShine 3.2s infinite ease-in-out;
+      }
+      /* TRUE elevation */
+      .apx-tier-card {
+        transition: transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1),
+          box-shadow 0.45s cubic-bezier(0.22, 0.61, 0.36, 1), filter 0.45s ease;
+      }
+      .apx-tier-card:hover {
+        transform: translateY(-14px) scale(1.015) perspective(700px)
+          rotateX(2deg);
+      }
+
+      /* ELEVATED STATE */
+      .apx-tier-card:hover {
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55),
+          /* deep natural drop shadow */ 0 6px 15px rgba(0, 0, 0, 0.35),
+          /* softened mid-shadow */ 0 0 22px rgba(219, 157, 0, 0.18); /* gold aura (luxury touch) */
+
+        filter: brightness(1.08) saturate(1.1);
+      }
+
+      @keyframes apexBadgeShine {
+        0% {
+          left: -120%;
+        }
+        50% {
+          left: 140%;
+        }
+        100% {
+          left: 140%;
+        }
+      }
+      .apx-tier-card:hover {
+        transform: translateY(-4px);
+      }
+
+      .apx-tier-card:hover .apx-tier-content {
+        transform: translateY(-3px);
+        transition: transform 0.55s ease;
+      }
+
+      /* Noise overlay on entire section */
+      #about::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url("https://grainy-gradients.vercel.app/noise.svg"); /* HD noise */
+        opacity: 0.035;
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      .apx-tier-content {
+        position: relative;
+        z-index: 2;
+        text-align: left;
+      }
+
+      .apx-tier-title {
+        font-size: 28px;
+        font-weight: 600;
+        color: #db9d00; /* luxury gold */
+        margin-bottom: 10px;
+      }
+
+      .apx-tier-text {
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 16px;
+      }
+
+      .apx-tier-sub {
+        margin-top: 20px;
+        font-size: 15px;
+        color: #ffffff;
+      }
+
+      /* PRIORITY badge for Zenith */
+      .apx-badge {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        background: #db9d00;
+        color: #000;
+        font-weight: 700;
+        font-size: 13px;
+        padding: 4px 10px;
+        border-radius: 4px;
+        z-index: 3;
+      }
+      /* Static gold line above subtitle */
+      .apx-tier-line {
+        width: 100%;
+        height: 1px;
+        margin: 22px 0 12px 0;
+        background: rgba(219, 157, 0, 0.35); /* soft premium gold */
+      }
+
+      .apx-divider-gold {
+        height: 1px;
+        width: 100%;
+        margin: 40px auto;
+        background: linear-gradient(
+          to right,
+          transparent,
+          #db9d00,
+          transparent
+        );
+      }
+
+      /* Mobile adjustments */
+      @media (max-width: 768px) {
+        .apx-tier-card {
+          height: 280px;
+          padding: 45px 25px;
+        }
+        .apx-tier-title {
+          font-size: 24px;
+        }
+      }
+
+      /* Container */
+      .apx-accordion {
+        width: 100%;
+        max-width: 520px;
+        color: #fff;
+      }
+
+      /* Each accordion item */
+      .apx-item {
+        padding: 12px 0 18px;
+        border-bottom: 1px solid rgba(219, 157, 0, 0.35);
+        cursor: pointer;
+      }
+
+      /* Header row */
+      .apx-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        color: #db9d00;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .apx-item:hover .apx-header span:first-child {
+        color: #f5d88a;
+      }
+
+      /* The body text */
+      .apx-body {
+        font-size: 15px;
+        line-height: 1.55;
+        color: rgba(255, 255, 255, 0.85);
+        margin-top: 12px;
+        max-height: 0;
+        overflow: hidden;
+        padding-right: 30px;
+        transition: all 0.35s ease;
+        opacity: 0;
+      }
+
+      /* Expanded state */
+      .apx-item.active .apx-body {
+        max-height: 200px;
+        opacity: 1;
+      }
+
+      /* Icon */
+      .apx-icon {
+        font-size: 22px;
+        color: #db9d00;
+        transition: all 0.3s ease;
+      }
+
+      .apx-item.active .apx-icon {
+        color: #f5d88a;
+      }
+
+      /* IMAGE WRAPPER */
+      .apx-img-wrap {
+        position: relative;
+        width: 100%;
+        border-radius: 12px;
+        overflow: hidden;
+        height: 420px; /* desktop */
+      }
+
+      .apx-img {
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .apx-img-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          0deg,
+          rgba(46, 70, 85, 0.9) 0%,
+          rgba(46, 70, 85, 0) 45%
+        );
+      }
+
+      /* MOBILE */
+      @media (max-width: 768px) {
+        .apx-img-wrap {
+          height: 280px;
+          border-radius: 10px;
+        }
+      }
     </style>
+
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const observer = new IntersectionObserver(
@@ -701,16 +1076,23 @@
                 <div class="apx-input-wrap">
                   <input
                     type="email"
+                    id="email"
                     placeholder="Enter Your Email Address"
-                    class="apx-input"
+                    class="apx-input apx-email"
                   />
                 </div>
 
-                <button class="apx-btn apx-btn-primary">
+                <button
+                  class="apx-btn apx-btn-primary apx-open-modal"
+                  id="apx-join-btn"
+                >
                   Join the Private Waitlist
                 </button>
 
-                <p class="apx-hero-note">
+                <p
+                  class="apx-hero-note"
+                  style="color: #db9d00; margin-top: -10px"
+                >
                   Invitation-only. Requests reviewed manually.
                 </p>
               </div>
@@ -722,271 +1104,79 @@
             id="help"
           >
             <div class="container">
-              <div class="row">
-                <div
-                  class="col col-12 col-lg-6 col-xl-5 flex items-stretch transition-all module-col"
-                >
-                  <div
-                    class="w-full relative flex flex-col items-end pt-300 px-65 pb-15 mb-0 rounded-10 module-img"
-                  >
-                    <div
-                      class="row-bg-wrap absolute top-0 right-0 bottom-0 left-0 inline-block overflow-hidden rounded-inherit"
-                    >
-                      <div
-                        class="row-bg-inner absolute top-0 right-0 bottom-0 left-0 inline-block overflow-hidden rounded-inherit opacity-100 scale-1"
-                      >
-                        <figure
-                          class="row-bg absolute -top-5 -right-5 -bottom-5 -left-5 inline-block overflow-hidden rounded-inherit bg-no-repeat bg-cover bg-center-top"
-                          style="background-image: url(assets/images/4.jpg)"
-                        ></figure>
-                      </div>
-                    </div>
-                    <div
-                      class="liquid-column-overlay pointer-events-none w-full h-full absolute block top-0 left-0 rounded-inherit transition-all"
-                      style="
-                        background: linear-gradient(
-                          0deg,
-                          rgb(46, 70, 85) 0%,
-                          rgba(46, 70, 85, 0) 40%
-                        );
-                      "
-                    ></div>
+              <div class="row align-items-center">
+                <!-- LEFT IMAGE -->
+                <div class="col-12 col-lg-6 col-xl-5 mb-4 my-5">
+                  <div class="apx-img-wrap">
+                    <figure
+                      class="apx-img"
+                      style="background-image: url('assets/images/4.jpg')"
+                    ></figure>
+                    <div class="apx-img-overlay"></div>
                   </div>
                 </div>
-                <div class="col col-12 col-lg-5 offset-lg-1">
-                  <h6 class="ld-fh-element mb-1em text-white">Our Offering</h6>
-                  <br />
-                  <h2
-                    class="ld-fh-element mb-0/5em text-amber-600 text-46 module-h2-init-sm"
-                  >
-                    How It <u> Works</u>.
+
+                <!-- RIGHT CONTENT -->
+                <div class="col-12 col-lg-6 col-xl-5 offset-xl-1 my-5">
+                  <h6 class="text-white mb-3">OUR OFFERING</h6>
+                  <h2 class="text-46 mb-4" style="color: #db9d00">
+                    How It <u>Works</u>.
                   </h2>
-                  <div
-                    class="accordion accordion-md text-white accordion-title-underlined mb-2em"
-                    id="help-accordion"
-                    role="tablist"
-                    aria-multiselectable="true"
-                  >
-                    <div class="accordion-item panel active">
-                      <div
-                        class="accordion-heading"
-                        role="tab"
-                        id="heading-help-1"
-                        data-id="lqd-help-item-1"
-                      >
-                        <h4
-                          class="accordion-title text-20 font-medium"
-                          data-bs-controls="lqd-help-item-1"
-                        >
-                          <a
-                            class="text-white"
-                            data-bs-toggle="collapse"
-                            data-bs-parent="#help-accordion"
-                            href="#lqd-help-item-1"
-                            aria-expanded="true"
-                            aria-controls="lqd-help-item-1"
-                            >Create a Tab in Seconds
 
-                            <span class="accordion-expander absolute text-16"
-                              ><i class="lqd-icn-ess icon-ion-ios-add"></i>
-                              <i
-                                class="lqd-icn-ess icon-ion-ios-remove"
-                              ></i></span
-                          ></a>
-                        </h4>
+                  <div class="apx-accordion mb-4">
+                    <!-- ITEM 1 -->
+                    <div class="apx-item active">
+                      <div class="apx-header">
+                        <span>Create a Tab in Seconds</span>
+                        <span class="apx-icon">−</span>
                       </div>
-                      <div
-                        id="lqd-help-item-1"
-                        class="accordion-collapse collapse show"
-                        role="tabpanel"
-                        aria-labelledby="heading-help-1"
-                        data-bs-parent="#help-accordion"
-                      >
-                        <div class="accordion-content">
-                          <div class="ld-fancy-heading">
-                            <p class="ld-fh-element mb-0 text-14 leading-1/6em">
-                              Private. Custom. Geofenced. Multi-currency.
-                            </p>
-                          </div>
-                        </div>
+                      <div class="apx-body">
+                        Private. Custom. Geofenced. Multi-currency.
                       </div>
                     </div>
-                    <div class="accordion-item panel">
-                      <div
-                        class="accordion-heading"
-                        role="tab"
-                        id="heading-help-2"
-                        data-id="lqd-help-item-2"
-                      >
-                        <h4
-                          class="accordion-title text-20 font-medium"
-                          data-bs-controls="lqd-help-item-2"
-                        >
-                          <a
-                            class="collapsed"
-                            data-bs-toggle="collapse"
-                            data-bs-parent="#help-accordion"
-                            href="#lqd-help-item-2"
-                            aria-expanded="false"
-                            aria-controls="lqd-help-item-2"
-                            >Authorize With a Glance
 
-                            <span class="accordion-expander absolute text-16"
-                              ><i class="lqd-icn-ess icon-ion-ios-add"></i>
-                              <i
-                                class="lqd-icn-ess icon-ion-ios-remove"
-                              ></i></span
-                          ></a>
-                        </h4>
+                    <!-- ITEM 2 -->
+                    <div class="apx-item">
+                      <div class="apx-header">
+                        <span>Authorize With a Glance</span>
+                        <span class="apx-icon">+</span>
                       </div>
-                      <div
-                        id="lqd-help-item-2"
-                        class="accordion-collapse collapse"
-                        role="tabpanel"
-                        aria-labelledby="heading-help-2"
-                        data-bs-parent="#help-accordion"
-                      >
-                        <div class="accordion-content">
-                          <div class="ld-fancy-heading">
-                            <p class="ld-fh-element mb-0 text-14 leading-1/6em">
-                              Approve or decline silently, from anywhere in the
-                              world.
-                            </p>
-                          </div>
-                        </div>
+                      <div class="apx-body">
+                        Approve or decline silently, from anywhere on earth.
                       </div>
                     </div>
-                    <div class="accordion-item panel">
-                      <div
-                        class="accordion-heading"
-                        role="tab"
-                        id="heading-help-3"
-                        data-id="lqd-help-item-3"
-                      >
-                        <h4
-                          class="accordion-title text-20 font-medium"
-                          data-bs-controls="lqd-help-item-3"
-                        >
-                          <a
-                            class="collapsed"
-                            data-bs-toggle="collapse"
-                            data-bs-parent="#help-accordion"
-                            href="#lqd-help-item-3"
-                            aria-expanded="false"
-                            aria-controls="lqd-help-item-3"
-                            >Empower the People You Trust
 
-                            <span class="accordion-expander absolute text-16"
-                              ><i class="lqd-icn-ess icon-ion-ios-add"></i>
-                              <i
-                                class="lqd-icn-ess icon-ion-ios-remove"
-                              ></i></span
-                          ></a>
-                        </h4>
+                    <!-- ITEM 3 -->
+                    <div class="apx-item">
+                      <div class="apx-header">
+                        <span>Empower the People You Trust</span>
+                        <span class="apx-icon">+</span>
                       </div>
-                      <div
-                        id="lqd-help-item-3"
-                        class="accordion-collapse collapse"
-                        role="tabpanel"
-                        aria-labelledby="heading-help-3"
-                        data-bs-parent="#help-accordion"
-                      >
-                        <div class="accordion-content">
-                          <div class="ld-fancy-heading">
-                            <p class="ld-fh-element mb-0 text-14 leading-1/6em">
-                              Staff, family, advisors—controlled access with
-                              instant revocation.
-                            </p>
-                          </div>
-                        </div>
+                      <div class="apx-body">
+                        Staff, family, advisors—controlled access with instant
+                        revocation.
                       </div>
                     </div>
-                    <div class="accordion-item panel">
-                      <div
-                        class="accordion-heading"
-                        role="tab"
-                        id="heading-help-3"
-                        data-id="lqd-help-item-3"
-                      >
-                        <h4
-                          class="accordion-title text-20 font-medium"
-                          data-bs-controls="lqd-help-item-3"
-                        >
-                          <a
-                            class="collapsed"
-                            data-bs-toggle="collapse"
-                            data-bs-parent="#help-accordion"
-                            href="#lqd-help-item-4"
-                            aria-expanded="false"
-                            aria-controls="lqd-help-item-4"
-                            >Concierge, Encrypted and Human
 
-                            <span class="accordion-expander absolute text-16"
-                              ><i class="lqd-icn-ess icon-ion-ios-add"></i>
-                              <i
-                                class="lqd-icn-ess icon-ion-ios-remove"
-                              ></i></span
-                          ></a>
-                        </h4>
+                    <!-- ITEM 4 -->
+                    <div class="apx-item">
+                      <div class="apx-header">
+                        <span>Concierge, Encrypted and Human</span>
+                        <span class="apx-icon">+</span>
                       </div>
-                      <div
-                        id="lqd-help-item-4"
-                        class="accordion-collapse collapse"
-                        role="tabpanel"
-                        aria-labelledby="heading-help-4"
-                        data-bs-parent="#help-accordion"
-                      >
-                        <div class="accordion-content">
-                          <div class="ld-fancy-heading">
-                            <p class="ld-fh-element mb-0 text-14 leading-1/6em">
-                              24/7 private assistance. Zero chat history stored.
-                            </p>
-                          </div>
-                        </div>
+                      <div class="apx-body">
+                        24/7 private assistance with zero chat history stored.
                       </div>
                     </div>
-                    <div class="accordion-item panel">
-                      <div
-                        class="accordion-heading"
-                        role="tab"
-                        id="heading-help-3"
-                        data-id="lqd-help-item-3"
-                      >
-                        <h4
-                          class="accordion-title text-20 font-medium"
-                          data-bs-controls="lqd-help-item-5"
-                        >
-                          <a
-                            class="collapsed"
-                            data-bs-toggle="collapse"
-                            data-bs-parent="#help-accordion"
-                            href="#lqd-help-item-5"
-                            aria-expanded="false"
-                            aria-controls="lqd-help-item-5"
-                            >AI Insights, But Only for You
 
-                            <span class="accordion-expander absolute text-16"
-                              ><i class="lqd-icn-ess icon-ion-ios-add"></i>
-                              <i
-                                class="lqd-icn-ess icon-ion-ios-remove"
-                              ></i></span
-                          ></a>
-                        </h4>
+                    <!-- ITEM 5 -->
+                    <div class="apx-item">
+                      <div class="apx-header">
+                        <span>AI Insights, But Only for You</span>
+                        <span class="apx-icon">+</span>
                       </div>
-                      <div
-                        id="lqd-help-item-5"
-                        class="accordion-collapse collapse"
-                        role="tabpanel"
-                        aria-labelledby="heading-help-5"
-                        data-bs-parent="#help-accordion"
-                      >
-                        <div class="accordion-content">
-                          <div class="ld-fancy-heading">
-                            <p class="ld-fh-element mb-0 text-14 leading-1/6em">
-                              On-device recommendations for wealth optimization.
-                            </p>
-                          </div>
-                        </div>
+                      <div class="apx-body">
+                        On-device intelligence for discreet wealth optimization.
                       </div>
                     </div>
                   </div>
@@ -994,114 +1184,81 @@
               </div>
             </div>
           </section>
-          <section
-            class="lqd-section sectin about"
-            id="about"
-            style="min-height: 85vh"
-          >
-            <!-- HEADER AREA -->
-            <div class="modul-top pt-65 pb-75 apx-fade-up">
-              <div class="container">
-                <div class="row items-center">
+          <section class="lqd-section sectin about" id="about">
+            <div class="container apx-tiers-container apx-fade-up">
+              <h6 class="text-amber-600">APEXIA</h6>
+              <h2 class="mb-0 text-46 text-white">Tiers Overview.</h2>
+            </div>
+
+            <div class="apx-divider-gold"></div>
+
+            <div class="container">
+              <div class="row">
+                <!-- SUMMIT -->
+                <div class="col col-12 col-md-4 mb-25">
                   <div
-                    class="col col-12 col-lg-12 pt-75 flex flex-col text-center"
+                    class="apx-tier-card"
+                    style="background-image: url('assets/images/submit.jpg')"
                   >
-                    <h6 class="ld-fh-element mb-1/25em text-amber-600">
-                      APEXIA
-                    </h6>
-                    <h2
-                      class="ld-fh-element mb-0 text-46 module-mb-init module-h2-init-md"
-                    >
-                      Tiers Overview.
-                    </h2>
+                    <div class="apx-tier-content">
+                      <h3 class="apx-tier-title">Summit</h3>
+                      <p class="apx-tier-text">
+                        The gateway to Apexia: private tabs, real-time
+                        monitoring, discreet control.
+                      </p>
+
+                      <div class="apx-tier-line"></div>
+                      <span class="apx-tier-sub">Entry-level sovereignty</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- PINNACLE -->
+                <div class="col col-12 col-md-4 mb-25">
+                  <div
+                    class="apx-tier-card"
+                    style="background-image: url('assets/images/pinnacle.jpg')"
+                  >
+                    <div class="apx-tier-content">
+                      <h3 class="apx-tier-title">Pinnacle</h3>
+                      <p class="apx-tier-text">
+                        Unlimited authorizations, advanced AI insights,
+                        multi-entity dashboards.
+                      </p>
+
+                      <div class="apx-tier-line"></div>
+                      <span class="apx-tier-sub">Advanced sovereignty</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ZENITH -->
+                <div class="col col-12 col-md-4 mb-25">
+                  <div
+                    class="apx-tier-card"
+                    style="background-image: url('assets/images/zenith.jpg')"
+                  >
+                    <span class="apx-badge">PRIORITY</span>
+
+                    <div class="apx-tier-content">
+                      <h3 class="apx-tier-title">Zenith</h3>
+                      <p class="apx-tier-text">
+                        For the rare few: priority concierge, invisible routing,
+                        authorization.
+                      </p>
+
+                      <div class="apx-tier-line"></div>
+                      <span class="apx-tier-sub">Ultimate sovereignty</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Animated GOLD divider -->
-            <div class="apx-divider"></div>
-
-            <!-- TIERS -->
-            <div class="border-white-10 py-75">
-              <div class="container apx-fade-up">
-                <div class="row">
-                  <!-- SUMMIT -->
-                  <div class="col col-12 col-md-4">
-                    <div
-                      class="iconbox apx-tier-card text-start iconbox-heading-lg flex-col pr-20percent -mt-10 mb-2em"
-                      data-animate-icon="true"
-                    >
-                      <div class="iconbox-icon-wrap apx-icon-glow">
-                        <span
-                          class="iconbox-icon-container mb-30 text-18 text-amber-700"
-                        >
-                          <i class="lqd-icn-ess icon-lqd-circle"></i>
-                        </span>
-                      </div>
-                      <div class="contents">
-                        <h3 class="mb-0/75em text-28 leading-1/5em">Summit</h3>
-                        <p>
-                          <span class="text-15">
-                            The gateway to Apexia: private tabs, real-time
-                            monitoring, discreet control.
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- PINNACLE -->
-                  <div class="col col-12 col-md-4">
-                    <div
-                      class="iconbox apx-tier-card text-start iconbox-heading-lg flex-col pr-20percent -mt-10 mb-2em"
-                    >
-                      <div class="iconbox-icon-wrap apx-icon-glow">
-                        <span
-                          class="iconbox-icon-container mb-30 text-18 text-amber-700"
-                        >
-                          <i class="lqd-icn-ess icon-lqd-circle"></i>
-                        </span>
-                      </div>
-                      <div class="contents">
-                        <h3 class="mb-0/75em text-28 leading-1/5em">
-                          Pinnacle
-                        </h3>
-                        <p>
-                          <span class="text-15">
-                            Unlimited authorizations, advanced AI insights,
-                            multi-entity dashboards.
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- ZENITH -->
-                  <div class="col col-12 col-md-4">
-                    <div
-                      class="iconbox apx-tier-card text-start iconbox-heading-lg flex-col pr-20percent -mt-10 mb-2em"
-                    >
-                      <div class="iconbox-icon-wrap apx-icon-glow">
-                        <span
-                          class="iconbox-icon-container mb-30 text-18 text-amber-700"
-                        >
-                          <i class="lqd-icn-ess icon-lqd-circle"></i>
-                        </span>
-                      </div>
-                      <div class="contents">
-                        <h3 class="mb-0/75em text-28 leading-1/5em">Zenith</h3>
-                        <p>
-                          <span class="text-15">
-                            Unlimited authorizations, advanced AI insights,
-                            multi-entity dashboards.
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="container text-center mt-40">
+              <p style="color: #db9d00 !important; font-size: 15px">
+                Zenith applicants receive priority review.
+              </p>
             </div>
           </section>
 
@@ -1168,51 +1325,47 @@
         </div>
       </main>
       <footer
-        class="main-footer pt-45 pb-20 bg-no-repeat bg-left-bottom bg-black text-white-70"
+        class="main-footer pt-15 bg-no-repeat bg-left-bottom bg-black text-white-70"
       >
         <section class="lqd-section footer-contact apx-footer-section">
           <div class="container">
             <div class="row justify-center">
               <!-- Top Divider -->
               <div class="col col-12">
-                <div
-                  class="w-full relative flex border-top border-white-20 section-divider"
-                ></div>
+                <div class="apx-divider-gold"></div>
               </div>
 
               <div class="col col-12 col-lg-8 col-xl-6 text-center">
-                <div class="w-full relative apx-footer-content py-45">
-                  <h2 class="ld-fh-element text-34 leading-1/25em text-white">
+                <div class="w-full relative apx-footer-conten py-45">
+                  <h2 class="ld-fh-element text-40 leading-1/25em text-white">
                     Exclusive Access Begins Here.
                   </h2>
 
-                  <span>
+                  <div class="mb-40">
                     Join the private waitlist to be notified when invitations
                     open.
-                  </span>
+                  </div>
 
                   <div class="apx-input-wrap apx-field">
                     <input
                       type="email"
                       placeholder="Enter Your Email Address"
-                      class="apx-input"
+                      class="apx-input apx-email"
                     />
                   </div>
 
                   <a
                     href="javascript:;"
-                    class="btn btn-solid btn-lg apx-btn-full apx-field bg-white text-12 uppercase font-bold"
+                    class="btn btn-solid btn-lg apx-btn-full apx-field bg-warning text-12 font-bold apx-open-modal"
                   >
-                    Join Waitlist
+                    Join the Private Waitlist
                   </a>
                 </div>
               </div>
 
               <!-- Bottom Divider -->
               <div class="col col-12">
-                <div
-                  class="w-full relative flex border-top border-white-20 section-divider"
-                ></div>
+                <div class="apx-divider-gold"></div>
               </div>
             </div>
           </div>
@@ -1237,15 +1390,7 @@
                         href="#"
                         class="transition-color text-12 text-white-80 hover:text-white"
                         target="_blank"
-                        >Our History</a
-                      >
-                    </li>
-                    <li class="w-auto inline-flex mx-10">
-                      <a
-                        href="#"
-                        class="transition-color text-12 text-white-80 hover:text-white"
-                        target="_blank"
-                        >What We Do</a
+                        >Terms and Condition</a
                       >
                     </li>
                   </ul>
@@ -1261,176 +1406,347 @@
         </section>
       </footer>
     </div>
+    <style>
+      /* LUXURY BLACK + GOLD MODAL */
+      .apx-modal-box {
+        background: #0a0a0a;
+        border: 1px solid rgba(219, 157, 0, 0.45);
+        border-radius: 18px;
+        padding: 25px 28px;
+        max-height: 90vh;
+        overflow-y: auto;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+      }
 
-    <script
-      data-cfasync="false"
-      src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-    ></script>
+      /* Inputs: dark, premium */
+      .apx-input {
+        background: rgba(255, 255, 255, 0.05) !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        color: white !important;
+        padding: 12px 14px !important;
+      }
+      .apx-input:focus {
+        border-color: #db9d00 !important;
+        box-shadow: 0 0 0 0.2rem rgba(219, 157, 0, 0.25) !important;
+      }
+
+      /* Gold Button */
+      .btn-gold {
+        background: #db9d00;
+        border: none;
+        color: #000;
+        font-weight: 700;
+        border-radius: 10px;
+        transition: 0.25s ease;
+      }
+      .btn-gold:hover {
+        background: #e6c46d;
+        transform: translateY(-2px);
+      }
+
+      /* Text gold */
+      .text-gold {
+        color: #db9d00 !important;
+      }
+    </style>
+    <!-- APEXIA LUXURY WAITLIST MODAL -->
+    <!-- ====================================================================
+     APEXIA — ULTRA PREMIUM WAITLIST MODAL (PROD VERSION)
+==================================================================== -->
+    <div class="modal fade" id="apxWaitlistModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content apx-modal-box">
+          <!-- Header -->
+          <div class="modal-header border-0 pb-0">
+            <h4 class="modal-title text-gold fw-bold">
+              Apexia Private Waitlist
+            </h4>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- Body -->
+          <div class="modal-body pt-2">
+            <p class="text-muted mb-4" style="color: #c8c8c8 !important">
+              Provide a few details to complete your private qualification
+              request.
+            </p>
+
+            <!-- FORM -->
+            <form id="apxWaitlistForm">
+              <!-- Hidden email from homepage -->
+              <input type="hidden" name="email" id="apx-email-final" />
+
+              <!-- ROW 1 -->
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label class="form-label text-light">Your Full Name *</label>
+                  <input
+                    type="text"
+                    class="form-control apx-input"
+                    name="full_name"
+                    required
+                    minlength="3"
+                  />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <label class="form-label text-light"
+                    >Mobile Phone (Optional)</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control apx-input"
+                    name="phone"
+                  />
+                </div>
+              </div>
+
+              <!-- ROW 2 -->
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label class="form-label text-light"
+                    >Profession or Title *</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control apx-input"
+                    name="profession"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <label class="form-label text-light"
+                    >Approximate Net Worth *</label
+                  >
+                  <select
+                    class="form-select apx-input"
+                    id="apx-networth"
+                    name="net_worth"
+                    required
+                  >
+                    <option value="">Select range</option>
+                    <option>Under $10M</option>
+                    <option>$10M - $50M</option>
+                    <option>$50M - $100M</option>
+                    <option>$100M - $500M</option>
+                    <option>Over $500M</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- ASSET MULTI-SELECT -->
+              <div class="mb-3">
+                <label class="form-label text-light"
+                  >Key Assets / Interests</label
+                >
+
+                <select
+                  class="form-select apx-input"
+                  id="apx-assets"
+                  name="assets[]"
+                  multiple
+                >
+                  <option value="Real Estate">Real Estate</option>
+                  <option value="Investments">Investments / Stocks</option>
+                  <option value="Private Equity">Private Equity</option>
+                  <option value="Crypto">Crypto / Blockchain</option>
+                  <option value="Art">Art / Collectibles</option>
+                  <option value="Jets">Yachts / Private Jets</option>
+                  <option value="Philanthropy">Philanthropy</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <!-- REFERRAL ROW -->
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label class="form-label text-light"
+                    >How Did You Hear About Apexia? *</label
+                  >
+                  <select
+                    class="form-select apx-input"
+                    id="apx-referral"
+                    name="referral"
+                    required
+                  >
+                    <option value="">Choose one</option>
+                    <option value="Wealth Advisor">Wealth Advisor</option>
+                    <option value="Business Network">Business Network</option>
+                    <option value="Event">Event</option>
+                    <option value="Media">Media</option>
+                    <option value="Referral">Personal Referral</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <div
+                  class="col-md-6 mb-3"
+                  id="apx-referral-other-wrap"
+                  style="display: none"
+                >
+                  <label class="form-label text-light">Please Specify</label>
+                  <input
+                    type="text"
+                    class="form-control apx-input"
+                    id="apx-referral-other"
+                    name="referral_other"
+                  />
+                </div>
+              </div>
+
+              <!-- WHY APEXIA -->
+              <div class="mb-3">
+                <label class="form-label text-light"
+                  >Why Apexia? (Optional)</label
+                >
+                <textarea
+                  class="form-control apx-input"
+                  name="why"
+                  rows="3"
+                  maxlength="500"
+                ></textarea>
+              </div>
+
+              <!-- CONSENT -->
+              <div class="form-check mb-4 mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="consent"
+                  required
+                />
+                <label class="form-check-label text-light">
+                  I consent to Apexia processing my data and agree to the
+                  Privacy Policy.
+                </label>
+              </div>
+
+              <!-- SUBMIT BUTTON -->
+              <button type="submit" class="btn btn-gold w-100 py-2 mt-2">
+                Submit Application
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="assets/vendors/jquery.min.js"></script>
     <script src="assets/vendors/jquery-ui/jquery-ui.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/vendors/fastdom/fastdom.min.js"></script>
-    <script src="assets/vendors/fresco/js/fresco.js"></script>
-    <script src="assets/vendors/lity/lity.min.js"></script>
-    <script src="assets/vendors/gsap/minified/gsap.min.js"></script>
-    <script src="assets/vendors/gsap/utils/CustomEase.min.js"></script>
-    <script src="assets/vendors/gsap/minified/DrawSVGPlugin.min.js"></script>
-    <script src="assets/vendors/gsap/minified/ScrollTrigger.min.js"></script>
-    <script src="assets/vendors/draw-shape/liquidDrawShape.min.js"></script>
-    <script src="assets/vendors/animated-blob/liquidAnimatedBlob.min.js"></script>
-    <script src="assets/vendors/fontfaceobserver.js"></script>
-    <script src="assets/vendors/lazyload.min.js"></script>
-    <script src="assets/vendors/tinycolor-min.js"></script>
-    <script src="assets/vendors/gsap/utils/SplitText.min.js"></script>
-    <script src="assets/vendors/particles.min.js"></script>
-    <script src="assets/vendors/flickity/flickity.pkgd.min.js"></script>
-    <script src="assets/vendors/flickity/flickity-fade.min.js"></script>
-    <script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
-    <script src="assets/vendors/isotope/packery-mode.pkgd.min.js"></script>
-    <script src="assets/js/liquid-gdpr.min.js"></script>
-    <script src="assets/js/theme.min.js"></script>
-    <script src="assets/js/liquid-ajax-contact-form.min.js"></script>
-    <div class="lqd-cc lqd-cc--inner fixed pointer-events-none"></div>
-    <div
-      class="lqd-cc--el lqd-cc-solid lqd-cc-explore flex items-center justify-center rounded-full fixed pointer-events-none"
-    >
-      <div class="lqd-cc-solid-bg flex absolute lqd-overlay"></div>
-      <div class="lqd-cc-solid-txt flex justify-center text-center relative">
-        <div class="lqd-cc-solid-txt-inner">Explide</div>
-      </div>
-    </div>
-    <div
-      class="lqd-cc--el lqd-cc-solid lqd-cc-drag flex items-center justify-center rounded-full fixed pointer-events-none"
-    >
-      <div class="lqd-cc-solid-bg flex absolute lqd-overlay"></div>
-      <div
-        class="lqd-cc-solid-ext lqd-cc-solid-ext-left inline-flex items-center"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 32 32"
-          style="width: 1em; height: 1em"
-        >
-          <path
-            fill="currentColor"
-            d="M19.943 6.07L9.837 14.73a1.486 1.486 0 0 0 0 2.25l10.106 8.661c.96.826 2.457.145 2.447-1.125V7.195c0-1.27-1.487-1.951-2.447-1.125z"
-          ></path>
-        </svg>
-      </div>
-      <div class="lqd-cc-solid-txt flex justify-center text-center relative">
-        <div class="lqd-cc-solid-txt-inner">Drag</div>
-      </div>
-      <div
-        class="lqd-cc-solid-ext lqd-cc-solid-ext-right inline-flex items-center"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 32 32"
-          style="width: 1em; height: 1em"
-        >
-          <path
-            fill="currentColor"
-            d="M11.768 25.641l10.106-8.66a1.486 1.486 0 0 0 0-2.25L11.768 6.07c-.96-.826-2.457-.145-2.447 1.125v17.321c0 1.27 1.487 1.951 2.447 1.125z"
-          ></path>
-        </svg>
-      </div>
-    </div>
-    <div
-      class="lqd-cc--el lqd-cc-arrow inline-flex items-center fixed top-0 left-0 pointer-events-none"
-    >
-      <svg
-        width="80"
-        height="80"
-        viewBox="0 0 80 80"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M60.4993 0V4.77005H8.87285L80 75.9207L75.7886 79.1419L4.98796 8.35478V60.4993H0V0H60.4993Z"
-        />
-      </svg>
-    </div>
-    <div
-      class="lqd-cc--el lqd-cc-custom-icon rounded-full fixed pointer-events-none"
-    >
-      <div
-        class="lqd-cc-ci inline-flex items-center justify-center rounded-full relative"
-      >
-        <svg
-          width="32"
-          height="32"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 32 32"
-          style="width: 1em; height: 1em"
-        >
-          <path
-            fill="currentColor"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M16.03 6a1 1 0 0 1 1 1v8.02h8.02a1 1 0 1 1 0 2.01h-8.02v8.02a1 1 0 1 1-2.01 0v-8.02h-8.02a1 1 0 1 1 0-2.01h8.02v-8.01a1 1 0 0 1 1.01-1.01z"
-          ></path>
-        </svg>
-      </div>
-    </div>
-    <div
-      class="lqd-cc lqd-cc--outer fixed top-0 left-0 pointer-events-none"
-    ></div>
-    <template id="lqd-temp-snickersbar"
-      ><div
-        class="lqd-snickersbar flex flex-wrap lqd-snickersbar-in"
-        data-item-id
-      >
-        <div class="lqd-snickersbar-inner flex flex-wrap items-center">
-          <div class="lqd-snickersbar-detail">
-            <p class="hidden lqd-snickersbar-addding-temp my-0">
-              Adding {{itemName}} to cart
-            </p>
-            <p class="hidden lqd-snickersbar-added-temp my-0">
-              Added {{itemName}} to cart
-            </p>
-            <p class="my-0 lqd-snickersbar-msg flex items-center my-0"></p>
-            <p class="my-0 lqd-snickersbar-msg-done flex items-center my-0"></p>
-          </div>
-          <div class="lqd-snickersbar-ext ml-4"></div>
-        </div></div></template
-    ><template id="lqd-temp-sticky-header-sentinel"
-      ><div
-        class="lqd-sticky-sentinel invisible absolute pointer-events-none"
-      ></div
-    ></template>
-    <div
-      class="lity"
-      role="dialog"
-      aria-label="Dialog Window (Press escape to close)"
-      tabindex="-1"
-      data-modal-type="default"
-      style="display: none"
-    >
-      <div class="lity-backdrop"></div>
-      <div class="lity-wrap" data-lity-close role="document">
-        <div class="lity-loader" aria-hidden="true">Loading...</div>
-        <div class="lity-container"><div class="lity-content"></div></div>
-        <button
-          class="lity-close"
-          type="button"
-          aria-label="Close (Press escape to close)"
-          data-lity-close
-        >
-          &times;
-        </button>
-      </div>
-    </div>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const header = document.querySelector(".apx-desktop-header");
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-        if (header && header.classList.contains("apx-animate-in")) {
-          header.classList.remove("apx-animate-in");
-        }
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Choices.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        /* ========================================================
+       STEP 1: HOMEPAGE BUTTON → Validate Email → Open Modal
+    ======================================================== */
+        $(".apx-open-modal").on("click", function () {
+          const email = $(".apx-email").val().trim();
+          console.log(email);
+          if (!email) {
+            Swal.fire(
+              "Email Required",
+              "Please enter your email first.",
+              "warning"
+            );
+            return;
+          }
+
+          const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+          if (!valid) {
+            Swal.fire(
+              "Invalid Email Address",
+              "Please enter a valid email.",
+              "error"
+            );
+            return;
+          }
+
+          // Set email into hidden field
+          $("#apx-email-final").val(email);
+
+          // Open modal
+          const modal = new bootstrap.Modal(
+            document.getElementById("apxWaitlistModal")
+          );
+          modal.show();
+        });
+
+        /* ========================================================
+       STEP 2: Referral "Other" Field Toggle
+    ======================================================== */
+        $("#apx-referral").on("change", function () {
+          if (this.value === "Other" || this.value === "Referral") {
+            $("#apx-referral-other-wrap").slideDown();
+          } else {
+            $("#apx-referral-other-wrap").slideUp();
+            $("#apx-referral-other").val("");
+          }
+        });
+
+        /* ========================================================
+       STEP 3: AJAX FORM SUBMISSION
+    ======================================================== */
+        $("#apxWaitlistForm").on("submit", function (e) {
+          e.preventDefault();
+
+          let formData = $(this).serialize();
+
+          $.ajax({
+            url: "waitlist/submit", // <-- your backend endpoint
+            type: "POST",
+            data: formData,
+            success: function (res) {
+              Swal.fire({
+                title: "Application Submitted",
+                text: "Your request has been received. Apexia will review it manually.",
+                icon: "success",
+                confirmButtonColor: "#db9d00",
+              });
+
+              $("#apxWaitlistModal").modal("hide");
+            },
+            error: function () {
+              Swal.fire(
+                "Error",
+                "Something went wrong. Try again later.",
+                "error"
+              );
+            },
+          });
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".apx-header").click(function () {
+          let item = $(this).closest(".apx-item");
+
+          // If already open, close it
+          if (item.hasClass("active")) {
+            item.removeClass("active");
+            item.find(".apx-icon").text("+");
+            return;
+          }
+
+          // Close others
+          $(".apx-item").removeClass("active");
+          $(".apx-icon").text("+");
+
+          // Open clicked one
+          item.addClass("active");
+          item.find(".apx-icon").text("−");
+        });
       });
     </script>
 
@@ -1477,6 +1793,39 @@
           themeHeader.removeAttribute("data-sticky-header");
           themeHeader.removeAttribute("data-sticky-values-measured");
           themeHeader.removeAttribute("data-sticky-options");
+        }
+      });
+    </script>
+    <script>
+      let netWorthChoice, assetsChoice, referralChoice;
+
+      $("#apxWaitlistModal").on("shown.bs.modal", function () {
+        // Prevent double initialization
+        if (!netWorthChoice) {
+          netWorthChoice = new Choices("#apx-networth", {
+            searchEnabled: false,
+            itemSelectText: "",
+            allowHTML: false,
+          });
+        }
+
+        if (!assetsChoice) {
+          assetsChoice = new Choices("#apx-assets", {
+            removeItemButton: true,
+            searchEnabled: true,
+            placeholder: true,
+            placeholderValue: "Select interests...",
+            itemSelectText: "",
+            allowHTML: false,
+          });
+        }
+
+        if (!referralChoice) {
+          referralChoice = new Choices("#apx-referral", {
+            searchEnabled: false,
+            itemSelectText: "",
+            allowHTML: false,
+          });
         }
       });
     </script>
