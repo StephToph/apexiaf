@@ -1,0 +1,13 @@
+ERROR - 2025-04-24 10:53:34 --> Table 'pcdl4kids_portaldb.pl_video_watch_history' doesn't exist
+CRITICAL - 2025-04-24 10:53:34 --> Table 'pcdl4kids_portaldb.pl_video_watch_history' doesn't exist
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/app/Models/Crud.php(415): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Tools.php(1528): App\Models\Crud->datatable_load('video_watch_his...', Array, Array, Array, Array)
+#6 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Tools->watch('analytic', 'video_watch_his...')
+#7 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+#8 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

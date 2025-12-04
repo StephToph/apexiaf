@@ -1,0 +1,40 @@
+# -----------------------------
+# CodeIgniter 4 public/.htaccess
+# -----------------------------
+
+Options -Indexes -MultiViews
+ServerSignature Off
+
+<IfModule mod_rewrite.c>
+    Options +FollowSymlinks
+    RewriteEngine On
+
+    # App lives in a subfolder:
+    RewriteBase /apexiaf/
+
+    # --- Security: block direct access to hidden/sensitive files
+    RewriteRule (^|/)\. - [F]                                      # dotfiles (.env, .git, etc)
+    RewriteRule ^(composer\.(json|lock)|phpunit\.xml(\.dist)?|env)$ - [F]
+    RewriteRule ^(README|CHANGELOG|LICENSE)(\..*)?$ - [F]
+    RewriteRule ^(.*)\.(ini|log|sh|sql|bak)$ - [F]
+
+    # Remove trailing slash if not a real folder
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Front controller: send everything not a real file/dir to index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.php [L,QSA]
+
+    # Preserve Authorization header for APIs (FastCGI/MAMP safe)
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+    SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+</IfModule>
+
+# Fallback if mod_rewrite is off
+<IfModule !mod_rewrite.c>
+    ErrorDocument 404 /index.php
+</IfModule>

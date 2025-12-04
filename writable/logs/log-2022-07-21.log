@@ -1,0 +1,197 @@
+ERROR - 2022-07-21 11:08:42 --> Unknown column 'parent_id' in 'where clause'
+CRITICAL - 2022-07-21 11:08:42 --> Unknown column 'parent_id' in 'where clause'
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Models/Crud.php(99): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(655): App\Models\Crud->read_single_order('parent_id', 0, 'category', 'name', 'asc')
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->category('manage')
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#8 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-07-21 11:09:19 --> Unknown column 'parent_id' in 'where clause'
+CRITICAL - 2022-07-21 11:09:19 --> Unknown column 'parent_id' in 'where clause'
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Models/Crud.php(99): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(655): App\Models\Crud->read_single_order('parent_id', 0, 'category', 'name', 'asc')
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->category('manage')
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#8 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-07-21 11:10:49 --> Unknown column 'parent_id' in 'where clause'
+CRITICAL - 2022-07-21 11:10:49 --> Unknown column 'parent_id' in 'where clause'
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Models/Crud.php(99): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(655): App\Models\Crud->read_single_order('parent_id', 0, 'category', 'name', 'asc')
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->category('manage')
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#8 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-07-21 15:08:07 --> Array to string conversion
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Views/setup/videos_form.php(146): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/Applications/M...', 146, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('setup/videos_fo...', Array, true)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(1165): view('setup/videos_fo...', Array)
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->videos('manage')
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-07-21 15:08:23 --> Array to string conversion
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Views/setup/videos_form.php(146): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/Applications/M...', 146, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('setup/videos_fo...', Array, true)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(1165): view('setup/videos_fo...', Array)
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->videos('manage')
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-07-21 15:09:30 --> Array to string conversion
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Views/setup/videos_form.php(146): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/Applications/M...', 146, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('setup/videos_fo...', Array, true)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(1165): view('setup/videos_fo...', Array)
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->videos('manage')
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-07-21 15:14:53 --> Array to string conversion
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Views/setup/videos_form.php(146): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/Applications/M...', 146, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('setup/videos_fo...', Array, true)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(1165): view('setup/videos_fo...', Array)
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->videos('manage')
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-07-21 15:17:27 --> Array to string conversion
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Views/setup/videos_form.php(146): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/Applications/M...', 146, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('setup/videos_fo...', Array, true)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(1165): view('setup/videos_fo...', Array)
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->videos('manage')
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-07-21 16:04:38 --> strtolower() expects parameter 1 to be string, array given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strtolower() ex...', '/Applications/M...', 1191, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(1191): strtolower(Array)
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->sync_tags()
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-07-21 16:07:31 --> in_array() expects parameter 2 to be array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expe...', '/Applications/M...', 1198, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(1198): in_array('mysql', 'php')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->sync_tags()
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-07-21 16:07:37 --> in_array() expects parameter 2 to be array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expe...', '/Applications/M...', 1198, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(1198): in_array('mysql', 'php')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->sync_tags()
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-07-21 16:08:41 --> in_array() expects parameter 2 to be array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expe...', '/Applications/M...', 1198, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(1198): in_array('php', 'mysql')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->sync_tags()
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-07-21 16:09:42 --> in_array() expects parameter 2 to be array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expe...', '/Applications/M...', 1198, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(1198): in_array('php', '"mysql"')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->sync_tags()
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-07-21 16:09:54 --> in_array() expects parameter 2 to be array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expe...', '/Applications/M...', 1198, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(1198): in_array('php', '"mysql"')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->sync_tags()
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-07-21 16:49:32 --> syntax error, unexpected ';'
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('setup/videos')
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle('setup/videos')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-07-21 16:50:16 --> Undefined offset: 4
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Models/Crud.php(325): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/Applications/M...', 325, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/app/Models/Crud.php(335): App\Models\Crud->datatable_query(Object(CodeIgniter\Database\MySQLi\Builder), 'video', Array, Array, Array, '')
+#2 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(1104): App\Models\Crud->datatable_load('video', Array, Array, Array, '')
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->videos('list')
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-07-21 16:52:43 --> in_array() expects parameter 2 to be array, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expe...', '/Applications/M...', 1218, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(1218): in_array('mysql', Object(stdClass))
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->sync_tags()
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-07-21 16:52:52 --> in_array() expects parameter 2 to be array, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expe...', '/Applications/M...', 1218, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(1218): in_array('mysql', Object(stdClass))
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->sync_tags()
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-07-21 16:55:07 --> syntax error, unexpected '$video_tags' (T_VARIABLE)
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('setup/videos/ma...')
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle('setup/videos/ma...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-07-21 16:56:17 --> array_search() expects parameter 2 to be array, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_search() ...', '/Applications/M...', 1234, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(1234): array_search('sdsjdkdjsjdjsd', Object(stdClass))
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->remove_tag('sdsjdkdjsjdjsd')
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-07-21 16:56:31 --> in_array() expects parameter 2 to be array, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expe...', '/Applications/M...', 1220, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(1220): in_array('php', Object(stdClass))
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->sync_tags()
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

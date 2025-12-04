@@ -1,0 +1,144 @@
+CRITICAL - 2025-10-28 12:21:25 --> Optional parameter $limit declared before required parameter $log_id is implicitly treated as a required parameter
+#0 /Applications/MAMP/htdocs/tglobal/system/Autoloader/Autoloader.php(264): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Optional parame...', '/Applications/M...', 1368)
+#1 /Applications/MAMP/htdocs/tglobal/system/Autoloader/Autoloader.php(264): include_once()
+#2 /Applications/MAMP/htdocs/tglobal/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/M...')
+#3 /Applications/MAMP/htdocs/tglobal/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Crud')
+#4 /Applications/MAMP/htdocs/tglobal/app/Controllers/BaseController.php(52): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Crud')
+#5 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(803): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#7 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/tglobal/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-10-28 12:47:05 --> Optional parameter $log_id declared before required parameter $path is implicitly treated as a required parameter
+#0 /Applications/MAMP/htdocs/tglobal/system/Autoloader/Autoloader.php(264): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Optional parame...', '/Applications/M...', 838)
+#1 /Applications/MAMP/htdocs/tglobal/system/Autoloader/Autoloader.php(264): include_once()
+#2 /Applications/MAMP/htdocs/tglobal/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/M...')
+#3 /Applications/MAMP/htdocs/tglobal/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Crud')
+#4 /Applications/MAMP/htdocs/tglobal/app/Controllers/BaseController.php(52): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Crud')
+#5 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(803): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#7 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/tglobal/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-10-28 12:47:15 --> Creation of dynamic property App\Controllers\Home::$Crud is deprecated
+#0 /Applications/MAMP/htdocs/tglobal/app/Controllers/BaseController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dyn...', '/Applications/M...', 52)
+#1 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(803): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#2 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#3 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/tglobal/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2025-10-28 12:49:39 --> Error connecting to the database: Unknown database 'beauty_db'
+CRITICAL - 2025-10-28 12:49:39 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'beauty_db'
+#0 /Applications/MAMP/htdocs/tglobal/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/tglobal/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/tglobal/app/Models/Crud.php(88): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/tglobal/app/Models/Crud.php(259): App\Models\Crud->read_single('id', NULL, 'user')
+#4 /Applications/MAMP/htdocs/tglobal/app/Controllers/Home.php(20): App\Models\Crud->read_field('id', NULL, 'user', 'role_id')
+#5 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#6 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/tglobal/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-10-28 12:49:55 --> No database selected
+CRITICAL - 2025-10-28 12:49:55 --> No database selected
+#0 /Applications/MAMP/htdocs/tglobal/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/tglobal/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/tglobal/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/tglobal/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/tglobal/app/Models/Crud.php(88): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/tglobal/app/Models/Crud.php(259): App\Models\Crud->read_single('id', NULL, 'user')
+#6 /Applications/MAMP/htdocs/tglobal/app/Controllers/Home.php(20): App\Models\Crud->read_field('id', NULL, 'user', 'role_id')
+#7 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#8 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/tglobal/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2025-10-28 12:50:08 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2025-10-28 12:50:08 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 /Applications/MAMP/htdocs/tglobal/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/tglobal/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/tglobal/app/Models/Crud.php(88): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/tglobal/app/Models/Crud.php(259): App\Models\Crud->read_single('id', NULL, 'user')
+#4 /Applications/MAMP/htdocs/tglobal/app/Controllers/Home.php(20): App\Models\Crud->read_field('id', NULL, 'user', 'role_id')
+#5 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#6 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/tglobal/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-10-28 12:50:16 --> Error connecting to the database: Uninitialized string offset 0
+CRITICAL - 2025-10-28 12:50:16 --> Unable to connect to the database.
+Main connection [MySQLi]: Uninitialized string offset 0
+#0 /Applications/MAMP/htdocs/tglobal/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/tglobal/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/tglobal/app/Models/Crud.php(88): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/tglobal/app/Models/Crud.php(259): App\Models\Crud->read_single('id', NULL, 'user')
+#4 /Applications/MAMP/htdocs/tglobal/app/Controllers/Home.php(20): App\Models\Crud->read_field('id', NULL, 'user', 'role_id')
+#5 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#6 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/tglobal/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-10-28 12:51:32 --> You have not selected a database type to connect to.
+#0 /Applications/MAMP/htdocs/tglobal/system/Database/Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#1 /Applications/MAMP/htdocs/tglobal/app/Controllers/Home.php(11): CodeIgniter\Database\Config::connect()
+#2 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(802): App\Controllers\Home->__construct()
+#3 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#4 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/tglobal/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2025-10-28 12:52:49 --> You have not selected a database type to connect to.
+#0 /Applications/MAMP/htdocs/tglobal/system/Database/Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#1 /Applications/MAMP/htdocs/tglobal/app/Controllers/Home.php(11): CodeIgniter\Database\Config::connect()
+#2 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(802): App\Controllers\Home->__construct()
+#3 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#4 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/tglobal/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2025-10-28 12:54:17 --> You have not selected a database type to connect to.
+#0 /Applications/MAMP/htdocs/tglobal/system/Database/Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#1 /Applications/MAMP/htdocs/tglobal/app/Controllers/Home.php(11): CodeIgniter\Database\Config::connect()
+#2 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(802): App\Controllers\Home->__construct()
+#3 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#4 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/tglobal/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2025-10-28 12:55:06 --> You have not selected a database type to connect to.
+#0 /Applications/MAMP/htdocs/tglobal/system/Database/Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#1 /Applications/MAMP/htdocs/tglobal/app/Controllers/Home.php(11): CodeIgniter\Database\Config::connect()
+#2 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(802): App\Controllers\Home->__construct()
+#3 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#4 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/tglobal/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2025-10-28 12:56:03 --> You have not selected a database type to connect to.
+#0 /Applications/MAMP/htdocs/tglobal/system/Database/Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#1 /Applications/MAMP/htdocs/tglobal/app/Controllers/Home.php(11): CodeIgniter\Database\Config::connect()
+#2 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(802): App\Controllers\Home->__construct()
+#3 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#4 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/tglobal/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2025-10-28 12:56:54 --> You have not selected a database type to connect to.
+#0 /Applications/MAMP/htdocs/tglobal/system/Database/Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#1 /Applications/MAMP/htdocs/tglobal/app/Controllers/Home.php(11): CodeIgniter\Database\Config::connect()
+#2 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(802): App\Controllers\Home->__construct()
+#3 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#4 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/tglobal/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2025-10-28 12:57:11 --> You have not selected a database type to connect to.
+#0 /Applications/MAMP/htdocs/tglobal/system/Database/Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#1 /Applications/MAMP/htdocs/tglobal/app/Controllers/Home.php(11): CodeIgniter\Database\Config::connect()
+#2 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(802): App\Controllers\Home->__construct()
+#3 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#4 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/tglobal/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2025-10-28 12:57:22 --> Typed property App\Controllers\BaseController::$Crud must not be accessed before initialization
+#0 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#1 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /Applications/MAMP/htdocs/tglobal/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/tglobal/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#4 {main}

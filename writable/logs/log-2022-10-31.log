@@ -1,0 +1,127 @@
+CRITICAL - 2022-10-31 05:38:24 --> Invalid file: account/parents.php
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('account/parents...')
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('account/parents', Array, true)
+#2 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Accounts.php(262): view('account/parents', Array)
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Accounts->parents()
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-10-31 05:42:42 --> Invalid file: account/parents.php
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('account/parents...')
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('account/parents', Array, true)
+#2 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Accounts.php(262): view('account/parents', Array)
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Accounts->parents()
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-10-31 05:43:06 --> Table 'pcdl4kidsdb.pl_state' doesn't exist
+CRITICAL - 2022-10-31 05:43:06 --> Table 'pcdl4kidsdb.pl_state' doesn't exist
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Models/Crud.php(99): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/pcdl4kids/app/Views/account/parents.php(31): App\Models\Crud->read_single_order('country_id', 132, 'state', 'name', 'asc')
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(210): include('/Applications/M...')
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('account/parents', Array, true)
+#9 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Accounts.php(262): view('account/parents', Array)
+#10 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Accounts->parents()
+#11 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#12 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-10-31 05:44:03 --> Call to undefined function _url()
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(210): include()
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('account/parents', Array, true)
+#3 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Accounts.php(262): view('account/parents', Array)
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Accounts->parents()
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-10-31 05:45:49 --> Undefined property: App\Controllers\Accounts::$input
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Accounts.php(161): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Applications/M...', 161, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Accounts->parents('load')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-31 05:46:35 --> Undefined property: App\Controllers\Accounts::$requst
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Accounts.php(161): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Applications/M...', 161, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Accounts->parents('load')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-31 05:47:01 --> Call to undefined method CodeIgniter\Session\Session::userdata()
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Accounts->parents('load')
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-10-31 05:47:29 --> Undefined variable: sub
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Accounts.php(213): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 213, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Accounts->parents('load')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-31 08:57:09 --> Undefined property: App\Controllers\Accounts::$db
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Accounts.php(190): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Applications/M...', 190, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Accounts->parents('load')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-10-31 09:18:27 --> Table 'pcdl4kidsdb.pl_3' doesn't exist
+CRITICAL - 2022-10-31 09:18:27 --> Table 'pcdl4kidsdb.pl_3' doesn't exist
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Models/Crud.php(99): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Accounts.php(522): App\Models\Crud->read_single_order('user', 'role', 3, 'fullname', 'ASC')
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Accounts->children()
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#8 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-31 09:19:24 --> Undefined property: App\Controllers\Accounts::$input
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Accounts.php(435): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Applications/M...', 435, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Accounts->children('load')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-31 09:19:40 --> Undefined property: App\Controllers\Accounts::$input
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Accounts.php(435): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Applications/M...', 435, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Accounts->children('load')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-31 09:20:28 --> Undefined variable: start_date
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Accounts.php(481): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 481, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Accounts->children('load')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-31 09:20:44 --> Undefined variable: all_btn
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Accounts.php(485): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 485, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Accounts->children('load')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-31 09:43:26 --> Undefined variable: counts
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Accounts.php(506): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 506, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Accounts->children('load')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

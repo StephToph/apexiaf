@@ -1,0 +1,113 @@
+CRITICAL - 2022-12-12 10:11:32 --> Undefined property: stdClass::$country_id
+#0 C:\xampp\htdocs\pcdl\app\Models\Crud.php(180): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 180, Array)
+#1 C:\xampp\htdocs\pcdl\app\Controllers\Tools.php(605): App\Models\Crud->read_field('id', '543', 'user', 'country_id')
+#2 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Tools->activity()
+#3 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+#4 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-12-12 10:12:10 --> Invalid file: tools/activity/list.php
+#0 C:\xampp\htdocs\pcdl\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tools/activity/...')
+#1 C:\xampp\htdocs\pcdl\system\Common.php(1089): CodeIgniter\View\View->render('tools/activity/...', Array, true)
+#2 C:\xampp\htdocs\pcdl\app\Controllers\Tools.php(711): view('tools/activity/...', Array)
+#3 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Tools->activity()
+#4 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+#5 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-12-12 10:15:37 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\pcdl\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\pcdl\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\pcdl\app\Controllers\Tools.php(634): CodeIgniter\Model->__call('filter_activity', Array)
+#3 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Tools->activity('load')
+#4 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+#5 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-12-12 10:23:55 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\pcdl\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\pcdl\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\pcdl\app\Controllers\Auth.php(53): CodeIgniter\Model->__call('activity', Array)
+#3 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Auth->logout()
+#4 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-12-12 10:25:31 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\pcdl\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\pcdl\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\pcdl\app\Controllers\Tools.php(646): CodeIgniter\Model->__call('timespan', Array)
+#3 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Tools->activity('load')
+#4 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+#5 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-12-12 10:25:38 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\pcdl\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\pcdl\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\pcdl\app\Controllers\Tools.php(646): CodeIgniter\Model->__call('timespan', Array)
+#3 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Tools->activity('load')
+#4 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+#5 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-12-12 10:27:29 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\pcdl\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\pcdl\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\pcdl\app\Controllers\Tools.php(646): CodeIgniter\Model->__call('timespan', Array)
+#3 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Tools->activity('load')
+#4 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+#5 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-12-12 10:29:32 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\pcdl\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\pcdl\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\pcdl\app\Controllers\Tools.php(646): CodeIgniter\Model->__call('timespan', Array)
+#3 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Tools->activity('load')
+#4 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+#5 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-12-12 10:31:19 --> Table 'pcdl4kidsdb.pl_actvity' doesn't exist
+CRITICAL - 2022-12-12 10:31:19 --> Table 'pcdl4kidsdb.pl_actvity' doesn't exist
+#0 C:\xampp\htdocs\pcdl\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pcdl\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pcdl\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pcdl\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pcdl\app\Models\Crud.php(960): CodeIgniter\Database\BaseBuilder->get(25)
+#5 C:\xampp\htdocs\pcdl\app\Controllers\Tools.php(634): App\Models\Crud->filter_activity(25, 0, '543', NULL, '', '')
+#6 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Tools->activity('load')
+#7 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+#8 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-12 10:31:43 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\pcdl\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\pcdl\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\pcdl\app\Controllers\Tools.php(646): CodeIgniter\Model->__call('timespan', Array)
+#3 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Tools->activity('load')
+#4 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+#5 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-12-12 12:11:54 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\pcdl\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\pcdl\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\pcdl\app\Controllers\Tools.php(830): CodeIgniter\Model->__call('filter_announec...', Array)
+#3 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Tools->announcement('load')
+#4 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+#5 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-12-12 12:17:59 --> Undefined property: CodeIgniter\View\View::$Crud
+#0 C:\xampp\htdocs\pcdl\app\Views\tools\announcement_form.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 124, Array)
+#1 C:\xampp\htdocs\pcdl\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pcdl\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\pcdl\system\Common.php(1089): CodeIgniter\View\View->render('tools/announcem...', Array, true)
+#4 C:\xampp\htdocs\pcdl\app\Controllers\Tools.php(1018): view('tools/announcem...', Array)
+#5 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Tools->announcement('manage')
+#6 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+#7 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

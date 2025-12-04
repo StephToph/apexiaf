@@ -1,0 +1,96 @@
+ERROR - 2022-06-26 20:23:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':0:
+AND 1 = :1:
+ORDER BY `name` ASC
+ LIMIT 10' at line 3
+CRITICAL - 2022-06-26 20:23:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':0:
+AND 1 = :1:
+ORDER BY `name` ASC
+ LIMIT 10' at line 3
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Models/Crud.php(341): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Settings.php(324): App\Models\Crud->datatable_load('access_role', Array, Array, Array, Array)
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Settings->roles('list')
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#8 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-06-26 20:24:05 --> Unknown column 'role_id' in 'where clause'
+CRITICAL - 2022-06-26 20:24:05 --> Unknown column 'role_id' in 'where clause'
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Models/Crud.php(341): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Settings.php(324): App\Models\Crud->datatable_load('access_role', Array, Array, Array, Array)
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Settings->roles('list')
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#8 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-06-26 20:24:10 --> Unknown column 'role_id' in 'where clause'
+CRITICAL - 2022-06-26 20:24:10 --> Unknown column 'role_id' in 'where clause'
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Models/Crud.php(341): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Settings.php(324): App\Models\Crud->datatable_load('access_role', Array, Array, Array, Array)
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Settings->roles('list')
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#8 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-06-26 20:24:49 --> Unknown column 'role_id' in 'where clause'
+CRITICAL - 2022-06-26 20:24:49 --> Unknown column 'role_id' in 'where clause'
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Models/Crud.php(341): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Settings.php(324): App\Models\Crud->datatable_load('access_role', Array, Array, Array, Array)
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Settings->roles('list')
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#8 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-26 20:25:28 --> Undefined variable: field
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Models/Crud.php(363): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 363, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Settings.php(354): App\Models\Crud->datatable_count('access_role', Array)
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Settings->roles('list')
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-26 20:28:25 --> Undefined variable: field
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Models/Crud.php(363): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 363, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Settings.php(354): App\Models\Crud->datatable_count('access_role', Array)
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Settings->roles('list')
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-26 20:39:35 --> Undefined variable: role
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Views/setting/access.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 29, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('setting/access', Array, true)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Settings.php(398): view('setting/access', Array)
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Settings->access()
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-26 20:40:05 --> Undefined variable: role
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Views/setting/access.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 29, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('setting/access', Array, true)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Settings.php(398): view('setting/access', Array)
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Settings->access()
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
