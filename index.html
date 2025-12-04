@@ -884,6 +884,99 @@
           font-size: 24px;
         }
       }
+
+      /* Container */
+      .apx-accordion {
+        width: 100%;
+        max-width: 520px;
+        color: #fff;
+      }
+
+      /* Each accordion item */
+      .apx-item {
+        padding: 12px 0 18px;
+        border-bottom: 1px solid rgba(219, 157, 0, 0.35);
+        cursor: pointer;
+      }
+
+      /* Header row */
+      .apx-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        color: #db9d00;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .apx-item:hover .apx-header span:first-child {
+        color: #f5d88a;
+      }
+
+      /* The body text */
+      .apx-body {
+        font-size: 15px;
+        line-height: 1.55;
+        color: rgba(255, 255, 255, 0.85);
+        margin-top: 12px;
+        max-height: 0;
+        overflow: hidden;
+        padding-right: 30px;
+        transition: all 0.35s ease;
+        opacity: 0;
+      }
+
+      /* Expanded state */
+      .apx-item.active .apx-body {
+        max-height: 200px;
+        opacity: 1;
+      }
+
+      /* Icon */
+      .apx-icon {
+        font-size: 22px;
+        color: #db9d00;
+        transition: all 0.3s ease;
+      }
+
+      .apx-item.active .apx-icon {
+        color: #f5d88a;
+      }
+
+      /* IMAGE WRAPPER */
+      .apx-img-wrap {
+        position: relative;
+        width: 100%;
+        border-radius: 12px;
+        overflow: hidden;
+        height: 420px; /* desktop */
+      }
+
+      .apx-img {
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .apx-img-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          0deg,
+          rgba(46, 70, 85, 0.9) 0%,
+          rgba(46, 70, 85, 0) 45%
+        );
+      }
+
+      /* MOBILE */
+      @media (max-width: 768px) {
+        .apx-img-wrap {
+          height: 280px;
+          border-radius: 10px;
+        }
+      }
     </style>
 
     <script>
@@ -1011,272 +1104,79 @@
             id="help"
           >
             <div class="container">
-              <div class="row">
-                <div
-                  class="col col-12 col-lg-6 col-xl-5 flex items-stretch transition-all module-col"
-                >
-                  <div
-                    class="w-full relative flex flex-col items-end pt-300 px-65 pb-15 mb-0 rounded-10 module-img"
-                  >
-                    <div
-                      class="row-bg-wrap absolute top-0 right-0 bottom-0 left-0 inline-block overflow-hidden rounded-inherit"
-                    >
-                      <div
-                        class="row-bg-inner absolute top-0 right-0 bottom-0 left-0 inline-block overflow-hidden rounded-inherit opacity-100 scale-1"
-                      >
-                        <figure
-                          class="row-bg absolute -top-5 -right-5 -bottom-5 -left-5 inline-block overflow-hidden rounded-inherit bg-no-repeat bg-cover bg-center-top"
-                          style="background-image: url(assets/images/4.jpg)"
-                        ></figure>
-                      </div>
-                    </div>
-                    <div
-                      class="liquid-column-overlay pointer-events-none w-full h-full absolute block top-0 left-0 rounded-inherit transition-all"
-                      style="
-                        background: linear-gradient(
-                          0deg,
-                          rgb(46, 70, 85) 0%,
-                          rgba(46, 70, 85, 0) 40%
-                        );
-                      "
-                    ></div>
+              <div class="row align-items-center">
+                <!-- LEFT IMAGE -->
+                <div class="col-12 col-lg-6 col-xl-5 mb-4 my-5">
+                  <div class="apx-img-wrap">
+                    <figure
+                      class="apx-img"
+                      style="background-image: url('assets/images/4.jpg')"
+                    ></figure>
+                    <div class="apx-img-overlay"></div>
                   </div>
                 </div>
-                <div class="col col-12 col-lg-5 offset-lg-1">
-                  <h6 class="ld-fh-element mb-1em text-white">Our Offering</h6>
-                  <br />
-                  <h2
-                    class="ld-fh-element mb-0/5em text-46 module-h2-init-sm"
-                    style="color: #db9d00"
-                  >
-                    How It <u> Works</u>.
+
+                <!-- RIGHT CONTENT -->
+                <div class="col-12 col-lg-6 col-xl-5 offset-xl-1 my-5">
+                  <h6 class="text-white mb-3">OUR OFFERING</h6>
+                  <h2 class="text-46 mb-4" style="color: #db9d00">
+                    How It <u>Works</u>.
                   </h2>
-                  <div
-                    class="accordion accordion-md text-white accordion-title-underlined mb-2em"
-                    id="help-accordion"
-                    role="tablist"
-                    aria-multiselectable="true"
-                  >
-                    <div class="accordion-item panel active">
-                      <div
-                        class="accordion-heading"
-                        role="tab"
-                        id="heading-help-1"
-                        data-id="lqd-help-item-1"
-                      >
-                        <h4
-                          class="accordion-title text-20 font-medium"
-                          data-bs-controls="lqd-help-item-1"
-                        >
-                          <a
-                            class="text-white"
-                            data-bs-toggle="collapse"
-                            data-bs-parent="#help-accordion"
-                            href="#lqd-help-item-1"
-                            aria-expanded="true"
-                            aria-controls="lqd-help-item-1"
-                            >Create a Tab in Seconds
 
-                            <span class="accordion-expander absolute text-16"
-                              ><i class="lqd-icn-ess icon-ion-ios-add"></i>
-                              <i
-                                class="lqd-icn-ess icon-ion-ios-remove"
-                              ></i></span
-                          ></a>
-                        </h4>
+                  <div class="apx-accordion mb-4">
+                    <!-- ITEM 1 -->
+                    <div class="apx-item active">
+                      <div class="apx-header">
+                        <span>Create a Tab in Seconds</span>
+                        <span class="apx-icon">−</span>
                       </div>
-                      <div
-                        id="lqd-help-item-1"
-                        class="accordion-collapse collapse show"
-                        role="tabpanel"
-                        aria-labelledby="heading-help-1"
-                        data-bs-parent="#help-accordion"
-                      >
-                        <div class="accordion-content">
-                          <div class="ld-fancy-heading">
-                            <p class="ld-fh-element mb-0 text-14 leading-1/6em">
-                              Private. Custom. Geofenced. Multi-currency.
-                            </p>
-                          </div>
-                        </div>
+                      <div class="apx-body">
+                        Private. Custom. Geofenced. Multi-currency.
                       </div>
                     </div>
-                    <div class="accordion-item panel">
-                      <div
-                        class="accordion-heading"
-                        role="tab"
-                        id="heading-help-2"
-                        data-id="lqd-help-item-2"
-                      >
-                        <h4
-                          class="accordion-title text-20 font-medium"
-                          data-bs-controls="lqd-help-item-2"
-                        >
-                          <a
-                            class="collapsed"
-                            data-bs-toggle="collapse"
-                            data-bs-parent="#help-accordion"
-                            href="#lqd-help-item-2"
-                            aria-expanded="false"
-                            aria-controls="lqd-help-item-2"
-                            >Authorize With a Glance
 
-                            <span class="accordion-expander absolute text-16"
-                              ><i class="lqd-icn-ess icon-ion-ios-add"></i>
-                              <i
-                                class="lqd-icn-ess icon-ion-ios-remove"
-                              ></i></span
-                          ></a>
-                        </h4>
+                    <!-- ITEM 2 -->
+                    <div class="apx-item">
+                      <div class="apx-header">
+                        <span>Authorize With a Glance</span>
+                        <span class="apx-icon">+</span>
                       </div>
-                      <div
-                        id="lqd-help-item-2"
-                        class="accordion-collapse collapse"
-                        role="tabpanel"
-                        aria-labelledby="heading-help-2"
-                        data-bs-parent="#help-accordion"
-                      >
-                        <div class="accordion-content">
-                          <div class="ld-fancy-heading">
-                            <p class="ld-fh-element mb-0 text-14 leading-1/6em">
-                              Approve or decline silently, from anywhere in the
-                              world.
-                            </p>
-                          </div>
-                        </div>
+                      <div class="apx-body">
+                        Approve or decline silently, from anywhere on earth.
                       </div>
                     </div>
-                    <div class="accordion-item panel">
-                      <div
-                        class="accordion-heading"
-                        role="tab"
-                        id="heading-help-3"
-                        data-id="lqd-help-item-3"
-                      >
-                        <h4
-                          class="accordion-title text-20 font-medium"
-                          data-bs-controls="lqd-help-item-3"
-                        >
-                          <a
-                            class="collapsed"
-                            data-bs-toggle="collapse"
-                            data-bs-parent="#help-accordion"
-                            href="#lqd-help-item-3"
-                            aria-expanded="false"
-                            aria-controls="lqd-help-item-3"
-                            >Empower the People You Trust
 
-                            <span class="accordion-expander absolute text-16"
-                              ><i class="lqd-icn-ess icon-ion-ios-add"></i>
-                              <i
-                                class="lqd-icn-ess icon-ion-ios-remove"
-                              ></i></span
-                          ></a>
-                        </h4>
+                    <!-- ITEM 3 -->
+                    <div class="apx-item">
+                      <div class="apx-header">
+                        <span>Empower the People You Trust</span>
+                        <span class="apx-icon">+</span>
                       </div>
-                      <div
-                        id="lqd-help-item-3"
-                        class="accordion-collapse collapse"
-                        role="tabpanel"
-                        aria-labelledby="heading-help-3"
-                        data-bs-parent="#help-accordion"
-                      >
-                        <div class="accordion-content">
-                          <div class="ld-fancy-heading">
-                            <p class="ld-fh-element mb-0 text-14 leading-1/6em">
-                              Staff, family, advisors—controlled access with
-                              instant revocation.
-                            </p>
-                          </div>
-                        </div>
+                      <div class="apx-body">
+                        Staff, family, advisors—controlled access with instant
+                        revocation.
                       </div>
                     </div>
-                    <div class="accordion-item panel">
-                      <div
-                        class="accordion-heading"
-                        role="tab"
-                        id="heading-help-3"
-                        data-id="lqd-help-item-3"
-                      >
-                        <h4
-                          class="accordion-title text-20 font-medium"
-                          data-bs-controls="lqd-help-item-3"
-                        >
-                          <a
-                            class="collapsed"
-                            data-bs-toggle="collapse"
-                            data-bs-parent="#help-accordion"
-                            href="#lqd-help-item-4"
-                            aria-expanded="false"
-                            aria-controls="lqd-help-item-4"
-                            >Concierge, Encrypted and Human
 
-                            <span class="accordion-expander absolute text-16"
-                              ><i class="lqd-icn-ess icon-ion-ios-add"></i>
-                              <i
-                                class="lqd-icn-ess icon-ion-ios-remove"
-                              ></i></span
-                          ></a>
-                        </h4>
+                    <!-- ITEM 4 -->
+                    <div class="apx-item">
+                      <div class="apx-header">
+                        <span>Concierge, Encrypted and Human</span>
+                        <span class="apx-icon">+</span>
                       </div>
-                      <div
-                        id="lqd-help-item-4"
-                        class="accordion-collapse collapse"
-                        role="tabpanel"
-                        aria-labelledby="heading-help-4"
-                        data-bs-parent="#help-accordion"
-                      >
-                        <div class="accordion-content">
-                          <div class="ld-fancy-heading">
-                            <p class="ld-fh-element mb-0 text-14 leading-1/6em">
-                              24/7 private assistance. Zero chat history stored.
-                            </p>
-                          </div>
-                        </div>
+                      <div class="apx-body">
+                        24/7 private assistance with zero chat history stored.
                       </div>
                     </div>
-                    <div class="accordion-item panel">
-                      <div
-                        class="accordion-heading"
-                        role="tab"
-                        id="heading-help-3"
-                        data-id="lqd-help-item-3"
-                      >
-                        <h4
-                          class="accordion-title text-20 font-medium"
-                          data-bs-controls="lqd-help-item-5"
-                        >
-                          <a
-                            class="collapsed"
-                            data-bs-toggle="collapse"
-                            data-bs-parent="#help-accordion"
-                            href="#lqd-help-item-5"
-                            aria-expanded="false"
-                            aria-controls="lqd-help-item-5"
-                            >AI Insights, But Only for You
 
-                            <span class="accordion-expander absolute text-16"
-                              ><i class="lqd-icn-ess icon-ion-ios-add"></i>
-                              <i
-                                class="lqd-icn-ess icon-ion-ios-remove"
-                              ></i></span
-                          ></a>
-                        </h4>
+                    <!-- ITEM 5 -->
+                    <div class="apx-item">
+                      <div class="apx-header">
+                        <span>AI Insights, But Only for You</span>
+                        <span class="apx-icon">+</span>
                       </div>
-                      <div
-                        id="lqd-help-item-5"
-                        class="accordion-collapse collapse"
-                        role="tabpanel"
-                        aria-labelledby="heading-help-5"
-                        data-bs-parent="#help-accordion"
-                      >
-                        <div class="accordion-content">
-                          <div class="ld-fancy-heading">
-                            <p class="ld-fh-element mb-0 text-14 leading-1/6em">
-                              On-device recommendations for wealth optimization.
-                            </p>
-                          </div>
-                        </div>
+                      <div class="apx-body">
+                        On-device intelligence for discreet wealth optimization.
                       </div>
                     </div>
                   </div>
@@ -1456,7 +1356,7 @@
 
                   <a
                     href="javascript:;"
-                    class="btn btn-solid btn-lg apx-btn-full apx-field bg-white text-12 uppercase font-bold apx-open-modal"
+                    class="btn btn-solid btn-lg apx-btn-full apx-field bg-warning text-12 font-bold apx-open-modal"
                   >
                     Join the Private Waitlist
                   </a>
@@ -1824,6 +1724,28 @@
               );
             },
           });
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".apx-header").click(function () {
+          let item = $(this).closest(".apx-item");
+
+          // If already open, close it
+          if (item.hasClass("active")) {
+            item.removeClass("active");
+            item.find(".apx-icon").text("+");
+            return;
+          }
+
+          // Close others
+          $(".apx-item").removeClass("active");
+          $(".apx-icon").text("+");
+
+          // Open clicked one
+          item.addClass("active");
+          item.find(".apx-icon").text("−");
         });
       });
     </script>
