@@ -1,0 +1,28 @@
+ERROR - 2025-04-30 18:45:08 --> Table 'pcdl4kids_portaldb.pl_ministry' doesn't exist
+CRITICAL - 2025-04-30 18:45:08 --> Table 'pcdl4kids_portaldb.pl_ministry' doesn't exist
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/app/Models/Crud.php(82): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/pcdl4kids_web/app/Models/Crud.php(221): App\Models\Crud->read_single('code', 'LOV972', 'ministry')
+#6 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Accounts.php(3110): App\Models\Crud->read_field('code', 'LOV972', 'ministry', 'name')
+#7 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Accounts->parent_link('LOV972')
+#8 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#9 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-04-30 23:36:58 --> Undefined variable: total_coupon
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Dashboard.php(428): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 428, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Dashboard->analytics('coupon')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-04-30 23:37:06 --> Undefined variable: total_coupon
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Dashboard.php(428): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 428, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Dashboard->analytics('coupon')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

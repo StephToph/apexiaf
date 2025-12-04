@@ -1,0 +1,7 @@
+CRITICAL - 2022-11-01 22:33:13 --> syntax error, unexpected ')', expecting '['
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('cron/subs')
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle('cron/subs')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

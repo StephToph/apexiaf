@@ -1,0 +1,14 @@
+CRITICAL - 2022-09-04 13:33:29 --> Undefined variable: url
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(1318): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 1318, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->games('manage')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-04 13:34:52 --> Undefined variable: url
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(1318): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 1318, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->games('manage')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

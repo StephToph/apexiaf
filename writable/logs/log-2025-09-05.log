@@ -1,0 +1,290 @@
+ERROR - 2025-09-05 21:56:51 --> Error connecting to the database: Unknown database 'beauty_db'
+CRITICAL - 2025-09-05 21:56:51 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'beauty_db'
+#0 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/beauty/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(82): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(245): App\Models\Crud->read_single('id', NULL, 'user')
+#4 /Applications/MAMP/htdocs/beauty/app/Controllers/Home.php(21): App\Models\Crud->read_field('id', NULL, 'user', 'role_id')
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#6 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-05 21:56:51 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in /Applications/MAMP/htdocs/beauty/app/Views/errors/html/error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', '/Applications/M...', 96, Array)
+#1 /Applications/MAMP/htdocs/beauty/app/Views/errors/html/error_exception.php(96): print_r(Object(App\Controllers\Home), true)
+#2 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(234): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-09-05 22:00:20 --> Error connecting to the database: Unknown database 'beauty_db'
+CRITICAL - 2025-09-05 22:00:20 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'beauty_db'
+#0 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/beauty/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(82): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(245): App\Models\Crud->read_single('id', NULL, 'user')
+#4 /Applications/MAMP/htdocs/beauty/app/Controllers/Home.php(21): App\Models\Crud->read_field('id', NULL, 'user', 'role_id')
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#6 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-05 22:00:20 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in /Applications/MAMP/htdocs/beauty/app/Views/errors/html/error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', '/Applications/M...', 96, Array)
+#1 /Applications/MAMP/htdocs/beauty/app/Views/errors/html/error_exception.php(96): print_r(Object(App\Controllers\Home), true)
+#2 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(234): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-09-05 22:01:02 --> Error connecting to the database: Unknown database 'beauty_db'
+CRITICAL - 2025-09-05 22:01:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'beauty_db'
+#0 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/beauty/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(82): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(245): App\Models\Crud->read_single('id', NULL, 'user')
+#4 /Applications/MAMP/htdocs/beauty/app/Controllers/Home.php(20): App\Models\Crud->read_field('id', NULL, 'user', 'role_id')
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#6 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-05 22:01:03 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in /Applications/MAMP/htdocs/beauty/app/Views/errors/html/error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', '/Applications/M...', 96, Array)
+#1 /Applications/MAMP/htdocs/beauty/app/Views/errors/html/error_exception.php(96): print_r(Object(App\Controllers\Home), true)
+#2 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(234): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-09-05 22:02:09 --> Error connecting to the database: Unknown database 'beauty_db'
+CRITICAL - 2025-09-05 22:02:09 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'beauty_db'
+#0 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/beauty/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(82): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(245): App\Models\Crud->read_single('id', NULL, 'user')
+#4 /Applications/MAMP/htdocs/beauty/app/Controllers/Home.php(20): App\Models\Crud->read_field('id', NULL, 'user', 'role_id')
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#6 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-05 22:02:10 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in /Applications/MAMP/htdocs/beauty/app/Views/errors/html/error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', '/Applications/M...', 96, Array)
+#1 /Applications/MAMP/htdocs/beauty/app/Views/errors/html/error_exception.php(96): print_r(Object(App\Controllers\Home), true)
+#2 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(234): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-09-05 22:02:15 --> Error connecting to the database: Unknown database 'beauty_db'
+CRITICAL - 2025-09-05 22:02:15 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'beauty_db'
+#0 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/beauty/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(82): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(245): App\Models\Crud->read_single('id', NULL, 'user')
+#4 /Applications/MAMP/htdocs/beauty/app/Controllers/Home.php(20): App\Models\Crud->read_field('id', NULL, 'user', 'role_id')
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#6 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-05 22:02:15 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in /Applications/MAMP/htdocs/beauty/app/Views/errors/html/error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', '/Applications/M...', 96, Array)
+#1 /Applications/MAMP/htdocs/beauty/app/Views/errors/html/error_exception.php(96): print_r(Object(App\Controllers\Home), true)
+#2 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(234): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-09-05 22:02:20 --> Error connecting to the database: Unknown database 'beauty_db'
+CRITICAL - 2025-09-05 22:02:20 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'beauty_db'
+#0 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/beauty/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(82): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(245): App\Models\Crud->read_single('id', NULL, 'user')
+#4 /Applications/MAMP/htdocs/beauty/app/Controllers/Home.php(20): App\Models\Crud->read_field('id', NULL, 'user', 'role_id')
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#6 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-05 22:02:20 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in /Applications/MAMP/htdocs/beauty/app/Views/errors/html/error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', '/Applications/M...', 96, Array)
+#1 /Applications/MAMP/htdocs/beauty/app/Views/errors/html/error_exception.php(96): print_r(Object(App\Controllers\Home), true)
+#2 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(234): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-09-05 22:03:28 --> Error connecting to the database: Unknown database 'beauty_db'
+CRITICAL - 2025-09-05 22:03:28 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'beauty_db'
+#0 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/beauty/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(82): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(245): App\Models\Crud->read_single('id', NULL, 'user')
+#4 /Applications/MAMP/htdocs/beauty/app/Controllers/Home.php(20): App\Models\Crud->read_field('id', NULL, 'user', 'role_id')
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#6 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-05 22:03:28 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in /Applications/MAMP/htdocs/beauty/app/Views/errors/html/error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', '/Applications/M...', 96, Array)
+#1 /Applications/MAMP/htdocs/beauty/app/Views/errors/html/error_exception.php(96): print_r(Object(App\Controllers\Home), true)
+#2 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(234): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-09-05 22:03:54 --> Table 'beauty_db.sb_user' doesn't exist
+CRITICAL - 2025-09-05 22:03:54 --> Table 'beauty_db.sb_user' doesn't exist
+#0 /Applications/MAMP/htdocs/beauty/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/beauty/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(82): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(245): App\Models\Crud->read_single('id', NULL, 'user')
+#6 /Applications/MAMP/htdocs/beauty/app/Controllers/Home.php(20): App\Models\Crud->read_field('id', NULL, 'user', 'role_id')
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#8 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2025-09-05 22:05:56 --> Table 'beauty_db.sb_user' doesn't exist
+CRITICAL - 2025-09-05 22:05:56 --> Table 'beauty_db.sb_user' doesn't exist
+#0 /Applications/MAMP/htdocs/beauty/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/beauty/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(82): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(245): App\Models\Crud->read_single('id', NULL, 'user')
+#6 /Applications/MAMP/htdocs/beauty/app/Controllers/Home.php(20): App\Models\Crud->read_field('id', NULL, 'user', 'role_id')
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#8 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-09-05 22:25:34 --> Uncaught Error: Call to undefined method CodeIgniter\Debug\Exceptions::extend() in /Applications/MAMP/htdocs/beauty/app/Views/errors/html/error_404.php:2
+Stack trace:
+#0 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(234): include()
+#1 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#2 /Applications/MAMP/htdocs/beauty/system/Debug/Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-09-05 23:27:40 --> Table 'beauty_db.sb_sub' doesn't exist
+CRITICAL - 2025-09-05 23:27:40 --> Table 'beauty_db.sb_sub' doesn't exist
+#0 /Applications/MAMP/htdocs/beauty/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/beauty/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(1748): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/beauty/app/Controllers/Dashboard.php(154): App\Models\Crud->date_range('2025-01-01', 'reg_date', '2025-12-31', 'reg_date', 'sub')
+#6 /Applications/MAMP/htdocs/beauty/app/Controllers/Dashboard.php(38): App\Controllers\Dashboard->sales()
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#8 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2025-09-05 23:32:53 --> Table 'beauty_db.sb_sub' doesn't exist
+CRITICAL - 2025-09-05 23:32:53 --> Table 'beauty_db.sb_sub' doesn't exist
+#0 /Applications/MAMP/htdocs/beauty/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/beauty/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(1748): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/beauty/app/Controllers/Dashboard.php(154): App\Models\Crud->date_range('2025-01-01', 'reg_date', '2025-12-31', 'reg_date', 'sub')
+#6 /Applications/MAMP/htdocs/beauty/app/Controllers/Dashboard.php(38): App\Controllers\Dashboard->sales()
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#8 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2025-09-05 23:33:20 --> Table 'beauty_db.sb_sub' doesn't exist
+CRITICAL - 2025-09-05 23:33:20 --> Table 'beauty_db.sb_sub' doesn't exist
+#0 /Applications/MAMP/htdocs/beauty/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/beauty/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(1748): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/beauty/app/Controllers/Dashboard.php(154): App\Models\Crud->date_range('2025-01-01', 'reg_date', '2025-12-31', 'reg_date', 'sub')
+#6 /Applications/MAMP/htdocs/beauty/app/Controllers/Dashboard.php(38): App\Controllers\Dashboard->sales()
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#8 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2025-09-05 23:44:51 --> Table 'beauty_db.sb_payments' doesn't exist
+CRITICAL - 2025-09-05 23:44:51 --> Table 'beauty_db.sb_payments' doesn't exist
+#0 /Applications/MAMP/htdocs/beauty/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT SUM(`amo...', 0)
+#1 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`amo...')
+#2 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`amo...')
+#3 /Applications/MAMP/htdocs/beauty/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`amo...', Array, false)
+#4 /Applications/MAMP/htdocs/beauty/app/Controllers/Dashboard.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#6 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-05 23:45:10 --> Undefined variable: online_sales
+#0 /Applications/MAMP/htdocs/beauty/app/Views/dashboard.php(206): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 206, Array)
+#1 /Applications/MAMP/htdocs/beauty/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/beauty/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/beauty/system/Common.php(1089): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 /Applications/MAMP/htdocs/beauty/app/Controllers/Dashboard.php(79): view('dashboard', Array)
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#6 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-09-05 23:54:21 --> Table 'beauty_db.sb_users' doesn't exist
+CRITICAL - 2025-09-05 23:54:21 --> Table 'beauty_db.sb_users' doesn't exist
+#0 /Applications/MAMP/htdocs/beauty/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `...', 0)
+#1 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `...')
+#2 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `...')
+#3 /Applications/MAMP/htdocs/beauty/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#4 /Applications/MAMP/htdocs/beauty/app/Controllers/Dashboard.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Dashboard->appointments_list()
+#6 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

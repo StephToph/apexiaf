@@ -1,0 +1,77 @@
+ERROR - 2022-12-11 18:27:31 --> Table 'pcdl4kidsdb.pl_sb' doesn't exist
+CRITICAL - 2022-12-11 18:27:31 --> Table 'pcdl4kidsdb.pl_sb' doesn't exist
+#0 C:\xampp\htdocs\pcdl\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pcdl\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pcdl\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pcdl\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pcdl\app\Models\Crud.php(78): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pcdl\app\Models\Crud.php(177): App\Models\Crud->read_single('id', '0', 'sb')
+#6 C:\xampp\htdocs\pcdl\app\Controllers\Accounts.php(184): App\Models\Crud->read_field('id', '0', 'sb', 'name')
+#7 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Accounts->parents('load')
+#8 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#9 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-11 18:56:50 --> Undefined variable: start_date
+#0 C:\xampp\htdocs\pcdl\app\Controllers\Accounts.php(226): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 226, Array)
+#1 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Accounts->parents('load')
+#2 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#3 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-12-11 19:02:33 --> Table 'pcdl4kidsdb.pl_subcription' doesn't exist
+CRITICAL - 2022-12-11 19:02:33 --> Table 'pcdl4kidsdb.pl_subcription' doesn't exist
+#0 C:\xampp\htdocs\pcdl\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pcdl\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pcdl\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pcdl\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pcdl\app\Models\Crud.php(78): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pcdl\app\Models\Crud.php(177): App\Models\Crud->read_single('id', '', 'subcription')
+#6 C:\xampp\htdocs\pcdl\app\Controllers\Accounts.php(185): App\Models\Crud->read_field('id', '', 'subcription', 'name')
+#7 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Accounts->parents('load')
+#8 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#9 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-11 19:07:09 --> Undefined property: stdClass::$company
+#0 C:\xampp\htdocs\pcdl\app\Controllers\Accounts.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 82, Array)
+#1 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Accounts->parents('manage', 'edit', '542')
+#2 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#3 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-12-11 19:09:11 --> Undefined property: stdClass::$company
+#0 C:\xampp\htdocs\pcdl\app\Controllers\Accounts.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 82, Array)
+#1 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Accounts->parents('manage', 'edit', '542')
+#2 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#3 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-12-11 19:12:23 --> syntax error, unexpected 'public' (T_PUBLIC)
+#0 C:\xampp\htdocs\pcdl\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('accounts/parent...')
+#1 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('accounts/parent...')
+#2 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-12-11 19:36:37 --> Undefined property: App\Controllers\Accounts::$input
+#0 C:\xampp\htdocs\pcdl\app\Controllers\Accounts.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 124, Array)
+#1 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Accounts->parents('load')
+#2 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#3 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-12-11 19:38:10 --> Undefined property: App\Controllers\Accounts::$input
+#0 C:\xampp\htdocs\pcdl\app\Controllers\Accounts.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 124, Array)
+#1 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Accounts->parents('load')
+#2 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#3 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-12-11 19:38:15 --> Undefined property: App\Controllers\Accounts::$input
+#0 C:\xampp\htdocs\pcdl\app\Controllers\Accounts.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 124, Array)
+#1 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Accounts->parents('load')
+#2 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#3 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

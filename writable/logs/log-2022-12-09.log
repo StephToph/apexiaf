@@ -1,0 +1,42 @@
+CRITICAL - 2022-12-09 15:24:18 --> Undefined property: stdClass::$reg_date
+#0 C:\xampp\htdocs\pcdl\app\Controllers\Tools.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 185, Array)
+#1 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Tools->subscribe('load')
+#2 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+#3 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-12-09 15:24:29 --> Undefined property: stdClass::$reg_date
+#0 C:\xampp\htdocs\pcdl\app\Controllers\Tools.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 185, Array)
+#1 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Tools->subscribe('load')
+#2 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+#3 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-12-09 15:25:19 --> Undefined property: stdClass::$img_id
+#0 C:\xampp\htdocs\pcdl\app\Models\Crud.php(180): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 180, Array)
+#1 C:\xampp\htdocs\pcdl\app\Controllers\Tools.php(199): App\Models\Crud->read_field('id', '91', 'user', 'img_id')
+#2 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Tools->subscribe('load')
+#3 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+#4 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-12-09 15:53:57 --> Undefined property: App\Controllers\Tools::$input
+#0 C:\xampp\htdocs\pcdl\app\Controllers\Tools.php(284): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 284, Array)
+#1 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Tools->history('89')
+#2 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+#3 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-12-09 16:00:12 --> Unknown column 'user_id' in 'where clause'
+CRITICAL - 2022-12-09 16:00:12 --> Unknown column 'user_id' in 'where clause'
+#0 C:\xampp\htdocs\pcdl\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pcdl\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pcdl\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pcdl\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pcdl\app\Models\Crud.php(99): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pcdl\app\Controllers\Tools.php(289): App\Models\Crud->read_single_order('user_id', '78', 'subscription', 'id', 'asc')
+#6 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(825): App\Controllers\Tools->history('78')
+#7 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tools))
+#8 C:\xampp\htdocs\pcdl\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pcdl\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

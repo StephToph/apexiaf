@@ -1,0 +1,123 @@
+ERROR - 2025-04-22 09:10:55 --> Table 'pcdl4kids_portaldb.pl_ministry' doesn't exist
+CRITICAL - 2025-04-22 09:10:55 --> Table 'pcdl4kids_portaldb.pl_ministry' doesn't exist
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/app/Models/Crud.php(82): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/pcdl4kids_web/app/Models/Crud.php(221): App\Models\Crud->read_single('id', '3', 'ministry')
+#6 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Accounts.php(1122): App\Models\Crud->read_field('id', '3', 'ministry', 'code')
+#7 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Accounts->church()
+#8 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#9 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2025-04-22 09:11:29 --> Table 'pcdl4kids_portaldb.pl_ministry' doesn't exist
+CRITICAL - 2025-04-22 09:11:29 --> Table 'pcdl4kids_portaldb.pl_ministry' doesn't exist
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/app/Models/Crud.php(82): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/pcdl4kids_web/app/Models/Crud.php(221): App\Models\Crud->read_single('id', '3', 'ministry')
+#6 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Accounts.php(1122): App\Models\Crud->read_field('id', '3', 'ministry', 'code')
+#7 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Accounts->church()
+#8 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#9 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-04-22 09:11:42 --> Undefined variable: ministry_code
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/app/Views/account/church.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 93, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/Common.php(1089): CodeIgniter\View\View->render('account/church', Array, true)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Accounts.php(1132): view('account/church', Array)
+#5 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Accounts->church()
+#6 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#7 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-04-22 09:53:41 --> Invalid file: accounts/admin_register.php
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('accounts/admin_...')
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/Common.php(1089): CodeIgniter\View\View->render('accounts/admin_...', Array, true)
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Accounts.php(3178): view('accounts/admin_...', Array)
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Accounts->church_admin('LOV972')
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#5 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2025-04-22 09:55:32 --> Undefined variable: param2
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/app/Views/account/admin_register.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 92, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/Common.php(1089): CodeIgniter\View\View->render('account/admin_r...', Array, true)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Accounts.php(3178): view('account/admin_r...', Array)
+#5 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Accounts->church_admin('LOV972')
+#6 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#7 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-04-22 10:32:05 --> Undefined variable: e_ban
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/app/Views/setup/church_admin_form.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 63, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/Common.php(1089): CodeIgniter\View\View->render('setup/church_ad...', Array, true)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Setup.php(458): view('setup/church_ad...', Array)
+#5 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Setup->church_admin('manage', 'edit', '2981')
+#6 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#7 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-04-22 10:48:11 --> You must set the database table to be used with your query.
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/Model.php(722): CodeIgniter\Model->builder()
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Auth.php(24): CodeIgniter\Model->__call('read_single2', Array)
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Auth->login()
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2025-04-22 10:49:12 --> Trying to get property 'ban' of non-object
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Auth.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Applications/M...', 30, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Auth->login()
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-04-22 13:23:25 --> Undefined variable: ministry_id
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/app/Views/account/parent_register.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 93, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/Common.php(1089): CodeIgniter\View\View->render('account/parent_...', Array, true)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Accounts.php(3039): view('account/parent_...', Array)
+#5 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Accounts->parent_link('ABU322')
+#6 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#7 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-04-22 14:22:31 --> Unknown column 'pl_u.admin_id' in 'where clause'
+CRITICAL - 2025-04-22 14:22:31 --> Unknown column 'pl_u.admin_id' in 'where clause'
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/app/Models/Crud.php(1396): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Accounts.php(545): App\Models\Crud->filter_children('', '', '2981', '', '', '', '', '')
+#6 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Accounts->children('load')
+#7 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#8 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-04-22 14:23:51 --> Unknown column 'pl_user.admin_id' in 'where clause'
+CRITICAL - 2025-04-22 14:23:51 --> Unknown column 'pl_user.admin_id' in 'where clause'
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/app/Models/Crud.php(1396): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Accounts.php(545): App\Models\Crud->filter_children('', '', '2981', '', '', '', '', '')
+#6 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Accounts->children('load')
+#7 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#8 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

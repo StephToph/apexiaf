@@ -1,0 +1,21 @@
+CRITICAL - 2025-05-09 23:16:06 --> Undefined variable: total_coupon
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Dashboard.php(428): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 428, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Dashboard->analytics('coupon')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-05-09 23:56:39 --> A non-numeric value encountered
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Church.php(1856): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', '/Applications/M...', 1856, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Church->outreach('load')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Church))
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-05-09 23:56:44 --> A non-numeric value encountered
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Church.php(1856): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', '/Applications/M...', 1856, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Church->outreach('load')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Church))
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

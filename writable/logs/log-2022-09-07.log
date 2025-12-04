@@ -1,0 +1,38 @@
+CRITICAL - 2022-09-07 17:16:08 --> Cannot call constructor
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(802): App\Controllers\Api->__construct()
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-07 17:16:38 --> Cannot call constructor
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(802): App\Controllers\Api->__construct()
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-07 17:17:59 --> Call to a member function getServer() on null
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(802): App\Controllers\Api->__construct()
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-07 17:18:13 --> Undefined index: Authorization
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Api.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Applications/M...', 11, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(802): App\Controllers\Api->__construct()
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-07 17:20:52 --> Call to a member function getServer() on null
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(802): App\Controllers\Api->__construct()
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-07 17:36:28 --> syntax error, unexpected 'explode' (T_STRING)
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('api/profile/9')
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle('api/profile/9')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

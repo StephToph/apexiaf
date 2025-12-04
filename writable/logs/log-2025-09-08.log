@@ -1,0 +1,149 @@
+ERROR - 2025-09-08 09:12:17 --> Table 'beauty_db.sb_settings' doesn't exist
+CRITICAL - 2025-09-08 09:12:17 --> Table 'beauty_db.sb_settings' doesn't exist
+#0 /Applications/MAMP/htdocs/beauty/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/beauty/system/Database/BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/beauty/app/Controllers/Settings.php(687): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Settings->saveWorkingHours()
+#6 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-08 09:17:50 --> Trying to get property 'working_hours' of non-object
+#0 /Applications/MAMP/htdocs/beauty/app/Views/setting/app.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Applications/M...', 61, Array)
+#1 /Applications/MAMP/htdocs/beauty/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/beauty/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/beauty/system/Common.php(1089): CodeIgniter\View\View->render('setting/app', Array, true)
+#4 /Applications/MAMP/htdocs/beauty/app/Controllers/Settings.php(450): view('setting/app', Array)
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Settings->platform()
+#6 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-08 09:28:21 --> Undefined variable: productions
+#0 /Applications/MAMP/htdocs/beauty/app/Views/operations/services.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 38, Array)
+#1 /Applications/MAMP/htdocs/beauty/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/beauty/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/beauty/system/Common.php(1089): CodeIgniter\View\View->render('operations/serv...', Array, true)
+#4 /Applications/MAMP/htdocs/beauty/app/Controllers/Operations.php(276): view('operations/serv...', Array)
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Operations->services()
+#6 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Operations))
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-08 09:30:43 --> Undefined variable: services
+#0 /Applications/MAMP/htdocs/beauty/app/Views/operations/services.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 47, Array)
+#1 /Applications/MAMP/htdocs/beauty/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/beauty/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/beauty/system/Common.php(1089): CodeIgniter\View\View->render('operations/serv...', Array, true)
+#4 /Applications/MAMP/htdocs/beauty/app/Controllers/Operations.php(276): view('operations/serv...', Array)
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Operations->services()
+#6 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Operations))
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-08 09:32:40 --> Undefined variable: services
+#0 /Applications/MAMP/htdocs/beauty/app/Views/operations/services.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 47, Array)
+#1 /Applications/MAMP/htdocs/beauty/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/beauty/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/beauty/system/Common.php(1089): CodeIgniter\View\View->render('operations/serv...', Array, true)
+#4 /Applications/MAMP/htdocs/beauty/app/Controllers/Operations.php(275): view('operations/serv...', Array)
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Operations->services()
+#6 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Operations))
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-08 09:35:43 --> Undefined variable: services
+#0 /Applications/MAMP/htdocs/beauty/app/Views/operations/services.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 47, Array)
+#1 /Applications/MAMP/htdocs/beauty/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/beauty/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/beauty/system/Common.php(1089): CodeIgniter\View\View->render('operations/serv...', Array, true)
+#4 /Applications/MAMP/htdocs/beauty/app/Controllers/Operations.php(258): view('operations/serv...', Array)
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Operations->services()
+#6 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Operations))
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-08 09:51:55 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::limit() must be of the type int or null, string given, called in /Applications/MAMP/htdocs/beauty/app/Models/Crud.php on line 1179
+#0 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(1179): CodeIgniter\Database\BaseBuilder->limit('load', 0)
+#1 /Applications/MAMP/htdocs/beauty/app/Controllers/Operations.php(176): App\Models\Crud->filter_services('load', 0, '', '', '')
+#2 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Operations->services('load', 'load')
+#3 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Operations))
+#4 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2025-09-08 11:17:01 --> mkdir(): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No suc...', '/Applications/M...', 793, Array)
+#1 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(793): mkdir('assets/images/u...', 493)
+#2 /Applications/MAMP/htdocs/beauty/app/Controllers/Operations.php(107): App\Models\Crud->img_upload('assets/images/u...', Object(CodeIgniter\HTTP\Files\UploadedFile))
+#3 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Operations->services('manage')
+#4 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Operations))
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2025-09-08 11:18:39 --> mkdir(): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No suc...', '/Applications/M...', 793, Array)
+#1 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(793): mkdir('uploads/service...', 493)
+#2 /Applications/MAMP/htdocs/beauty/app/Controllers/Operations.php(104): App\Models\Crud->img_upload('uploads/service...', Object(CodeIgniter\HTTP\Files\UploadedFile))
+#3 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Operations->services('manage')
+#4 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Operations))
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2025-09-08 11:41:32 --> Unknown column 'date' in 'field list'
+CRITICAL - 2025-09-08 11:41:32 --> Unknown column 'date' in 'field list'
+#0 /Applications/MAMP/htdocs/beauty/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `date`, ...', 0)
+#1 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `date`, ...')
+#2 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `date`, ...')
+#3 /Applications/MAMP/htdocs/beauty/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `date`, ...', Array, false)
+#4 /Applications/MAMP/htdocs/beauty/app/Controllers/Operations.php(259): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Operations->getAvailability()
+#6 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Operations))
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-09-08 11:52:14 --> Column 'stylist_id' cannot be null
+CRITICAL - 2025-09-08 11:52:14 --> Column 'stylist_id' cannot be null
+#0 /Applications/MAMP/htdocs/beauty/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `sb...', 0)
+#1 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sb...')
+#2 /Applications/MAMP/htdocs/beauty/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sb...')
+#3 /Applications/MAMP/htdocs/beauty/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sb...', Array, false)
+#4 /Applications/MAMP/htdocs/beauty/app/Models/Crud.php(25): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/beauty/app/Controllers/Home.php(178): App\Models\Crud->create('sb_appointments', Array)
+#6 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Home->book('process')
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-09-08 16:43:22 --> Invalid file: operations/appointments.php
+#0 /Applications/MAMP/htdocs/beauty/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('operations/appo...')
+#1 /Applications/MAMP/htdocs/beauty/system/Common.php(1089): CodeIgniter\View\View->render('operations/appo...', Array, true)
+#2 /Applications/MAMP/htdocs/beauty/app/Controllers/Operations.php(423): view('operations/appo...', Array)
+#3 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Operations->appointment()
+#4 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Operations))
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2025-09-08 17:05:00 --> Undefined variable: e_status
+#0 /Applications/MAMP/htdocs/beauty/app/Views/operations/appointment_form.php(109): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 109, Array)
+#1 /Applications/MAMP/htdocs/beauty/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/beauty/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/beauty/system/Common.php(1089): CodeIgniter\View\View->render('operations/appo...', Array, true)
+#4 /Applications/MAMP/htdocs/beauty/app/Controllers/Operations.php(434): view('operations/appo...', Array)
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Operations->appointment('manage', 'view', '1')
+#6 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Operations))
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-08 21:35:40 --> Too few arguments to function App\Models\Crud::read_order(), 1 passed in /Applications/MAMP/htdocs/beauty/app/Views/home/services.php on line 51 and at least 3 expected
+#0 /Applications/MAMP/htdocs/beauty/app/Views/home/services.php(51): App\Models\Crud->read_order('services')
+#1 /Applications/MAMP/htdocs/beauty/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/beauty/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/beauty/system/Common.php(1089): CodeIgniter\View\View->render('home/services', Array, true)
+#4 /Applications/MAMP/htdocs/beauty/app/Controllers/Home.php(61): view('home/services', Array)
+#5 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(825): App\Controllers\Home->services()
+#6 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/beauty/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/beauty/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

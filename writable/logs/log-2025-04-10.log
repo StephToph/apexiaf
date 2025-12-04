@@ -1,0 +1,63 @@
+ERROR - 2025-04-10 11:18:59 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: NO)
+CRITICAL - 2025-04-10 11:18:59 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/app/Models/Crud.php(185): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/app/Models/Crud.php(230): App\Models\Crud->read2('email', 'tofunmi015@gmai...', 'password', '827ccb0eea8a706...', 'user')
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Auth.php(24): App\Models\Crud->read_field2('email', 'tofunmi015@gmai...', 'password', '827ccb0eea8a706...', 'user', 'id')
+#5 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Auth->login()
+#6 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-04-10 11:19:00 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in /Applications/MAMP/htdocs/pcdl4kids_web/app/Views/errors/html/error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', '/Applications/M...', 96, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/app/Views/errors/html/error_exception.php(96): print_r(Object(App\Controllers\Auth), true)
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/Debug/Exceptions.php(234): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/Debug/Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/system/Debug/Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2025-04-10 12:09:12 --> Undefined property: stdClass::$is_markter
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Accounts.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Applications/M...', 92, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Accounts->parents('manage', 'edit', '2974')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2025-04-10 12:20:11 --> Unknown column 'fullname' in 'field list'
+CRITICAL - 2025-04-10 12:20:11 --> Unknown column 'fullname' in 'field list'
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `pl_chil...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pl_chil...')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pl_chil...')
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseBuilder.php(1913): CodeIgniter\Database\BaseConnection->query('UPDATE `pl_chil...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/app/Models/Crud.php(342): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Accounts.php(156): App\Models\Crud->updates('id', '2009', 'child', Array)
+#6 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Accounts->parents('manage', 'edit', '2968')
+#7 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#8 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-10 18:24:30 --> Trying to get property 'fullname' of non-object
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Accounts.php(2411): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Applications/M...', 2411, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Accounts->kyc('check_email')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-04-10 20:18:51 --> Undefined property: CodeIgniter\View\View::$Crud
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/app/Views/auth/kyc.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Applications/M...', 91, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/Common.php(1089): CodeIgniter\View\View->render('auth/kyc', Array, true)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Accounts.php(2423): view('auth/kyc', Array)
+#5 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Accounts->kyc()
+#6 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#7 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

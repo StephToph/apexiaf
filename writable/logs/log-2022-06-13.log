@@ -1,0 +1,149 @@
+CRITICAL - 2022-06-13 16:10:21 --> Undefined property: stdClass::$firstname
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Models/Crud.php(158): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Applications/M...', 158, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Profile.php(62): App\Models\Crud->read_field('id', '1', 'user', 'firstname')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Profile->index()
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-13 16:12:01 --> Undefined property: stdClass::$firstname
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Models/Crud.php(158): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Applications/M...', 158, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Profile.php(62): App\Models\Crud->read_field('id', '1', 'user', 'firstname')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Profile->index()
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-13 16:15:02 --> Undefined property: stdClass::$firstname
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Models/Crud.php(158): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Applications/M...', 158, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/app/Views/designs/backend.php(5): App\Models\Crud->read_field('id', '1', 'user', 'firstname')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(210): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(226): CodeIgniter\View\View->render('designs/backend', Array, true)
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('profile/profile', Array, true)
+#6 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Profile.php(54): view('profile/profile', Array)
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Profile->index()
+#8 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#9 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-13 16:22:46 --> Table 'pcdl4kidsdb.pl_premium' doesn't exist
+CRITICAL - 2022-06-13 16:22:46 --> Table 'pcdl4kidsdb.pl_premium' doesn't exist
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Dashboard.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Dashboard.php(34): App\Controllers\Dashboard->sales()
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-06-13 16:23:54 --> Unknown column 'is_partner' in 'where clause'
+CRITICAL - 2022-06-13 16:23:54 --> Unknown column 'is_partner' in 'where clause'
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Dashboard.php(59): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-06-13 16:25:08 --> Table 'pcdl4kidsdb.pl_transaction' doesn't exist
+CRITICAL - 2022-06-13 16:25:08 --> Table 'pcdl4kidsdb.pl_transaction' doesn't exist
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pl_tran...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pl_tran...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pl_tran...')
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `pl_tran...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Models/Crud.php(945): CodeIgniter\Database\BaseBuilder->get(10)
+#5 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Dashboard.php(244): App\Models\Crud->filter_payment(10, 0, '1')
+#6 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Dashboard.php(65): App\Controllers\Dashboard->recent_payment('1')
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#8 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-06-13 16:45:58 --> Undefined property: App\Controllers\Setup::$db
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(358): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Applications/M...', 358, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->age()
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-13 16:46:52 --> Undefined variable: name
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(407): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 407, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->age()
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-13 16:47:05 --> Undefined variable: name
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(407): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 407, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->age()
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-13 16:48:21 --> Table 'pcdl4kidsdb.pl_type' doesn't exist
+CRITICAL - 2022-06-13 16:48:21 --> Table 'pcdl4kidsdb.pl_type' doesn't exist
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Models/Crud.php(57): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/pcdl4kids/app/Views/setup/age_form.php(37): App\Models\Crud->read_order('type', 'name', 'asc')
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(210): include('/Applications/M...')
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('setup/age_form', Array, true)
+#9 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(417): view('setup/age_form', Array)
+#10 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->age('manage')
+#11 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#12 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-06-13 17:05:09 --> Table 'pcdl4kidsdb.pl_subscription' doesn't exist
+CRITICAL - 2022-06-13 17:05:09 --> Table 'pcdl4kidsdb.pl_subscription' doesn't exist
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Models/Crud.php(57): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(533): App\Models\Crud->read_order('subscription', 'id', 'DESC')
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->subscription()
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#8 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-13 22:47:50 --> syntax error, unexpected '$edit_btn' (T_VARIABLE)
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('setup/videos')
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle('setup/videos')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-13 22:47:59 --> syntax error, unexpected '$edit_btn' (T_VARIABLE)
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('setup/videos')
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle('setup/videos')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-13 22:53:56 --> Undefined variable: online_sales
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Dashboard.php(229): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 229, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Dashboard.php(34): App\Controllers\Dashboard->sales()
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-13 22:54:03 --> Undefined variable: online_sales
+#0 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Dashboard.php(229): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 229, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Dashboard.php(34): App\Controllers\Dashboard->sales()
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

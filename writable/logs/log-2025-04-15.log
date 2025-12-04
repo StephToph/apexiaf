@@ -1,0 +1,29 @@
+CRITICAL - 2025-04-15 22:38:05 --> Too few arguments to function App\Models\Crud::check3(), 2 passed in /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Accounts.php on line 2549 and exactly 7 expected
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Accounts.php(2549): App\Models\Crud->check3(Array, 'child')
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Accounts->kyc('submit')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-04-15 23:01:58 --> You must set the database table to be used with your query.
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/Model.php(722): CodeIgniter\Model->builder()
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Accounts.php(2415): CodeIgniter\Model->__call('read_limit', Array)
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Accounts->kyc('check_email')
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#5 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2025-04-15 23:22:39 --> Unknown column 'role_ii' in 'field list'
+CRITICAL - 2025-04-15 23:22:39 --> Unknown column 'role_ii' in 'field list'
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `pl...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pl...')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pl...')
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pl...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/app/Models/Crud.php(20): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Accounts.php(2579): App\Models\Crud->create('user', Array)
+#6 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Accounts->kyc('submit')
+#7 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#8 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

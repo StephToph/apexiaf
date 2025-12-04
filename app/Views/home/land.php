@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO: Brand-Focused Metadata -->
+    <title>
+        Apexia — Private Financial Concierge for the World’s Quiet Powerholders
+    </title>
+    <meta name="description"
+        content="Apexia is a sovereign financial concierge engineered for ultra-high-net-worth individuals. Zero-trust privacy, quantum-resistant security, and invisible financial operations." />
+    <meta name="keywords"
+        content="Apexia, private financial concierge, UHNWI wallet, luxury fintech, private banking, secure wallet, encrypted concierge, sovereign finance" />
+    <meta name="author" content="Apexia" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://theapexia.com/" />
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Apexia — Private Financial Concierge" />
+    <meta property="og:description"
+        content="Engineered for UHNWI, family offices, and elite executives. Apexia delivers invisible transactions, encrypted concierge access, and absolute digital sovereignty." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://theapexia.com/" />
+    <meta property="og:image" content="assets/images/logo.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Apexia — Private Financial Concierge" />
+    <meta name="twitter:description"
+        content="A new standard of private wealth autonomy. Zero-trust. No tracking. No ads. Encrypted by design." />
+    <meta name="twitter:image" content="assets/images/logo.png" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/images/logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/images/logo.png" />
+
+    <link rel="stylesheet" href="assets/vendors/liquid-icon/lqd-essentials/lqd-essentials.min.css" />
+    <link rel="stylesheet" href="assets/css/theme.min.css" />
+    <link rel="stylesheet" href="assets/css/utility.min.css" />
+    <link rel="stylesheet" href="assets/css/demo/lawyer/base.css" />
+    <link rel="stylesheet" href="assets/css/demo/lawyer/lawyer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&amp;family=Marcellus&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+
+    <title>Home</title>
+
+    <style>
+        .apx-field {
+            width: 100%;
+            max-width: 480px;
+            /* same width for both */
+            margin: 0 auto;
+            /* center horizontally */
+        }
+
+        .apx-field input {
+            width: 100%;
+        }
+
+        .apx-btn-full {
+            display: block;
+            border-radius: 10px;
+            width: 100%;
+            text-transform: capitalize;
+            font-size: medium;
+            background-color: #db9d00;
+            border: 1px solid #061b3a;
+            color: #000;
+        }
+
+        /* ============================================================
+   APEXIA LANDING PAGE — CLEAN REFACTORED STYLES (LOGO LEFT)
+   ============================================================ */
+        /* Disable theme's sticky header wrapper completely */
+        .main-header,
+        .main-header-overlay {
+            opacity: 1 !important;
+            visibility: visible !important;
+            transform: none !important;
+            height: auto !important;
+            pointer-events: auto !important;
+        }
+
+        .apx-footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            /* <— controls spacing between all items */
+        }
+
+        /* ===========
+   HERO BASE
+   =========== */
+        .apx-hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 2rem;
+            background: #0b102c;
+        }
+
+        .apx-hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 115%;
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+        }
+
+        .apx-hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(56deg,
+                    rgba(11, 16, 44, 1) 10%,
+                    rgba(11, 16, 44, 0) 95%);
+            z-index: 2;
+        }
+
+        .apx-container {
+            position: relative;
+            z-index: 3;
+            width: 100%;
+            max-width: 820px;
+            text-align: center;
+            padding: 0 1rem;
+            margin-top: 60px;
+        }
+
+        /* ===========
+   HERO TYPOGRAPHY
+   =========== */
+        .apx-hero-title {
+            font-size: 3.2rem;
+            line-height: 1.05;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 1.2rem;
+        }
+
+        @media (min-width: 768px) {
+            .apx-hero-title {
+                font-size: 4.8rem;
+            }
+        }
+
+        .apx-hero-subtext {
+            font-size: 1.15rem;
+            line-height: 1.55;
+            color: rgba(255, 255, 255, 0.82);
+            margin: 0 auto 2.2rem;
+            max-width: 630px;
+        }
+
+        /* ===========
+   INPUT + BUTTON
+   =========== */
+        .apx-input-wrap {
+            width: 100%;
+            max-width: 480px;
+            margin: 0 auto 1.2rem;
+        }
+
+        .apx-input {
+            width: 100%;
+            padding: 16px 20px;
+            font-size: 1rem;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            background: rgba(255, 255, 255, 0.17);
+            color: #fff;
+            outline: none;
+            transition: border 0.25s ease, background 0.25s ease;
+        }
+
+        .apx-input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .apx-input:focus {
+            border-color: #0b102c;
+            background: rgba(255, 255, 255, 0.22);
+        }
+
+        .apx-btn {
+            width: 100%;
+            max-width: 480px;
+            padding: 16px 32px;
+            background: #0b102c;
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: block;
+            margin: 1rem auto 2rem;
+            transition: all 0.25s ease;
+        }
+
+        .apx-btn:hover {
+            background: #11183f;
+            transform: translateY(-1px);
+        }
+
+        .apx-btn:active {
+            transform: scale(0.97);
+        }
+
+        .apx-hero-note {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.72);
+        }
+
+        /* ============================================================
+   LOGO LEFT — BIGGER PREMIUM LOGO
+   ============================================================ */
+        .apx-logo {
+            height: 90px;
+            width: auto;
+            border-radius: 12px;
+            object-fit: contain;
+            filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.35));
+            transition: transform 0.3s ease;
+        }
+
+        .apx-logo:hover {
+            transform: scale(1.04);
+        }
+
+        @media (min-width: 1400px) {
+            .apx-logo {
+                height: 100px;
+            }
+        }
+
+        @media (min-width: 1600px) {
+            .apx-logo {
+                height: 110px;
+            }
+        }
+
+        /* ============================================================
+   MOBILE HEADER
+   ============================================================ */
+        .apx-mobile-header {
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 20px;
+            background: transparent !important;
+            /* ← FORCE override */
+            backdrop-filter: none !important;
+            -webkit-backdrop-filter: none !important;
+            box-shadow: none !important;
+            position: relative;
+            z-index: 20;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .apx-mobile-logo img {
+            height: 65px;
+            width: auto;
+        }
+
+        .apx-mobile-btn {
+            padding: 10px 22px;
+            background: #0b102c;
+            color: #fff;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .apx-mobile-header {
+                display: flex;
+            }
+        }
+
+        /* ============================================================
+   DESKTOP HEADER (LOGO LEFT)
+   ============================================================ */
+        .apx-desktop-header {
+            width: 100%;
+            padding: 10px 35px;
+            background: transparent;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            transition: background 0.35s ease, box-shadow 0.35s ease;
+        }
+
+        @media (max-width: 768px) {
+            .apx-desktop-header {
+                display: none;
+            }
+        }
+
+        /* Header Layout */
+        .apx-header-inner {
+            max-width: 1600px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .apx-header-col {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .apx-left {
+            justify-content: flex-start;
+        }
+
+        .apx-right {
+            justify-content: flex-end;
+        }
+
+        /* CTA button */
+        .apx-header-btn {
+            background: #0b102c;
+            color: #ffffff;
+            padding: 14px 34px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            transition: 0.25s ease;
+        }
+
+        .apx-header-btn:hover {
+            background: #11183f;
+            transform: translateY(-2px);
+        }
+
+        /* ============================================================
+   HEADER SLIDE-IN
+   ============================================================ */
+        .apx-animate-in {
+            opacity: 0;
+            transform: translateY(-25px);
+            animation: apxHeaderSlideIn 0.75s ease-out forwards;
+            animation-delay: 0.25s;
+        }
+
+        @keyframes apxHeaderSlideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-25px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ============================================================
+   HERO TEXT FADE-UP
+   ============================================================ */
+        .apx-hero-animate>* {
+            opacity: 0;
+            transform: translateY(25px);
+            animation: apxFadeUp 0.8s ease-out forwards;
+        }
+
+        .apx-hero-animate h1 {
+            animation-delay: 0.2s;
+        }
+
+        .apx-hero-animate p.apx-hero-subtext {
+            animation-delay: 0.35s;
+        }
+
+        .apx-hero-animate .apx-input-wrap {
+            animation-delay: 0.55s;
+        }
+
+        .apx-hero-animate .apx-btn {
+            animation-delay: 0.75s;
+        }
+
+        .apx-hero-animate .apx-hero-note {
+            animation-delay: 0.95s;
+        }
+
+        @keyframes apxFadeUp {
+            0% {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 767px) {
+            .module-img {
+                padding-top: 120px !important;
+                /* reduce from 300 */
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+                padding-bottom: 25px !important;
+            }
+
+            .module-img figure.row-bg {
+                background-position: center !important;
+            }
+
+            .module-img .liquid-column-overlay {
+                background: linear-gradient(0deg,
+                        rgba(46, 70, 85, 0.9) 0%,
+                        rgba(46, 70, 85, 0) 35%) !important;
+            }
+
+            .module-col {
+                margin-bottom: -6rem !important;
+            }
+
+            .module-h2-init-sm {
+                font-size: 32px !important;
+                line-height: 1.2 !important;
+            }
+
+            #help-accordion .accordion-title {
+                font-size: 16px !important;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .module-img {
+                padding: 0 !important;
+                height: 200px !important;
+                /* control the mobile height */
+                overflow: hidden !important;
+            }
+
+            .module-img .row-bg,
+            .module-img .row-bg-inner,
+            .module-img .row-bg-wrap {
+                top: 0 !important;
+                left: 0 !important;
+                right: 0 !important;
+                bottom: 0 !important;
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            .module-img .row-bg {
+                background-size: cover !important;
+                background-position: center !important;
+            }
+
+            .module-img .liquid-column-overlay {
+                height: 100% !important;
+            }
+        }
+
+        #about {
+            background-color: #061b3a;
+        }
+
+        #about .iconbox {
+            background: rgba(172, 214, 242, 0.03);
+            border: 1px solid #db9d00;
+            padding: 25px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        #about .iconbox h3 {
+            color: #ffffff !important;
+        }
+
+        #about .iconbox p {
+            color: #cfe7ff !important;
+        }
+
+        #about .modul-top {
+            padding-top: 40px !important;
+            padding-bottom: 20px !important;
+        }
+
+        #about .modul-bottom {
+            padding-top: 20px !important;
+            padding-bottom: 40px !important;
+        }
+
+        .section {
+            min-height: 100vh;
+            /* fills at least one full screen */
+            display: flex;
+            /* lets you center or manage children easily */
+            align-items: center;
+            /* vertically centers content */
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        #practice-areas .bg-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom,
+                    rgba(0, 0, 0, 0.55),
+                    rgba(0, 0, 0, 0.35));
+            z-index: 1;
+        }
+
+        #practice-areas .image-wrapper {
+            position: relative;
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+        }
+
+        #practice-areas .module-col-1,
+        #practice-areas .module-col-2,
+        #practice-areas .module-col-3 {
+            position: relative;
+            z-index: 2;
+            /* ensures text is above the overlay */
+        }
+
+        .apx-hero-section {
+            position: relative;
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 75px;
+
+            /* Background image applied to the SECTION */
+            background-image: url("assets/images/slide.jpg");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+
+        /* Dark overlay ON the SECTION */
+        .apx-hero-section::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+            /* Darker overlay */
+            backdrop-filter: brightness(0.6);
+            z-index: 1;
+        }
+
+        /* Ensure all content sits ABOVE the overlay */
+        .apx-hero-section>.container,
+        .apx-hero-section * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .accordion-title-underlined .accordion-title a {
+            color: #db9d00;
+        }
+
+        /* Fade up on section load */
+        .apx-fade-up {
+            opacity: 0;
+            transform: translateY(25px);
+            transition: all 0.9s ease;
+        }
+
+        .apx-fade-up.apx-in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Divider animation */
+        .apx-divider {
+            width: 0;
+            height: 1px;
+            background-color: #db9d00;
+            margin: 0 auto 50px auto;
+            transition: width 1.2s ease;
+        }
+
+        .apx-divider.apx-in-view {
+            width: 100%;
+        }
+
+        /* Icon glow pulse */
+        .apx-icon-glow i {
+            animation: apexGlow 2.2s ease-in-out infinite;
+        }
+
+        @keyframes apexGlow {
+            0% {
+                opacity: 0.7;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.08);
+            }
+
+            100% {
+                opacity: 0.7;
+                transform: scale(1);
+            }
+        }
+
+        /* Card hover animation */
+        .apx-tier-card {
+            transition: all 0.35s ease;
+        }
+
+        .apx-tier-card:hover {
+            transform: translateY(-12px);
+            filter: brightness(1.15);
+        }
+
+        /* ================================
+   APEXIA — Tiers Section Premium
+   ================================ */
+
+        #about {
+            background: #0c0c0c;
+            /* deep luxury black */
+            padding-top: 80px;
+            padding-bottom: 120px;
+        }
+
+        .apx-tiers-container {
+            text-align: left;
+        }
+
+        /* Stronger premium baseline */
+        .apx-tier-card {
+            position: relative;
+            background-size: cover !important;
+            background-position: center !important;
+            border-radius: 14px;
+            overflow: hidden;
+            padding: 60px 35px;
+            height: 340px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: white;
+            border: 1px solid rgba(219, 157, 0, 0.22);
+            transition: all 0.55s cubic-bezier(0.22, 0.61, 0.36, 1);
+            filter: brightness(0.75) saturate(0.85);
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        }
+
+        .apx-tier-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 40%,
+                    rgba(0, 0, 0, 0.55),
+                    rgba(0, 0, 0, 0.85)),
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.95));
+
+            opacity: 1;
+            transition: opacity 0.55s ease;
+            z-index: 1;
+        }
+
+        .apx-tier-card:hover {
+            border-color: #e6c46d;
+            box-shadow: 0 0 22px rgba(219, 157, 0, 0.25),
+                0 0 3px 1px rgba(219, 157, 0, 0.45) inset;
+            /* inner gold glow */
+            filter: brightness(1) saturate(1.08);
+        }
+
+        .apx-tier-card:hover::before {
+            opacity: 0.35;
+        }
+
+        .apx-tier-card:hover .apx-tier-title {
+            color: #ffd995;
+            text-shadow: 0 0 8px rgba(255, 210, 140, 0.35);
+        }
+
+        .apx-tier-card:hover .apx-tier-sub {
+            color: #f0c878;
+        }
+
+        .apx-tier-card:hover .apx-tier-text {
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        .apx-tier-card:hover .apx-tier-sub {
+            color: #e1b85c;
+        }
+
+        .apx-tier-title {
+            position: relative;
+            display: inline-block;
+        }
+
+        .apx-tier-text::after {
+            content: "";
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            height: 2px;
+            width: 0;
+            background: linear-gradient(90deg, #db9d00, #f7e7b0);
+            transition: width 0.45s ease;
+            border-radius: 2px;
+        }
+
+        .apx-tier-card:hover .apx-tier-text::after {
+            width: 60%;
+        }
+
+        .apx-badge {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            background: #db9d00;
+            color: #000;
+            font-weight: 700;
+            font-size: 13px;
+            padding: 4px 12px;
+            border-radius: 4px;
+            z-index: 3;
+            overflow: hidden;
+        }
+
+        .apx-badge::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -120%;
+            height: 100%;
+            width: 70%;
+            background: linear-gradient(120deg,
+                    transparent,
+                    rgba(255, 255, 255, 0.6),
+                    transparent);
+            transform: skewX(-25deg);
+            animation: apexBadgeShine 3.2s infinite ease-in-out;
+        }
+
+        /* TRUE elevation */
+        .apx-tier-card {
+            transition: transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1),
+                box-shadow 0.45s cubic-bezier(0.22, 0.61, 0.36, 1), filter 0.45s ease;
+        }
+
+        .apx-tier-card:hover {
+            transform: translateY(-14px) scale(1.015) perspective(700px) rotateX(2deg);
+        }
+
+        /* ELEVATED STATE */
+        .apx-tier-card:hover {
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55),
+                /* deep natural drop shadow */
+                0 6px 15px rgba(0, 0, 0, 0.35),
+                /* softened mid-shadow */
+                0 0 22px rgba(219, 157, 0, 0.18);
+            /* gold aura (luxury touch) */
+
+            filter: brightness(1.08) saturate(1.1);
+        }
+
+        @keyframes apexBadgeShine {
+            0% {
+                left: -120%;
+            }
+
+            50% {
+                left: 140%;
+            }
+
+            100% {
+                left: 140%;
+            }
+        }
+
+        .apx-tier-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .apx-tier-card:hover .apx-tier-content {
+            transform: translateY(-3px);
+            transition: transform 0.55s ease;
+        }
+
+        /* Noise overlay on entire section */
+        #about::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url("https://grainy-gradients.vercel.app/noise.svg");
+            /* HD noise */
+            opacity: 0.035;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .apx-tier-content {
+            position: relative;
+            z-index: 2;
+            text-align: left;
+        }
+
+        .apx-tier-title {
+            font-size: 28px;
+            font-weight: 600;
+            color: #db9d00;
+            /* luxury gold */
+            margin-bottom: 10px;
+        }
+
+        .apx-tier-text {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 16px;
+        }
+
+        .apx-tier-sub {
+            margin-top: 20px;
+            font-size: 15px;
+            color: #ffffff;
+        }
+
+        /* PRIORITY badge for Zenith */
+        .apx-badge {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            background: #db9d00;
+            color: #000;
+            font-weight: 700;
+            font-size: 13px;
+            padding: 4px 10px;
+            border-radius: 4px;
+            z-index: 3;
+        }
+
+        /* Static gold line above subtitle */
+        .apx-tier-line {
+            width: 100%;
+            height: 1px;
+            margin: 22px 0 12px 0;
+            background: rgba(219, 157, 0, 0.35);
+            /* soft premium gold */
+        }
+
+        .apx-divider-gold {
+            height: 1px;
+            width: 100%;
+            margin: 40px auto;
+            background: linear-gradient(to right,
+                    transparent,
+                    #db9d00,
+                    transparent);
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .apx-tier-card {
+                height: 280px;
+                padding: 45px 25px;
+            }
+
+            .apx-tier-title {
+                font-size: 24px;
+            }
+        }
+
+        /* Container */
+        .apx-accordion {
+            width: 100%;
+            max-width: 520px;
+            color: #fff;
+        }
+
+        /* Each accordion item */
+        .apx-item {
+            padding: 12px 0 18px;
+            border-bottom: 1px solid rgba(219, 157, 0, 0.35);
+            cursor: pointer;
+        }
+
+        /* Header row */
+        .apx-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 20px;
+            color: #db9d00;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .apx-item:hover .apx-header span:first-child {
+            color: #f5d88a;
+        }
+
+        /* The body text */
+        .apx-body {
+            font-size: 15px;
+            line-height: 1.55;
+            color: rgba(255, 255, 255, 0.85);
+            margin-top: 12px;
+            max-height: 0;
+            overflow: hidden;
+            padding-right: 30px;
+            transition: all 0.35s ease;
+            opacity: 0;
+        }
+
+        /* Expanded state */
+        .apx-item.active .apx-body {
+            max-height: 200px;
+            opacity: 1;
+        }
+
+        /* Icon */
+        .apx-icon {
+            font-size: 22px;
+            color: #db9d00;
+            transition: all 0.3s ease;
+        }
+
+        .apx-item.active .apx-icon {
+            color: #f5d88a;
+        }
+
+        /* IMAGE WRAPPER */
+        .apx-img-wrap {
+            position: relative;
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            height: 420px;
+            /* desktop */
+        }
+
+        .apx-img {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .apx-img-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg,
+                    rgba(46, 70, 85, 0.9) 0%,
+                    rgba(46, 70, 85, 0) 45%);
+        }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+            .apx-img-wrap {
+                height: 280px;
+                border-radius: 10px;
+            }
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("apx-in-view");
+                        }
+                    });
+                },
+                { threshold: 0.3 }
+            );
+
+            document
+                .querySelectorAll(".apx-fade-up, .apx-divider")
+                .forEach((el) => {
+                    observer.observe(el);
+                });
+        });
+    </script>
+</head>
+
+<body data-mobile-nav-breakpoint="1199" data-mobile-nav-style="classic" data-mobile-nav-scheme="gray"
+    data-mobile-nav-trigger-alignment="right" data-mobile-header-scheme="gray" data-mobile-logo-alignment="default">
+    <div id="wrap">
+        <div class="lqd-sticky-placeholder hidden"></div>
+        <header class="main-header main-header-overlay" data-sticky-header="true" data-sticky-values-measured="false"
+            data-sticky-options='{ "disableOnMobile" :true, "stickyTrigger" :"first-section" }'>
+            <section class="apx-desktop-header apx-animate-in">
+                <div class="apx-header-inner">
+                    <div class="apx-header-col apx-left">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" class="apx-logo" alt="Apexia Logo" />
+                        </a>
+                    </div>
+
+                    <div class="apx-header-col apx-right">
+                        <button class="apx-header-btn">Join Waitlist</button>
+                    </div>
+                </div>
+            </section>
+
+            <div class="apx-mobile-header">
+                <!-- Left: Logo -->
+                <a href="index.html" class="apx-mobile-logo">
+                    <img src="assets/images/logo.png" alt="Apexia Logo" />
+                </a>
+
+                <!-- Right: Join Button -->
+                <button type="button" class="apx-mobile-btn">Join Now</button>
+            </div>
+        </header>
+
+        <main class="content bg-reapet bg-white z-2" id="lqd-site-content"
+            style="background-image: url(assets/images/demo/lawyer/Pattern.jpg)">
+            <div id="lqd-contents-wrap">
+                <section id="banner" class="apx-hero apx-hero-animate">
+                    <!-- Background image -->
+                    <div class="apx-hero-bg" style="background-image: url('assets/images/1.jpg')"></div>
+
+                    <!-- Gradient Overlay -->
+                    <div class="apx-hero-overlay"></div>
+
+                    <div class="apx-container">
+                        <div class="apx-hero-content">
+                            <h1 class="apx-hero-title">
+                                Private<br />Financial Concierge.
+                            </h1>
+
+                            <p class="apx-hero-subtext">
+                                Silent sovereignty in every transaction. Wallet & Tab
+                                Management. Unrivaled privacy, total autonomy, and
+                                gold-standard security for the ultra-wealthy.
+                            </p>
+
+                            <div class="apx-input-wrap">
+                                <input type="email" id="email" placeholder="Enter Your Email Address"
+                                    class="apx-input apx-email" />
+                            </div>
+
+                            <button class="apx-btn apx-btn-primary apx-open-modal" id="apx-join-btn">
+                                Join the Private Waitlist
+                            </button>
+
+                            <p class="apx-hero-note" style="color: #db9d00; margin-top: -10px">
+                                Invitation-only. Requests reviewed manually.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="lqd-section section bg-black help text-white py-75" id="help">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <!-- LEFT IMAGE -->
+                            <div class="col-12 col-lg-6 col-xl-5 mb-4 my-5">
+                                <div class="apx-img-wrap">
+                                    <figure class="apx-img" style="background-image: url('assets/images/4.jpg')">
+                                    </figure>
+                                    <div class="apx-img-overlay"></div>
+                                </div>
+                            </div>
+
+                            <!-- RIGHT CONTENT -->
+                            <div class="col-12 col-lg-6 col-xl-5 offset-xl-1 my-5">
+                                <h6 class="text-white mb-3">OUR OFFERING</h6>
+                                <h2 class="text-46 mb-4" style="color: #db9d00">
+                                    How It <u>Works</u>.
+                                </h2>
+
+                                <div class="apx-accordion mb-4">
+                                    <!-- ITEM 1 -->
+                                    <div class="apx-item active">
+                                        <div class="apx-header">
+                                            <span>Create a Tab in Seconds</span>
+                                            <span class="apx-icon">−</span>
+                                        </div>
+                                        <div class="apx-body">
+                                            Private. Custom. Geofenced. Multi-currency.
+                                        </div>
+                                    </div>
+
+                                    <!-- ITEM 2 -->
+                                    <div class="apx-item">
+                                        <div class="apx-header">
+                                            <span>Authorize With a Glance</span>
+                                            <span class="apx-icon">+</span>
+                                        </div>
+                                        <div class="apx-body">
+                                            Approve or decline silently, from anywhere on earth.
+                                        </div>
+                                    </div>
+
+                                    <!-- ITEM 3 -->
+                                    <div class="apx-item">
+                                        <div class="apx-header">
+                                            <span>Empower the People You Trust</span>
+                                            <span class="apx-icon">+</span>
+                                        </div>
+                                        <div class="apx-body">
+                                            Staff, family, advisors—controlled access with instant
+                                            revocation.
+                                        </div>
+                                    </div>
+
+                                    <!-- ITEM 4 -->
+                                    <div class="apx-item">
+                                        <div class="apx-header">
+                                            <span>Concierge, Encrypted and Human</span>
+                                            <span class="apx-icon">+</span>
+                                        </div>
+                                        <div class="apx-body">
+                                            24/7 private assistance with zero chat history stored.
+                                        </div>
+                                    </div>
+
+                                    <!-- ITEM 5 -->
+                                    <div class="apx-item">
+                                        <div class="apx-header">
+                                            <span>AI Insights, But Only for You</span>
+                                            <span class="apx-icon">+</span>
+                                        </div>
+                                        <div class="apx-body">
+                                            On-device intelligence for discreet wealth optimization.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="lqd-section sectin about" id="about">
+                    <div class="container apx-tiers-container apx-fade-up">
+                        <h6 class="text-amber-600">APEXIA</h6>
+                        <h2 class="mb-0 text-46 text-white">Tiers Overview.</h2>
+                    </div>
+
+                    <div class="apx-divider-gold"></div>
+
+                    <div class="container">
+                        <div class="row">
+                            <!-- SUMMIT -->
+                            <div class="col col-12 col-md-4 mb-25">
+                                <div class="apx-tier-card" style="background-image: url('assets/images/submit.jpg')">
+                                    <div class="apx-tier-content">
+                                        <h3 class="apx-tier-title">Summit</h3>
+                                        <p class="apx-tier-text">
+                                            The gateway to Apexia: private tabs, real-time
+                                            monitoring, discreet control.
+                                        </p>
+
+                                        <div class="apx-tier-line"></div>
+                                        <span class="apx-tier-sub">Entry-level sovereignty</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PINNACLE -->
+                            <div class="col col-12 col-md-4 mb-25">
+                                <div class="apx-tier-card" style="background-image: url('assets/images/pinnacle.jpg')">
+                                    <div class="apx-tier-content">
+                                        <h3 class="apx-tier-title">Pinnacle</h3>
+                                        <p class="apx-tier-text">
+                                            Unlimited authorizations, advanced AI insights,
+                                            multi-entity dashboards.
+                                        </p>
+
+                                        <div class="apx-tier-line"></div>
+                                        <span class="apx-tier-sub">Advanced sovereignty</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ZENITH -->
+                            <div class="col col-12 col-md-4 mb-25">
+                                <div class="apx-tier-card" style="background-image: url('assets/images/zenith.jpg')">
+                                    <span class="apx-badge">PRIORITY</span>
+
+                                    <div class="apx-tier-content">
+                                        <h3 class="apx-tier-title">Zenith</h3>
+                                        <p class="apx-tier-text">
+                                            For the rare few: priority concierge, invisible routing,
+                                            authorization.
+                                        </p>
+
+                                        <div class="apx-tier-line"></div>
+                                        <span class="apx-tier-sub">Ultimate sovereignty</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container text-center mt-40">
+                        <p style="color: #db9d00 !important; font-size: 15px">
+                            Zenith applicants receive priority review.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="lqd-section practice-area pt-50 pb-75 apx-hero-section" id="practice-areas">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col col-12">
+                                <div class="w-full relative flex flex-wrap rounded-6">
+                                    <!-- COLUMN 1 -->
+                                    <div
+                                        class="w-40percent flex flex-col justify-center items-start py-75 px-50 border-right border-white-20 md:w-full md:border-bottom module-col-1">
+                                        <h2 class="text-44 text-white">APEXIA.</h2>
+                                        <p class="text-15 leading-1/5em text-white-80">
+                                            Trusted by the World’s Quiet Powerhouses. Protected by
+                                            Design.
+                                        </p>
+                                        <a href="#"
+                                            class="btn btn-underlined border-thick border-thick-white text-white">
+                                            Join Waitlist
+                                        </a>
+                                    </div>
+
+                                    <!-- COLUMN 2 -->
+                                    <div
+                                        class="w-33percent flex flex-col justify-center pt-75 pb-55 px-50 border-right border-white-20 md:w-full md:border-bottom module-col-2">
+                                        <h6 class="text-white">TRUSTED BY</h6>
+                                        <ul class="text-white">
+                                            <li class="mb-20">Family Offices</li>
+                                            <li class="mb-20">Global Executives</li>
+                                            <li class="mb-20">Sovereign Estates</li>
+                                            <li class="mb-20">Sovereign Estates</li>
+                                            <li class="mb-20">Discreet Investors</li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- COLUMN 3 -->
+                                    <div
+                                        class="w-25percent flex flex-col justify-center pt-65 pb-55 px-40 md:w-full module-col-3">
+                                        <h6 class="text-white">Private by Design.</h6>
+                                        <ul class="text-white">
+                                            <li class="mb-20">Quantum-resistant encryption</li>
+                                            <li class="mb-20">Zero-trust access</li>
+                                            <li class="mb-20">
+                                                No tracking. No ads. No data monetization
+                                            </li>
+                                            <li class="mb-20">
+                                                Sensitive data dissolves when you close the session
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="main-footer pt-15 bg-no-repeat bg-left-bottom bg-black text-white-70">
+            <section class="lqd-section footer-contact apx-footer-section">
+                <div class="container">
+                    <div class="row justify-center">
+                        <!-- Top Divider -->
+                        <div class="col col-12">
+                            <div class="apx-divider-gold"></div>
+                        </div>
+
+                        <div class="col col-12 col-lg-8 col-xl-6 text-center">
+                            <div class="w-full relative apx-footer-conten py-45">
+                                <h2 class="ld-fh-element text-40 leading-1/25em text-white">
+                                    Exclusive Access Begins Here.
+                                </h2>
+
+                                <div class="mb-40">
+                                    Join the private waitlist to be notified when invitations
+                                    open.
+                                </div>
+
+                                <div class="apx-input-wrap apx-field">
+                                    <input type="email" placeholder="Enter Your Email Address"
+                                        class="apx-input apx-email" />
+                                </div>
+
+                                <a href="javascript:;"
+                                    class="btn btn-solid btn-lg apx-btn-full apx-field bg-warning text-12 font-bold apx-open-modal">
+                                    Join the Private Waitlist
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Divider -->
+                        <div class="col col-12">
+                            <div class="apx-divider-gold"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lqd-section footer-info pt-35">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-12 col-md-6">
+                            <div class="lqd-fancy-menu lqd-simple-menu mb-20">
+                                <ul class="lqd-simple-menu-ul reset-ul inline-nav -mx-10">
+                                    <li class="w-auto inline-flex mx-10">
+                                        <a href="#" class="transition-color text-12 text-white-80 hover:text-white"
+                                            target="_blank">Privacy Policy</a>
+                                    </li>
+                                    <li class="w-auto inline-flex mx-10">
+                                        <a href="#" class="transition-color text-12 text-white-80 hover:text-white"
+                                            target="_blank">Terms and Condition</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-12 col-md-6 text-end sm:text-start">
+                            <div class="ld-fancy-heading mb-20">
+                                <p class="ld-fh-element mb-0/5em text-14">© 2025 Apexia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <style>
+        /* LUXURY BLACK + GOLD MODAL */
+        .apx-modal-box {
+            background: #0a0a0a;
+            border: 1px solid rgba(219, 157, 0, 0.45);
+            border-radius: 18px;
+            padding: 25px 28px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Inputs: dark, premium */
+        .apx-input {
+            background: rgba(255, 255, 255, 0.05) !important;
+            border: 1px solid rgba(255, 255, 255, 0.2) !important;
+            color: white !important;
+            padding: 12px 14px !important;
+        }
+
+        .apx-input:focus {
+            border-color: #db9d00 !important;
+            box-shadow: 0 0 0 0.2rem rgba(219, 157, 0, 0.25) !important;
+        }
+
+        /* Gold Button */
+        .btn-gold {
+            background: #db9d00;
+            border: none;
+            color: #000;
+            font-weight: 700;
+            border-radius: 10px;
+            transition: 0.25s ease;
+        }
+
+        .btn-gold:hover {
+            background: #e6c46d;
+            transform: translateY(-2px);
+        }
+
+        /* Text gold */
+        .text-gold {
+            color: #db9d00 !important;
+        }
+    </style>
+    <!-- APEXIA LUXURY WAITLIST MODAL -->
+    <!-- ====================================================================
+     APEXIA — ULTRA PREMIUM WAITLIST MODAL (PROD VERSION)
+==================================================================== -->
+    <div class="modal fade" id="apxWaitlistModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content apx-modal-box">
+                <!-- Header -->
+                <div class="modal-header border-0 pb-0">
+                    <h4 class="modal-title text-gold fw-bold">
+                        Apexia Private Waitlist
+                    </h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body pt-2">
+                    <p class="text-muted mb-4" style="color: #c8c8c8 !important">
+                        Provide a few details to complete your private qualification
+                        request.
+                    </p>
+
+                    <!-- FORM -->
+                    <form id="apxWaitlistForm">
+                        <!-- Hidden email from homepage -->
+                        <input type="hidden" name="email" id="apx-email-final" />
+
+                        <!-- ROW 1 -->
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label text-light">Your Full Name *</label>
+                                <input type="text" class="form-control apx-input" name="full_name" required
+                                    minlength="3" />
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label text-light">Mobile Phone (Optional)</label>
+                                <input type="tel" class="form-control apx-input" name="phone" />
+                            </div>
+                        </div>
+
+                        <!-- ROW 2 -->
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label text-light">Profession or Title *</label>
+                                <input type="text" class="form-control apx-input" name="profession" required />
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label text-light">Approximate Net Worth *</label>
+                                <select class="form-select apx-input" id="apx-networth" name="net_worth" required>
+                                    <option value="">Select range</option>
+                                    <option>Under $10M</option>
+                                    <option>$10M - $50M</option>
+                                    <option>$50M - $100M</option>
+                                    <option>$100M - $500M</option>
+                                    <option>Over $500M</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- ASSET MULTI-SELECT -->
+                        <div class="mb-3">
+                            <label class="form-label text-light">Key Assets / Interests</label>
+
+                            <select class="form-select apx-input" id="apx-assets" name="assets[]" multiple>
+                                <option value="Real Estate">Real Estate</option>
+                                <option value="Investments">Investments / Stocks</option>
+                                <option value="Private Equity">Private Equity</option>
+                                <option value="Crypto">Crypto / Blockchain</option>
+                                <option value="Art">Art / Collectibles</option>
+                                <option value="Jets">Yachts / Private Jets</option>
+                                <option value="Philanthropy">Philanthropy</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- REFERRAL ROW -->
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label text-light">How Did You Hear About Apexia? *</label>
+                                <select class="form-select apx-input" id="apx-referral" name="referral" required>
+                                    <option value="">Choose one</option>
+                                    <option value="Wealth Advisor">Wealth Advisor</option>
+                                    <option value="Business Network">Business Network</option>
+                                    <option value="Event">Event</option>
+                                    <option value="Media">Media</option>
+                                    <option value="Referral">Personal Referral</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6 mb-3" id="apx-referral-other-wrap" style="display: none">
+                                <label class="form-label text-light">Please Specify</label>
+                                <input type="text" class="form-control apx-input" id="apx-referral-other"
+                                    name="referral_other" />
+                            </div>
+                        </div>
+
+                        <!-- WHY APEXIA -->
+                        <div class="mb-3">
+                            <label class="form-label text-light">Why Apexia? (Optional)</label>
+                            <textarea class="form-control apx-input" name="why" rows="3" maxlength="500"></textarea>
+                        </div>
+
+                        <!-- CONSENT -->
+                        <div class="form-check mb-4 mt-3">
+                            <input class="form-check-input" type="checkbox" name="consent" required />
+                            <label class="form-check-label text-light">
+                                I consent to Apexia processing my data and agree to the
+                                Privacy Policy.
+                            </label>
+                        </div>
+
+                        <!-- SUBMIT BUTTON -->
+                        <button type="submit" class="btn btn-gold w-100 py-2 mt-2">
+                            Submit Application
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/vendors/jquery-ui/jquery-ui.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Choices.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            /* ========================================================
+           STEP 1: HOMEPAGE BUTTON → Validate Email → Open Modal
+        ======================================================== */
+            $(".apx-open-modal").on("click", function () {
+                const email = $(".apx-email").val().trim();
+                console.log(email);
+                if (!email) {
+                    Swal.fire(
+                        "Email Required",
+                        "Please enter your email first.",
+                        "warning"
+                    );
+                    return;
+                }
+
+                const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+                if (!valid) {
+                    Swal.fire(
+                        "Invalid Email Address",
+                        "Please enter a valid email.",
+                        "error"
+                    );
+                    return;
+                }
+
+                // Set email into hidden field
+                $("#apx-email-final").val(email);
+
+                // Open modal
+                const modal = new bootstrap.Modal(
+                    document.getElementById("apxWaitlistModal")
+                );
+                modal.show();
+            });
+
+            /* ========================================================
+           STEP 2: Referral "Other" Field Toggle
+        ======================================================== */
+            $("#apx-referral").on("change", function () {
+                if (this.value === "Other" || this.value === "Referral") {
+                    $("#apx-referral-other-wrap").slideDown();
+                } else {
+                    $("#apx-referral-other-wrap").slideUp();
+                    $("#apx-referral-other").val("");
+                }
+            });
+
+            /* ========================================================
+           STEP 3: AJAX FORM SUBMISSION
+        ======================================================== */
+            $("#apxWaitlistForm").on("submit", function (e) {
+                e.preventDefault();
+
+                let formData = $(this).serialize();
+
+                $.ajax({
+                    url: "waitlist/submit", // <-- your backend endpoint
+                    type: "POST",
+                    data: formData,
+                    success: function (res) {
+                        Swal.fire({
+                            title: "Application Submitted",
+                            text: "Your request has been received. Apexia will review it manually.",
+                            icon: "success",
+                            confirmButtonColor: "#db9d00",
+                        });
+
+                        $("#apxWaitlistModal").modal("hide");
+                    },
+                    error: function () {
+                        Swal.fire(
+                            "Error",
+                            "Something went wrong. Try again later.",
+                            "error"
+                        );
+                    },
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".apx-header").click(function () {
+                let item = $(this).closest(".apx-item");
+
+                // If already open, close it
+                if (item.hasClass("active")) {
+                    item.removeClass("active");
+                    item.find(".apx-icon").text("+");
+                    return;
+                }
+
+                // Close others
+                $(".apx-item").removeClass("active");
+                $(".apx-icon").text("+");
+
+                // Open clicked one
+                item.addClass("active");
+                item.find(".apx-icon").text("−");
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const apexiaHeader = document.querySelector(".apx-desktop-header");
+            if (!apexiaHeader) return;
+
+            // Always visible on load
+            apexiaHeader.style.opacity = "1";
+            apexiaHeader.style.transform = "translateY(0)";
+            apexiaHeader.style.pointerEvents = "auto";
+
+            let lastScrollTop = 0;
+
+            window.addEventListener("scroll", function () {
+                let scrollTop = window.scrollY;
+
+                // hide only after scrolling down past 200px
+                if (scrollTop > lastScrollTop && scrollTop > 200) {
+                    apexiaHeader.style.opacity = "0";
+                    apexiaHeader.style.transform = "translateY(-25px)";
+                    apexiaHeader.style.pointerEvents = "none";
+                }
+
+                // show when scroll up close to top
+                else if (scrollTop < 100) {
+                    apexiaHeader.style.opacity = "1";
+                    apexiaHeader.style.transform = "translateY(0)";
+                    apexiaHeader.style.pointerEvents = "auto";
+                }
+
+                lastScrollTop = scrollTop;
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const themeHeader = document.querySelector(".main-header");
+
+            if (themeHeader) {
+                // Remove all sticky attributes
+                themeHeader.removeAttribute("data-sticky-header");
+                themeHeader.removeAttribute("data-sticky-values-measured");
+                themeHeader.removeAttribute("data-sticky-options");
+            }
+        });
+    </script>
+    <script>
+        let netWorthChoice, assetsChoice, referralChoice;
+
+        $("#apxWaitlistModal").on("shown.bs.modal", function () {
+            // Prevent double initialization
+            if (!netWorthChoice) {
+                netWorthChoice = new Choices("#apx-networth", {
+                    searchEnabled: false,
+                    itemSelectText: "",
+                    allowHTML: false,
+                });
+            }
+
+            if (!assetsChoice) {
+                assetsChoice = new Choices("#apx-assets", {
+                    removeItemButton: true,
+                    searchEnabled: true,
+                    placeholder: true,
+                    placeholderValue: "Select interests...",
+                    itemSelectText: "",
+                    allowHTML: false,
+                });
+            }
+
+            if (!referralChoice) {
+                referralChoice = new Choices("#apx-referral", {
+                    searchEnabled: false,
+                    itemSelectText: "",
+                    allowHTML: false,
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

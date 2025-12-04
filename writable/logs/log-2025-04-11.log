@@ -1,0 +1,11 @@
+CRITICAL - 2025-04-11 16:32:49 --> Undefined variable: country_id
+#0 /Applications/MAMP/htdocs/pcdl4kids_web/app/Views/auth/kyc.php(96): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 96, Array)
+#1 /Applications/MAMP/htdocs/pcdl4kids_web/system/View/View.php(210): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/pcdl4kids_web/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/pcdl4kids_web/system/Common.php(1089): CodeIgniter\View\View->render('auth/kyc', Array, true)
+#4 /Applications/MAMP/htdocs/pcdl4kids_web/app/Controllers/Accounts.php(2436): view('auth/kyc', Array)
+#5 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(825): App\Controllers\Accounts->kyc()
+#6 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accounts))
+#7 /Applications/MAMP/htdocs/pcdl4kids_web/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/pcdl4kids_web/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

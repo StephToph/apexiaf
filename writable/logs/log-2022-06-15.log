@@ -1,0 +1,113 @@
+CRITICAL - 2022-06-15 10:52:07 --> Invalid file: designs.php
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('designs.php')
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(226): CodeIgniter\View\View->render('designs', Array, true)
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Dashboard.php(83): view('dashboard', Array)
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-15 11:00:21 --> Invalid file: designs.php
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('designs.php')
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(226): CodeIgniter\View\View->render('designs', Array, true)
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Dashboard.php(83): view('dashboard', Array)
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-15 11:00:35 --> Invalid file: designs.php
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('designs.php')
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(226): CodeIgniter\View\View->render('designs', Array, true)
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Dashboard.php(83): view('dashboard', Array)
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-15 11:00:48 --> Invalid file: designs.php
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('designs.php')
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(226): CodeIgniter\View\View->render('designs', Array, true)
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Dashboard.php(83): view('dashboard', Array)
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-15 11:05:24 --> Invalid file: designs.php
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('designs.php')
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(226): CodeIgniter\View\View->render('designs', Array, true)
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Dashboard.php(83): view('dashboard', Array)
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-15 11:05:26 --> Invalid file: designs.php
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('designs.php')
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(226): CodeIgniter\View\View->render('designs', Array, true)
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Dashboard.php(83): view('dashboard', Array)
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-15 11:05:27 --> Invalid file: designs.php
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('designs.php')
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(226): CodeIgniter\View\View->render('designs', Array, true)
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Dashboard.php(83): view('dashboard', Array)
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-15 11:06:38 --> Invalid file: designs.php
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('designs.php')
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(226): CodeIgniter\View\View->render('designs', Array, true)
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Dashboard.php(83): view('dashboard', Array)
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-15 11:06:40 --> Invalid file: designs.php
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('designs.php')
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(226): CodeIgniter\View\View->render('designs', Array, true)
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Dashboard.php(83): view('dashboard', Array)
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-15 11:07:33 --> Invalid file: designs.php
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('designs.php')
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/View/View.php(226): CodeIgniter\View\View->render('designs', Array, true)
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Common.php(1089): CodeIgniter\View\View->render('dashboard', Array, true)
+#3 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Dashboard.php(83): view('dashboard', Array)
+#4 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#5 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-15 21:41:27 --> Unknown column 'fullname' in 'field list'
+CRITICAL - 2022-06-15 21:41:27 --> Unknown column 'fullname' in 'field list'
+#0 /Applications/MAMP/htdocs/pcdl4kids/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `pl...', 0)
+#1 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pl...')
+#2 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pl...')
+#3 /Applications/MAMP/htdocs/pcdl4kids/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pl...', Array, false)
+#4 /Applications/MAMP/htdocs/pcdl4kids/app/Models/Crud.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/pcdl4kids/app/Controllers/Setup.php(112): App\Models\Crud->create('age', Array)
+#6 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(825): App\Controllers\Setup->admin('manage')
+#7 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setup))
+#8 /Applications/MAMP/htdocs/pcdl4kids/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/pcdl4kids/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
