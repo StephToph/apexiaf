@@ -10,7 +10,7 @@ ServerSignature Off
     RewriteEngine On
 
     # App lives in a subfolder:
-    RewriteBase /delivery/
+    RewriteBase /apexiaf/
 
     # --- Security: block direct access to hidden/sensitive files
     RewriteRule (^|/)\. - [F]                                      # dotfiles (.env, .git, etc)

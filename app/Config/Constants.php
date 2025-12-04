@@ -35,11 +35,11 @@ defined('COMPOSER_PATH') || define('COMPOSER_PATH', ROOTPATH . 'vendor/autoload.
  */
 defined('SECOND') || define('SECOND', 1);
 defined('MINUTE') || define('MINUTE', 60);
-defined('HOUR')   || define('HOUR', 3600);
-defined('DAY')    || define('DAY', 86400);
-defined('WEEK')   || define('WEEK', 604800);
-defined('MONTH')  || define('MONTH', 2592000);
-defined('YEAR')   || define('YEAR', 31536000);
+defined('HOUR') || define('HOUR', 3600);
+defined('DAY') || define('DAY', 86400);
+defined('WEEK') || define('WEEK', 604800);
+defined('MONTH') || define('MONTH', 2592000);
+defined('YEAR') || define('YEAR', 31536000);
 defined('DECADE') || define('DECADE', 315360000);
 
 
@@ -50,14 +50,39 @@ defined('DECADE') || define('DECADE', 315360000);
  |
  | Provide simple customize global contants values
  */
-defined('app_name') || define('app_name', 'Tehilah Global');
-defined('app_meta_desc') || define('app_meta_desc', '');
-defined('app_email') || define('app_email', '');
-defined('app_website') || define('app_website', '');
-defined('push_email') || define('push_email', md5(time().rand()).'@.com');
+
+// ------------------------------
+// APP IDENTITY
+// ------------------------------
+defined('app_name') || define('app_name', 'Apexia – Private Financial Concierge');
+defined('app_meta_desc') || define('app_meta_desc', 'A private financial concierge with sovereign privacy, quantum-resistant security, and exclusive invitation-only access.');
+defined('app_email') || define('app_email', 'support@apexia.vip');
+defined('app_website') || define('app_website', 'https://apexia.vip');
+
+
+// ------------------------------
+// SYSTEM EMAIL (safer fallback)
+// ------------------------------
+// Generates something like: system.65f2b921e7@apexia.system
+defined('push_email')
+    || define(
+        'push_email',
+        'system.' . substr(md5(time() . rand()), 0, 12) . '@apexia.system'
+    );
+
+
+// ------------------------------
+// DATE + CURRENCY
+// ------------------------------
 defined('fdate') || define('fdate', 'Y-m-d H:i:s');
-defined('curr') || define('curr', '&#8358;');
-defined('pay_server') || define('pay_server', 'test');
+defined('curr') || define('curr', '&#8358;'); // ₦
+
+
+// ------------------------------
+// PAYMENT ENVIRONMENT
+// ------------------------------
+// Values expected: test | live
+
 
 /*
  | --------------------------------------------------------------------------
@@ -84,13 +109,13 @@ defined('pay_server') || define('pay_server', 'test');
  |       http://tldp.org/LDP/abs/html/exitcodes.html
  |
  */
-defined('EXIT_SUCCESS')        || define('EXIT_SUCCESS', 0); // no errors
-defined('EXIT_ERROR')          || define('EXIT_ERROR', 1); // generic error
-defined('EXIT_CONFIG')         || define('EXIT_CONFIG', 3); // configuration error
-defined('EXIT_UNKNOWN_FILE')   || define('EXIT_UNKNOWN_FILE', 4); // file not found
-defined('EXIT_UNKNOWN_CLASS')  || define('EXIT_UNKNOWN_CLASS', 5); // unknown class
+defined('EXIT_SUCCESS') || define('EXIT_SUCCESS', 0); // no errors
+defined('EXIT_ERROR') || define('EXIT_ERROR', 1); // generic error
+defined('EXIT_CONFIG') || define('EXIT_CONFIG', 3); // configuration error
+defined('EXIT_UNKNOWN_FILE') || define('EXIT_UNKNOWN_FILE', 4); // file not found
+defined('EXIT_UNKNOWN_CLASS') || define('EXIT_UNKNOWN_CLASS', 5); // unknown class
 defined('EXIT_UNKNOWN_METHOD') || define('EXIT_UNKNOWN_METHOD', 6); // unknown class member
-defined('EXIT_USER_INPUT')     || define('EXIT_USER_INPUT', 7); // invalid user input
-defined('EXIT_DATABASE')       || define('EXIT_DATABASE', 8); // database error
-defined('EXIT__AUTO_MIN')      || define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
-defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
+defined('EXIT_USER_INPUT') || define('EXIT_USER_INPUT', 7); // invalid user input
+defined('EXIT_DATABASE') || define('EXIT_DATABASE', 8); // database error
+defined('EXIT__AUTO_MIN') || define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
+defined('EXIT__AUTO_MAX') || define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code

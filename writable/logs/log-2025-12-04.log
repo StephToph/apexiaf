@@ -1,0 +1,30 @@
+CRITICAL - 2025-12-04 10:10:46 --> You have not selected a database type to connect to.
+#0 /Applications/MAMP/htdocs/apexiaf/system/Database/Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#1 /Applications/MAMP/htdocs/apexiaf/app/Controllers/Home.php(11): CodeIgniter\Database\Config::connect()
+#2 /Applications/MAMP/htdocs/apexiaf/system/CodeIgniter.php(802): App\Controllers\Home->__construct()
+#3 /Applications/MAMP/htdocs/apexiaf/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#4 /Applications/MAMP/htdocs/apexiaf/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/apexiaf/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2025-12-04 10:12:50 --> Error connecting to the database: Unknown database 'apexiaf_db'
+CRITICAL - 2025-12-04 10:12:50 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'apexiaf_db'
+#0 /Applications/MAMP/htdocs/apexiaf/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/apexiaf/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/apexiaf/app/Controllers/Auth.php(152): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/apexiaf/system/CodeIgniter.php(825): App\Controllers\Auth->submit_waitlist()
+#4 /Applications/MAMP/htdocs/apexiaf/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /Applications/MAMP/htdocs/apexiaf/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/apexiaf/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2025-12-04 10:14:05 --> Error connecting to the database: Unknown database 'apexiaf_db'
+CRITICAL - 2025-12-04 10:14:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'apexiaf_db'
+#0 /Applications/MAMP/htdocs/apexiaf/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/apexiaf/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/apexiaf/app/Controllers/Auth.php(152): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/apexiaf/system/CodeIgniter.php(825): App\Controllers\Auth->submit_waitlist()
+#4 /Applications/MAMP/htdocs/apexiaf/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /Applications/MAMP/htdocs/apexiaf/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/apexiaf/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#7 {main}

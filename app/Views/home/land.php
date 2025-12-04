@@ -1022,7 +1022,8 @@
                     </div>
 
                     <div class="apx-header-col apx-right">
-                        <button class="apx-header-btn">Join Waitlist</button>
+                        <button class="apx-header-btn apx-scroll-btn">Join Waitlist</button>
+
                     </div>
                 </div>
             </section>
@@ -1034,7 +1035,8 @@
                 </a>
 
                 <!-- Right: Join Button -->
-                <button type="button" class="apx-mobile-btn">Join Now</button>
+                <button type="button" class="apx-mobile-btn apx-scroll-btn">Join Now</button>
+
             </div>
         </header>
 
@@ -1239,7 +1241,7 @@
                                             Design.
                                         </p>
                                         <a href="#"
-                                            class="btn btn-underlined border-thick border-thick-white text-white">
+                                            class="btn btn-underlined border-thick border-thick-white text-white apx-scroll-btn">
                                             Join Waitlist
                                         </a>
                                     </div>
@@ -1416,7 +1418,13 @@
                     <!-- FORM -->
                     <form id="apxWaitlistForm">
                         <!-- Hidden email from homepage -->
-                        <input type="hidden" name="email" id="apx-email-final" />
+                        <!-- Honeypot -->
+                        <input type="text" name="website" style="display:none">
+                        <input type="hidden" name="waitlist_id" id="waitlist_id">
+                        <input type="hidden" name="email" id="apx-email-final">
+
+                        <!-- Time form was loaded -->
+                        <input type="hidden" name="form_load_time" id="formLoadTime">
 
                         <!-- ROW 1 -->
                         <div class="row">
@@ -1523,47 +1531,144 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Choices.js JS -->
     <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // TARGET SECTIONS
+            const joinSection = document.querySelector("#banner"); // first email+join section
+            const joinButtons = document.querySelectorAll(".apx-header-btn, .apx-mobile-btn, .module-col-1 .btn");
+
+            joinButtons.forEach(btn => {
+                btn.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    joinSection.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("formLoadTime").value = Math.floor(Date.now() / 1000);
+        });
+    </script>
 
     <script>
+        var site_url = '<?= site_url(''); ?>';
         $(document).ready(function () {
             /* ========================================================
            STEP 1: HOMEPAGE BUTTON → Validate Email → Open Modal
         ======================================================== */
             $(".apx-open-modal").on("click", function () {
-                const email = $(".apx-email").val().trim();
-                console.log(email);
+                const btn = $(this);
+                btn.prop("disabled", true);
+
+                const emailField = btn.closest("section, div, form").find(".apx-email").first();
+                const email = emailField.val() ? emailField.val().trim() : "";
+
                 if (!email) {
-                    Swal.fire(
-                        "Email Required",
-                        "Please enter your email first.",
-                        "warning"
-                    );
+                    Swal.fire("Email Required", "Please enter your email first.", "warning");
+                    btn.prop("disabled", false);
                     return;
                 }
 
                 const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
                 if (!valid) {
-                    Swal.fire(
-                        "Invalid Email Address",
-                        "Please enter a valid email.",
-                        "error"
-                    );
+                    Swal.fire("Invalid Email Address", "Please enter a valid email.", "error");
+                    btn.prop("disabled", false);
                     return;
                 }
 
-                // Set email into hidden field
-                $("#apx-email-final").val(email);
+                // Show processing
+                Swal.fire({
+                    title: "Processing...",
+                    html: "Please wait while we check your application.",
+                    allowOutsideClick: false,
+                    allowEscapeKey: false,
+                    didOpen: () => Swal.showLoading(),
+                });
 
-                // Open modal
-                const modal = new bootstrap.Modal(
-                    document.getElementById("apxWaitlistModal")
-                );
-                modal.show();
+                $.post(site_url + "auth/submit_email_first", { email: email }, function (res) {
+                    Swal.close();
+
+                    // ============================
+                    // 🚫 CASE 1 — APPLICATION COMPLETE
+                    // ============================
+                    if (res.type === "completed") {
+                        Swal.fire({
+                            title: "Already Completed",
+                            text: res.msg,
+                            icon: "info",
+                            confirmButtonColor: "#db9d00"
+                        });
+
+                        btn.prop("disabled", false);
+                        return; // ❌ STOP HERE — DO NOT OPEN MODAL
+                    }
+
+                    // ============================
+                    // 🚫 CASE 2 — UNDER REVIEW
+                    // ============================
+                    if (res.type === "under_review") {
+                        Swal.fire({
+                            title: "Under Review",
+                            text: res.msg,
+                            icon: "info",
+                            confirmButtonColor: "#db9d00"
+                        });
+
+                        btn.prop("disabled", false);
+                        return; // ❌ STOP
+                    }
+
+                    // ============================
+                    // 🚫 CASE 3 — BANNED or REJECTED
+                    // ============================
+                    if (res.type === "banned" || res.type === "rejected") {
+                        Swal.fire({
+                            title: "Access Restricted",
+                            text: res.msg,
+                            icon: "error",
+                            confirmButtonColor: "#db9d00"
+                        });
+
+                        btn.prop("disabled", false);
+                        return; // ❌ STOP
+                    }
+
+                    // ============================
+                    // CASE 4 — CONTINUE / NEW
+                    // ============================
+                    if (res.type === "continue" || res.type === "new") {
+                        Swal.fire({
+                            title: res.type === "new" ? "Email Saved" : "Continue Application",
+                            text: res.msg,
+                            icon: "success",
+                            confirmButtonColor: "#db9d00",
+                            timer: 1500
+                        });
+                    }
+
+                    // Set fields for modal
+                    $("#waitlist_id").val(res.id);
+                    $("#apx-email-final").val(email);
+
+                    // OPEN MODAL NOW
+                    const modal = new bootstrap.Modal(
+                        document.getElementById("apxWaitlistModal")
+                    );
+                    modal.show();
+
+                    btn.prop("disabled", false);
+
+                }, "json").fail(function () {
+                    Swal.close();
+                    Swal.fire("Error", "Something went wrong. Try again.", "error");
+                    btn.prop("disabled", false);
+                });
             });
 
             /* ========================================================
-           STEP 2: Referral "Other" Field Toggle
-        ======================================================== */
+                      STEP 2: Referral "Other" Field Toggle
+                   ======================================================== */
             $("#apx-referral").on("change", function () {
                 if (this.value === "Other" || this.value === "Referral") {
                     $("#apx-referral-other-wrap").slideDown();
@@ -1580,30 +1685,58 @@
                 e.preventDefault();
 
                 let formData = $(this).serialize();
+                const btn = $("#apxWaitlistForm button[type=submit]");
+
+                // Disable button
+                btn.prop("disabled", true).html("Processing…");
+
+                // Show processing modal
+                Swal.fire({
+                    title: "Submitting Application...",
+                    html: "Please wait while we process your request.",
+                    allowOutsideClick: false,
+                    allowEscapeKey: false,
+                    didOpen: () => {
+                        Swal.showLoading();
+                    }
+                });
 
                 $.ajax({
-                    url: "waitlist/submit", // <-- your backend endpoint
+                    url: site_url + "auth/submit_waitlist",
                     type: "POST",
                     data: formData,
-                    success: function (res) {
-                        Swal.fire({
-                            title: "Application Submitted",
-                            text: "Your request has been received. Apexia will review it manually.",
-                            icon: "success",
-                            confirmButtonColor: "#db9d00",
-                        });
+                    dataType: "json",
 
-                        $("#apxWaitlistModal").modal("hide");
+                    success: function (res) {
+                        Swal.close();
+
+                        if (res.status) {
+                            Swal.fire({
+                                title: "Application Submitted",
+                                text: res.msg,
+                                icon: "success",
+                                confirmButtonColor: "#db9d00",
+                            });
+
+                            $("#apxWaitlistModal").modal("hide");
+                            $("#apxWaitlistForm")[0].reset();
+                        } else {
+                            Swal.fire("Error", res.msg, "error");
+                        }
+
+                        btn.prop("disabled", false).html("Submit Application");
                     },
+
                     error: function () {
-                        Swal.fire(
-                            "Error",
-                            "Something went wrong. Try again later.",
-                            "error"
-                        );
+                        Swal.close();
+                        Swal.fire("Error", "Something went wrong. Try again later.", "error");
+                        btn.prop("disabled", false).html("Submit Application");
                     },
                 });
             });
+
+
+
         });
     </script>
     <script>
